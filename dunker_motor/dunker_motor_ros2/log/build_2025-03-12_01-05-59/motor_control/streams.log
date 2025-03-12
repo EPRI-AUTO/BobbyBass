@@ -1,0 +1,24 @@
+[1.124s] Invoking command in '/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control': PYTHONPATH=/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/build --no-deps symlink_data
+[1.599s] running develop
+[1.898s] running egg_info
+[1.898s] creating motor_control.egg-info
+[1.898s] writing motor_control.egg-info/PKG-INFO
+[1.898s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[1.899s] writing entry points to motor_control.egg-info/entry_points.txt
+[1.899s] writing requirements to motor_control.egg-info/requires.txt
+[1.899s] writing top-level names to motor_control.egg-info/top_level.txt
+[1.900s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.903s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.904s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.906s] running build_ext
+[1.907s] Creating /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages/motor-control.egg-link (link to .)
+[1.908s] Installing controller script to /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/motor_control
+[1.909s] 
+[1.909s] Installed /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control
+[1.909s] running symlink_data
+[1.909s] creating /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/share/ament_index
+[1.909s] creating /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/share/ament_index/resource_index
+[1.909s] creating /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/share/ament_index/resource_index/packages
+[1.910s] symbolically linking /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/resource/motor_control -> /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/share/ament_index/resource_index/packages
+[1.910s] symbolically linking /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/package.xml -> /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/share/motor_control
+[1.988s] Invoked command in '/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control' returned '0': PYTHONPATH=/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/build --no-deps symlink_data

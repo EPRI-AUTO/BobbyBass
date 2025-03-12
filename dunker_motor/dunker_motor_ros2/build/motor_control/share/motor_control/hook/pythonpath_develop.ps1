@@ -1,0 +1,3 @@
+# generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em
+
+colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control"

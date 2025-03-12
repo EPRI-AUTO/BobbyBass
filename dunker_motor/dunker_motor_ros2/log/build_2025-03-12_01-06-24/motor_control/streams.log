@@ -1,0 +1,17 @@
+[1.137s] Invoking command in '/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control': PYTHONPATH=/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/build --no-deps symlink_data
+[1.616s] running develop
+[1.922s] running egg_info
+[1.922s] writing motor_control.egg-info/PKG-INFO
+[1.922s] writing dependency_links to motor_control.egg-info/dependency_links.txt
+[1.922s] writing entry points to motor_control.egg-info/entry_points.txt
+[1.923s] writing requirements to motor_control.egg-info/requires.txt
+[1.923s] writing top-level names to motor_control.egg-info/top_level.txt
+[1.926s] reading manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.928s] writing manifest file 'motor_control.egg-info/SOURCES.txt'
+[1.930s] running build_ext
+[1.931s] Creating /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages/motor-control.egg-link (link to .)
+[1.932s] Installing controller script to /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/motor_control
+[1.933s] 
+[1.933s] Installed /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control
+[1.933s] running symlink_data
+[2.009s] Invoked command in '/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control' returned '0': PYTHONPATH=/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/build/motor_control/build --no-deps symlink_data

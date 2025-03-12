@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1d8d713eac6216f3a5c9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "unitree_lidar_pointlio",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pointlio_mapping::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pointlio_mapping-a875b8a8521f51522ded.json",
+					"name" : "pointlio_mapping",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-af0b8f98e1b2581d53c5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unitree_lidar_pointlio_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unitree_lidar_pointlio_uninstall-50304215afa0ed0166df.json",
+					"name" : "unitree_lidar_pointlio_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio",
+		"source" : "/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

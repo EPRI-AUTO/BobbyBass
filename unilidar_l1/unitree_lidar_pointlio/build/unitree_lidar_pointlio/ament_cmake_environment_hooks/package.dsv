@@ -1,0 +1,4 @@
+source;share/unitree_lidar_pointlio/local_setup.bash
+source;share/unitree_lidar_pointlio/local_setup.dsv
+source;share/unitree_lidar_pointlio/local_setup.sh
+source;share/unitree_lidar_pointlio/local_setup.zsh

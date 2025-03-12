@@ -4,7 +4,7 @@
   <name>unitree_lidar_ros2</name>
   <version>0.0.0</version>
   <description>unitree lidar ros2</description>
-  <maintainer email="lukelbmeng@gmail.com">jo</maintainer>
+  <maintainer email="epriauto@todo.todo">EPRI AUTO</maintainer>
   <license>GPLv3</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

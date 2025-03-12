@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio/pointlio_mapping" "TARGETS" "pointlio_mapping" "DESTINATION" "lib/unitree_lidar_pointlio")

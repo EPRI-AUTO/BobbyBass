@@ -1,1 +1,0 @@
-/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio/ament_cmake_core/point_lioConfig-version.cmake

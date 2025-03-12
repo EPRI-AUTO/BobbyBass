@@ -1,0 +1,108 @@
+[0.016s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/src/unitree_lidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2
+[0.105s] -- The C compiler identification is GNU 11.4.0
+[0.205s] -- The CXX compiler identification is GNU 11.4.0
+[0.224s] -- Detecting C compiler ABI info
+[0.359s] -- Detecting C compiler ABI info - done
+[0.383s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.383s] -- Detecting C compile features
+[0.385s] -- Detecting C compile features - done
+[0.394s] -- Detecting CXX compiler ABI info
+[0.543s] -- Detecting CXX compiler ABI info - done
+[0.569s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.570s] -- Detecting CXX compile features
+[0.571s] -- Detecting CXX compile features - done
+[0.579s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.906s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.030s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.097s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.181s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.188s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.202s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.311s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.314s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.439s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.488s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.552s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.565s] -- Looking for pthread.h
+[1.695s] -- Looking for pthread.h - found
+[1.696s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.846s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.850s] -- Found Threads: TRUE  
+[1.975s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.024s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.088s] -- Checking for module 'eigen3'
+[2.109s] --   Found eigen3, version 3.4.0
+[2.166s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.166s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.242s] -- Checking for module 'flann'
+[2.267s] --   Found flann, version 1.9.1
+[2.346s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[2.346s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[4.168s] -- Checking for module 'libusb-1.0'
+[4.195s] --   Found libusb-1.0, version 1.0.25
+[4.265s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[4.268s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.383s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.649s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.659s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.668s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.887s] -- Found Qhull version 8.0.2
+[5.115s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.339s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[5.340s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[5.341s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[5.343s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[5.344s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[5.345s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[5.346s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[5.347s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[5.348s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[5.350s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[5.352s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[5.353s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[5.355s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[5.356s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[5.358s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[5.359s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[5.360s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[5.362s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[5.363s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[5.365s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[5.366s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[5.367s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[5.367s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[5.369s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[5.370s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[5.519s] -- Configuring done
+[5.581s] -- Generating done
+[5.600s] -- Build files have been written to: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2
+[5.641s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/src/unitree_lidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2
+[5.647s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2 -- -j6 -l6
+[5.746s] [ 50%] [32mBuilding CXX object CMakeFiles/unitree_lidar_ros2_node.dir/src/unitree_lidar_ros2_node.cpp.o[0m
+[31.196s] [100%] [32m[1mLinking CXX executable unitree_lidar_ros2_node[0m
+[32.180s] [100%] Built target unitree_lidar_ros2_node
+[32.206s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2 -- -j6 -l6
+[32.227s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2
+[32.245s] -- Install configuration: ""
+[32.246s] -- Execute custom install script
+[32.247s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node
+[32.264s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz
+[32.282s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py
+[32.300s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2
+[32.318s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2
+[32.336s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh
+[32.354s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv
+[32.372s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh
+[32.391s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv
+[32.410s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash
+[32.429s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh
+[32.445s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh
+[32.465s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv
+[32.483s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv
+[32.502s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2
+[32.521s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake
+[32.539s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake
+[32.557s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml
+[32.580s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_ros2/build/unitree_lidar_ros2

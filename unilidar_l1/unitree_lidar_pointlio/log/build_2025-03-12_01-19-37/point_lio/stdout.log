@@ -86,33 +86,19 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio
-[ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
 [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
-[ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
 [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
 [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
 [100%] Built target pointlio_mapping
 -- Install configuration: ""
 -- Execute custom install script
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/lib/point_lio/pointlio_mapping
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/avia.yaml
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/horizon.yaml
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/mid360.yaml
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/ouster64.yaml
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/unilidar_l1.yaml
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/unilidar_l2.yaml
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/velody16.yaml
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
--- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
 -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio

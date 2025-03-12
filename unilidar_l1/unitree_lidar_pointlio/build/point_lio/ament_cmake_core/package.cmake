@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "point_lio")
 set(point_lio_VERSION "0.0.0")
-set(point_lio_MAINTAINER "Daniel Florea <dflorea@uc.cl>")
+set(point_lio_MAINTAINER "EPRI AUTO <epriauto@todo.todo>")
 set(point_lio_BUILD_DEPENDS "rclcpp" "rclpy" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf2_ros" "pcl_ros" "pcl_conversions" "visualization_msgs")
 set(point_lio_BUILDTOOL_DEPENDS "ament_cmake")
 set(point_lio_BUILD_EXPORT_DEPENDS "rclcpp" "rclpy" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf2_ros" "pcl_ros" "pcl_conversions" "visualization_msgs")

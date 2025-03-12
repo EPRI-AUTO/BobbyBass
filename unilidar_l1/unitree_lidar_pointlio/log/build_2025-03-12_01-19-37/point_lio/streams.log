@@ -1,0 +1,147 @@
+[0.014s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio
+[0.215s] -- The C compiler identification is GNU 11.4.0
+[0.350s] -- The CXX compiler identification is GNU 11.4.0
+[0.371s] -- Detecting C compiler ABI info
+[0.507s] -- Detecting C compiler ABI info - done
+[0.524s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.525s] -- Detecting C compile features
+[0.527s] -- Detecting C compile features - done
+[0.536s] -- Detecting CXX compiler ABI info
+[0.680s] -- Detecting CXX compiler ABI info - done
+[0.699s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.700s] -- Detecting CXX compile features
+[0.701s] -- Detecting CXX compile features - done
+[0.703s] -- Current CPU architecture: aarch64
+[0.712s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.007s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.135s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.190s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.268s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.276s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.290s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.340s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.414s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.418s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.553s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.606s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.674s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.689s] -- Looking for pthread.h
+[1.822s] -- Looking for pthread.h - found
+[1.823s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.964s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.968s] -- Found Threads: TRUE  
+[2.090s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[2.092s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.117s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.148s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.179s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.250s] -- Checking for module 'eigen3'
+[2.265s] --   Found eigen3, version 3.4.0
+[2.314s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.314s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.388s] -- Checking for module 'flann'
+[2.408s] --   Found flann, version 1.9.1
+[2.479s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[2.479s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[4.260s] -- Checking for module 'libusb-1.0'
+[4.288s] --   Found libusb-1.0, version 1.0.25
+[4.360s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[4.364s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.465s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.713s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.722s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.731s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.956s] -- Found Qhull version 8.0.2
+[5.187s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.410s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[5.412s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[5.413s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[5.415s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[5.416s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[5.418s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[5.418s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[5.419s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[5.420s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[5.422s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[5.423s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[5.425s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[5.426s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[5.428s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[5.429s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[5.431s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[5.432s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[5.434s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[5.435s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[5.436s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[5.438s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[5.438s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[5.439s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[5.441s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[5.442s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[5.496s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.499s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[5.499s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.658s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[6.342s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[6.502s] -- Configuring done
+[6.617s] -- Generating done
+[6.642s] -- Build files have been written to: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio
+[6.689s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio
+[6.695s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio -- -j6 -l6
+[6.794s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[6.795s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[6.795s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[6.795s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[6.795s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[27.410s] In file included from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+[27.410s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+[27.410s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/Estimator.h:4[m[K,
+[27.410s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/Estimator.cpp:2[m[K:
+[27.411s] /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double][m[K’:
+[27.411s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3][m[K’
+[27.411s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:334:32:[m[K   required from ‘[01m[Kstatic MTK::SO3<_scalar, Options> MTK::SO3<_scalar, Options>::exp(const Eigen::Matrix<Type, 3, 1>&, MTK::SO3<_scalar, Options>::scalar) [with _scalar = double; int Options = 0; MTK::SO3<_scalar, Options>::scalar = double][m[K’
+[27.411s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:242:18:[m[K   required from ‘[01m[Kvoid MTK::SO3<_scalar, Options>::boxplus(MTK::vectview<const _scalar, MTK::SO3<_scalar, Options>::DOF>, MTK::SO3<_scalar, Options>::scalar) [with _scalar = double; int Options = 0; MTK::SO3<_scalar, Options>::scalar = double][m[K’
+[27.411s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/Estimator.h:38:1:[m[K   required from here
+[27.411s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[27.411s]   143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+[27.411s]       |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[32.971s] In file included from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+[32.971s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+[32.971s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/Estimator.h:4[m[K,
+[32.972s]                  from [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/laserMapping.cpp:27[m[K:
+[32.972s] /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double][m[K’:
+[32.972s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3][m[K’
+[32.972s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:[m[K   required from ‘[01m[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::predict(double&, esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::processnoisecovariance&, const input&, bool, bool) [with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>][m[K’
+[32.972s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/src/laserMapping.cpp:1004:46:[m[K   required from here
+[32.972s] [01m[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[32.972s]   143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+[32.972s]       |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[108.725s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[111.108s] [100%] Built target pointlio_mapping
+[111.142s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio -- -j6 -l6
+[111.164s] Invoking command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio
+[111.177s] -- Install configuration: ""
+[111.178s] -- Execute custom install script
+[111.179s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/lib/point_lio/pointlio_mapping
+[111.201s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[111.218s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[111.237s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[111.257s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[111.275s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[111.293s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[111.314s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[111.332s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[111.354s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/environment/path.sh
+[111.372s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/environment/path.dsv
+[111.391s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/local_setup.bash
+[111.413s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/local_setup.sh
+[111.432s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/local_setup.zsh
+[111.449s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/local_setup.dsv
+[111.466s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/package.dsv
+[111.483s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[111.498s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[111.515s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[111.532s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[111.548s] -- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/point_lio/share/point_lio/package.xml
+[111.571s] Invoked command in '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/point_lio

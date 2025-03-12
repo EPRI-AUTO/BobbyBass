@@ -9,11 +9,11 @@
     Robotics: Science and Systems Conference (RSS). Berkeley, CA, July 2014.
   </description>
 
-  <maintainer email="dflorea@uc.cl">Daniel Florea</maintainer>
+  <maintainer email="epriauto@todo.todo">EPRI AUTO</maintainer>
 
   <license>BSD</license>
 
-  <author email="dflorea@uc.cl">Daniel Florea</author>
+  <author email="epriauto@todo.todo">EPRI AUTO</author>
 
   <!-- ROS2 uses ament as build system -->
   <buildtool_depend>ament_cmake</buildtool_depend>

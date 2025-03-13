@@ -1,0 +1,1978 @@
+[0.000000] (-) TimerEvent: {}
+[0.000364] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict()}
+[0.000607] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_components', '/home/epriauto/ros2_ws/camera/install/zed_components')])}
+[0.001025] (zed_ros2) JobQueued: {'identifier': 'zed_ros2', 'dependencies': OrderedDict([('zed_components', '/home/epriauto/ros2_ws/camera/install/zed_components'), ('zed_wrapper', '/home/epriauto/ros2_ws/camera/install/zed_wrapper')])}
+[0.001260] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.016626] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.017538] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_components'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099620] (-) TimerEvent: {}
+[0.176847] (zed_components) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199772] (-) TimerEvent: {}
+[0.300398] (-) TimerEvent: {}
+[0.323585] (zed_components) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.348687] (zed_components) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400580] (-) TimerEvent: {}
+[0.488809] (zed_components) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500663] (-) TimerEvent: {}
+[0.513731] (zed_components) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.515604] (zed_components) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.517430] (zed_components) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.528914] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600881] (-) TimerEvent: {}
+[0.677728] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.700960] (-) TimerEvent: {}
+[0.703537] (zed_components) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.704562] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.706178] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.720994] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[0.801190] (-) TimerEvent: {}
+[0.861371] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[0.866734] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.901350] (-) TimerEvent: {}
+[1.002006] (-) TimerEvent: {}
+[1.015232] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.016011] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.102187] (-) TimerEvent: {}
+[1.162539] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.166343] (zed_components) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.202327] (-) TimerEvent: {}
+[1.249047] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[1.302506] (-) TimerEvent: {}
+[1.403144] (-) TimerEvent: {}
+[1.421500] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[1.422794] (zed_components) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  \n'}
+[1.493679] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12.6") \n'}
+[1.503281] (-) TimerEvent: {}
+[1.542519] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "12.6") \n'}
+[1.548567] (zed_components) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.603434] (-) TimerEvent: {}
+[1.704003] (-) TimerEvent: {}
+[1.804608] (-) TimerEvent: {}
+[1.858546] (zed_components) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.904748] (-) TimerEvent: {}
+[1.992031] (zed_components) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.004925] (-) TimerEvent: {}
+[2.105630] (-) TimerEvent: {}
+[2.206270] (-) TimerEvent: {}
+[2.265398] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.275028] (zed_components) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.291206] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.306324] (-) TimerEvent: {}
+[2.313390] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.341190] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.406459] (-) TimerEvent: {}
+[2.507004] (-) TimerEvent: {}
+[2.533773] (zed_components) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.538368] (zed_components) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.607155] (-) TimerEvent: {}
+[2.677806] (zed_components) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.707281] (-) TimerEvent: {}
+[2.728230] (zed_components) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.794992] (zed_components) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.807382] (-) TimerEvent: {}
+[2.907852] (-) TimerEvent: {}
+[3.008466] (-) TimerEvent: {}
+[3.109089] (-) TimerEvent: {}
+[3.209698] (-) TimerEvent: {}
+[3.229014] (zed_components) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.231309] (zed_components) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.231517] (zed_components) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.309850] (-) TimerEvent: {}
+[3.410445] (-) TimerEvent: {}
+[3.443868] (zed_components) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.503992] (zed_components) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.506731] (zed_components) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.507692] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/include;/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/tools/include\n'}
+[3.507836] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.509001] (zed_components) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.510481] (-) TimerEvent: {}
+[3.512012] (zed_components) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.512175] (zed_components) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.513028] (zed_components) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.520239] (zed_components) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.581655] (zed_components) StdoutLine: {'line': b'-- Generating done\n'}
+[3.599210] (zed_components) StdoutLine: {'line': b'-- Build files have been written to: /home/epriauto/ros2_ws/camera/build/zed_components\n'}
+[3.610610] (-) TimerEvent: {}
+[3.630938] (zed_components) CommandEnded: {'returncode': 0}
+[3.632271] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[3.634828] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/epriauto/ros2_ws/camera/build/zed_components', '--', '-j6', '-l6'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.710796] (-) TimerEvent: {}
+[3.733732] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o\x1b[0m\n'}
+[3.734193] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[3.734490] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[3.734639] (zed_components) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[3.734764] (zed_components) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_win_avg.cpp.o\x1b[0m\n'}
+[3.734973] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[3.811003] (-) TimerEvent: {}
+[3.911673] (-) TimerEvent: {}
+[4.012424] (-) TimerEvent: {}
+[4.113140] (-) TimerEvent: {}
+[4.213808] (-) TimerEvent: {}
+[4.314567] (-) TimerEvent: {}
+[4.415290] (-) TimerEvent: {}
+[4.516034] (-) TimerEvent: {}
+[4.616787] (-) TimerEvent: {}
+[4.624475] (zed_components) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/zed_camera/src/zed_camera_one_component.cpp.o\x1b[0m\n'}
+[4.671258] (zed_components) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o\x1b[0m\n'}
+[4.717005] (-) TimerEvent: {}
+[4.817728] (-) TimerEvent: {}
+[4.918440] (-) TimerEvent: {}
+[5.019150] (-) TimerEvent: {}
+[5.119909] (-) TimerEvent: {}
+[5.220677] (-) TimerEvent: {}
+[5.321402] (-) TimerEvent: {}
+[5.422139] (-) TimerEvent: {}
+[5.522837] (-) TimerEvent: {}
+[5.623548] (-) TimerEvent: {}
+[5.724267] (-) TimerEvent: {}
+[5.824983] (-) TimerEvent: {}
+[5.925650] (-) TimerEvent: {}
+[6.026364] (-) TimerEvent: {}
+[6.127081] (-) TimerEvent: {}
+[6.227822] (-) TimerEvent: {}
+[6.328599] (-) TimerEvent: {}
+[6.429316] (-) TimerEvent: {}
+[6.530039] (-) TimerEvent: {}
+[6.630770] (-) TimerEvent: {}
+[6.731519] (-) TimerEvent: {}
+[6.832295] (-) TimerEvent: {}
+[6.933080] (-) TimerEvent: {}
+[7.033798] (-) TimerEvent: {}
+[7.134491] (-) TimerEvent: {}
+[7.235239] (-) TimerEvent: {}
+[7.335978] (-) TimerEvent: {}
+[7.436757] (-) TimerEvent: {}
+[7.537478] (-) TimerEvent: {}
+[7.638213] (-) TimerEvent: {}
+[7.738946] (-) TimerEvent: {}
+[7.839656] (-) TimerEvent: {}
+[7.940312] (-) TimerEvent: {}
+[8.041121] (-) TimerEvent: {}
+[8.142365] (-) TimerEvent: {}
+[8.243428] (-) TimerEvent: {}
+[8.344149] (-) TimerEvent: {}
+[8.444891] (-) TimerEvent: {}
+[8.545624] (-) TimerEvent: {}
+[8.646382] (-) TimerEvent: {}
+[8.747124] (-) TimerEvent: {}
+[8.847866] (-) TimerEvent: {}
+[8.948621] (-) TimerEvent: {}
+[9.049338] (-) TimerEvent: {}
+[9.150128] (-) TimerEvent: {}
+[9.250856] (-) TimerEvent: {}
+[9.351534] (-) TimerEvent: {}
+[9.452258] (-) TimerEvent: {}
+[9.552999] (-) TimerEvent: {}
+[9.653854] (-) TimerEvent: {}
+[9.754529] (-) TimerEvent: {}
+[9.855257] (-) TimerEvent: {}
+[9.955975] (-) TimerEvent: {}
+[10.056737] (-) TimerEvent: {}
+[10.157453] (-) TimerEvent: {}
+[10.258176] (-) TimerEvent: {}
+[10.358878] (-) TimerEvent: {}
+[10.459600] (-) TimerEvent: {}
+[10.560329] (-) TimerEvent: {}
+[10.661135] (-) TimerEvent: {}
+[10.762175] (-) TimerEvent: {}
+[10.863490] (-) TimerEvent: {}
+[10.964179] (-) TimerEvent: {}
+[11.064959] (-) TimerEvent: {}
+[11.165647] (-) TimerEvent: {}
+[11.266440] (-) TimerEvent: {}
+[11.367159] (-) TimerEvent: {}
+[11.467852] (-) TimerEvent: {}
+[11.568507] (-) TimerEvent: {}
+[11.669190] (-) TimerEvent: {}
+[11.769900] (-) TimerEvent: {}
+[11.870584] (-) TimerEvent: {}
+[11.971265] (-) TimerEvent: {}
+[12.071949] (-) TimerEvent: {}
+[12.172636] (-) TimerEvent: {}
+[12.273333] (-) TimerEvent: {}
+[12.373992] (-) TimerEvent: {}
+[12.474793] (-) TimerEvent: {}
+[12.575531] (-) TimerEvent: {}
+[12.676221] (-) TimerEvent: {}
+[12.776901] (-) TimerEvent: {}
+[12.877597] (-) TimerEvent: {}
+[12.978288] (-) TimerEvent: {}
+[13.079924] (-) TimerEvent: {}
+[13.180680] (-) TimerEvent: {}
+[13.281522] (-) TimerEvent: {}
+[13.382190] (-) TimerEvent: {}
+[13.482905] (-) TimerEvent: {}
+[13.583629] (-) TimerEvent: {}
+[13.684347] (-) TimerEvent: {}
+[13.785027] (-) TimerEvent: {}
+[13.885738] (-) TimerEvent: {}
+[13.986410] (-) TimerEvent: {}
+[14.087077] (-) TimerEvent: {}
+[14.187798] (-) TimerEvent: {}
+[14.288503] (-) TimerEvent: {}
+[14.389225] (-) TimerEvent: {}
+[14.489932] (-) TimerEvent: {}
+[14.590603] (-) TimerEvent: {}
+[14.691281] (-) TimerEvent: {}
+[14.791950] (-) TimerEvent: {}
+[14.892615] (-) TimerEvent: {}
+[14.993324] (-) TimerEvent: {}
+[15.093978] (-) TimerEvent: {}
+[15.194687] (-) TimerEvent: {}
+[15.295358] (-) TimerEvent: {}
+[15.396082] (-) TimerEvent: {}
+[15.496773] (-) TimerEvent: {}
+[15.597465] (-) TimerEvent: {}
+[15.698184] (-) TimerEvent: {}
+[15.799846] (-) TimerEvent: {}
+[15.900522] (-) TimerEvent: {}
+[16.001187] (-) TimerEvent: {}
+[16.101856] (-) TimerEvent: {}
+[16.202507] (-) TimerEvent: {}
+[16.303169] (-) TimerEvent: {}
+[16.403832] (-) TimerEvent: {}
+[16.504509] (-) TimerEvent: {}
+[16.605186] (-) TimerEvent: {}
+[16.616344] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[16.616987] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[16.617165] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[16.617292] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[16.617404] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[16.617510] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[16.617615] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[16.617715] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[16.617814] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[16.617915] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[16.618013] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[16.618111] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[16.618206] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42\x1b[m\x1b[K,\n'}
+[16.618323] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[16.618425] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[16.618524] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[16.618619] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool stereolabs::ZedCamera::startCamera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.618722] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.618831] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[16.618928] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.619037] (zed_components) StderrLine: {'line': b' 4250 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.width\x1b[m\x1b[K,\n'}
+[16.619135] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.619231] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[16.619325] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[16.619421] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[16.619518] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> \x1b[01;36m\x1b[K%d\x1b[m\x1b[Kx%d",\n'}
+[16.619611] (zed_components) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[16.619705] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[16.619798] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[16.619893] (zed_components) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[16.619985] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[16.620078] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[16.620172] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[16.620279] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[16.620374] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[16.620467] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[16.620560] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[16.620668] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[16.620773] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[16.620869] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[16.620964] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[16.621081] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[16.621319] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42\x1b[m\x1b[K,\n'}
+[16.621432] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[16.621533] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[16.621629] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[16.621723] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.621828] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[16.621923] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.622016] (zed_components) StderrLine: {'line': b' 4250 |       mZed->getCameraInformation().camera_configuration.resolution.width,\n'}
+[16.622110] (zed_components) StderrLine: {'line': b' 4251 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.height\x1b[m\x1b[K);\n'}
+[16.622203] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.622295] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[16.622391] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[16.622501] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[16.622609] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> %dx\x1b[01;36m\x1b[K%d\x1b[m\x1b[K",\n'}
+[16.622705] (zed_components) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[16.622799] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[16.622892] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[16.622985] (zed_components) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[16.705361] (-) TimerEvent: {}
+[16.806035] (-) TimerEvent: {}
+[16.906718] (-) TimerEvent: {}
+[17.007382] (-) TimerEvent: {}
+[17.108055] (-) TimerEvent: {}
+[17.208747] (-) TimerEvent: {}
+[17.309422] (-) TimerEvent: {}
+[17.410091] (-) TimerEvent: {}
+[17.510732] (-) TimerEvent: {}
+[17.611382] (-) TimerEvent: {}
+[17.712039] (-) TimerEvent: {}
+[17.812690] (-) TimerEvent: {}
+[17.913365] (-) TimerEvent: {}
+[18.014031] (-) TimerEvent: {}
+[18.114682] (-) TimerEvent: {}
+[18.215344] (-) TimerEvent: {}
+[18.316012] (-) TimerEvent: {}
+[18.416670] (-) TimerEvent: {}
+[18.517357] (-) TimerEvent: {}
+[18.617999] (-) TimerEvent: {}
+[18.718647] (-) TimerEvent: {}
+[18.819302] (-) TimerEvent: {}
+[18.919947] (-) TimerEvent: {}
+[19.020614] (-) TimerEvent: {}
+[19.121291] (-) TimerEvent: {}
+[19.221961] (-) TimerEvent: {}
+[19.322627] (-) TimerEvent: {}
+[19.423279] (-) TimerEvent: {}
+[19.523920] (-) TimerEvent: {}
+[19.624561] (-) TimerEvent: {}
+[19.725208] (-) TimerEvent: {}
+[19.825858] (-) TimerEvent: {}
+[19.926502] (-) TimerEvent: {}
+[20.027150] (-) TimerEvent: {}
+[20.127785] (-) TimerEvent: {}
+[20.228446] (-) TimerEvent: {}
+[20.329145] (-) TimerEvent: {}
+[20.429795] (-) TimerEvent: {}
+[20.530462] (-) TimerEvent: {}
+[20.631137] (-) TimerEvent: {}
+[20.731779] (-) TimerEvent: {}
+[20.832446] (-) TimerEvent: {}
+[20.933118] (-) TimerEvent: {}
+[21.033788] (-) TimerEvent: {}
+[21.134462] (-) TimerEvent: {}
+[21.235155] (-) TimerEvent: {}
+[21.335831] (-) TimerEvent: {}
+[21.436505] (-) TimerEvent: {}
+[21.537194] (-) TimerEvent: {}
+[21.637867] (-) TimerEvent: {}
+[21.738527] (-) TimerEvent: {}
+[21.839204] (-) TimerEvent: {}
+[21.939851] (-) TimerEvent: {}
+[22.040511] (-) TimerEvent: {}
+[22.141180] (-) TimerEvent: {}
+[22.241833] (-) TimerEvent: {}
+[22.342476] (-) TimerEvent: {}
+[22.443130] (-) TimerEvent: {}
+[22.543778] (-) TimerEvent: {}
+[22.644435] (-) TimerEvent: {}
+[22.745099] (-) TimerEvent: {}
+[22.845715] (-) TimerEvent: {}
+[22.946413] (-) TimerEvent: {}
+[23.047090] (-) TimerEvent: {}
+[23.147766] (-) TimerEvent: {}
+[23.248425] (-) TimerEvent: {}
+[23.349108] (-) TimerEvent: {}
+[23.449774] (-) TimerEvent: {}
+[23.550424] (-) TimerEvent: {}
+[23.651073] (-) TimerEvent: {}
+[23.751716] (-) TimerEvent: {}
+[23.852362] (-) TimerEvent: {}
+[23.953052] (-) TimerEvent: {}
+[24.053696] (-) TimerEvent: {}
+[24.154349] (-) TimerEvent: {}
+[24.254995] (-) TimerEvent: {}
+[24.355662] (-) TimerEvent: {}
+[24.456331] (-) TimerEvent: {}
+[24.556998] (-) TimerEvent: {}
+[24.657663] (-) TimerEvent: {}
+[24.758321] (-) TimerEvent: {}
+[24.858973] (-) TimerEvent: {}
+[24.959620] (-) TimerEvent: {}
+[25.060264] (-) TimerEvent: {}
+[25.160927] (-) TimerEvent: {}
+[25.261591] (-) TimerEvent: {}
+[25.362249] (-) TimerEvent: {}
+[25.462907] (-) TimerEvent: {}
+[25.563564] (-) TimerEvent: {}
+[25.664211] (-) TimerEvent: {}
+[25.764865] (-) TimerEvent: {}
+[25.865513] (-) TimerEvent: {}
+[25.966147] (-) TimerEvent: {}
+[26.066770] (-) TimerEvent: {}
+[26.167404] (-) TimerEvent: {}
+[26.268043] (-) TimerEvent: {}
+[26.368673] (-) TimerEvent: {}
+[26.469339] (-) TimerEvent: {}
+[26.569994] (-) TimerEvent: {}
+[26.670635] (-) TimerEvent: {}
+[26.771277] (-) TimerEvent: {}
+[26.871963] (-) TimerEvent: {}
+[26.972592] (-) TimerEvent: {}
+[27.073237] (-) TimerEvent: {}
+[27.173884] (-) TimerEvent: {}
+[27.274516] (-) TimerEvent: {}
+[27.375165] (-) TimerEvent: {}
+[27.475812] (-) TimerEvent: {}
+[27.576456] (-) TimerEvent: {}
+[27.677080] (-) TimerEvent: {}
+[27.777598] (-) TimerEvent: {}
+[27.878090] (-) TimerEvent: {}
+[27.978617] (-) TimerEvent: {}
+[28.079255] (-) TimerEvent: {}
+[28.179901] (-) TimerEvent: {}
+[28.280571] (-) TimerEvent: {}
+[28.381211] (-) TimerEvent: {}
+[28.481869] (-) TimerEvent: {}
+[28.582523] (-) TimerEvent: {}
+[28.683183] (-) TimerEvent: {}
+[28.783847] (-) TimerEvent: {}
+[28.884500] (-) TimerEvent: {}
+[28.985181] (-) TimerEvent: {}
+[29.085829] (-) TimerEvent: {}
+[29.186486] (-) TimerEvent: {}
+[29.287152] (-) TimerEvent: {}
+[29.387796] (-) TimerEvent: {}
+[29.488450] (-) TimerEvent: {}
+[29.589119] (-) TimerEvent: {}
+[29.689770] (-) TimerEvent: {}
+[29.790435] (-) TimerEvent: {}
+[29.891073] (-) TimerEvent: {}
+[29.991739] (-) TimerEvent: {}
+[30.092411] (-) TimerEvent: {}
+[30.193081] (-) TimerEvent: {}
+[30.293726] (-) TimerEvent: {}
+[30.394397] (-) TimerEvent: {}
+[30.495071] (-) TimerEvent: {}
+[30.595733] (-) TimerEvent: {}
+[30.696408] (-) TimerEvent: {}
+[30.797089] (-) TimerEvent: {}
+[30.897736] (-) TimerEvent: {}
+[30.998404] (-) TimerEvent: {}
+[31.099062] (-) TimerEvent: {}
+[31.199724] (-) TimerEvent: {}
+[31.300345] (-) TimerEvent: {}
+[31.400974] (-) TimerEvent: {}
+[31.501639] (-) TimerEvent: {}
+[31.602291] (-) TimerEvent: {}
+[31.702946] (-) TimerEvent: {}
+[31.803592] (-) TimerEvent: {}
+[31.904242] (-) TimerEvent: {}
+[32.004899] (-) TimerEvent: {}
+[32.105568] (-) TimerEvent: {}
+[32.206225] (-) TimerEvent: {}
+[32.306871] (-) TimerEvent: {}
+[32.407518] (-) TimerEvent: {}
+[32.508171] (-) TimerEvent: {}
+[32.608822] (-) TimerEvent: {}
+[32.709498] (-) TimerEvent: {}
+[32.810149] (-) TimerEvent: {}
+[32.910797] (-) TimerEvent: {}
+[33.011452] (-) TimerEvent: {}
+[33.112104] (-) TimerEvent: {}
+[33.212758] (-) TimerEvent: {}
+[33.313461] (-) TimerEvent: {}
+[33.414115] (-) TimerEvent: {}
+[33.514757] (-) TimerEvent: {}
+[33.615410] (-) TimerEvent: {}
+[33.716059] (-) TimerEvent: {}
+[33.816671] (-) TimerEvent: {}
+[33.917315] (-) TimerEvent: {}
+[34.017969] (-) TimerEvent: {}
+[34.118613] (-) TimerEvent: {}
+[34.219273] (-) TimerEvent: {}
+[34.319920] (-) TimerEvent: {}
+[34.420575] (-) TimerEvent: {}
+[34.521223] (-) TimerEvent: {}
+[34.621872] (-) TimerEvent: {}
+[34.722521] (-) TimerEvent: {}
+[34.823160] (-) TimerEvent: {}
+[34.923798] (-) TimerEvent: {}
+[35.024455] (-) TimerEvent: {}
+[35.125125] (-) TimerEvent: {}
+[35.225792] (-) TimerEvent: {}
+[35.326470] (-) TimerEvent: {}
+[35.427122] (-) TimerEvent: {}
+[35.527779] (-) TimerEvent: {}
+[35.628455] (-) TimerEvent: {}
+[35.729158] (-) TimerEvent: {}
+[35.829822] (-) TimerEvent: {}
+[35.930501] (-) TimerEvent: {}
+[36.031180] (-) TimerEvent: {}
+[36.131866] (-) TimerEvent: {}
+[36.232541] (-) TimerEvent: {}
+[36.333220] (-) TimerEvent: {}
+[36.433890] (-) TimerEvent: {}
+[36.534589] (-) TimerEvent: {}
+[36.635280] (-) TimerEvent: {}
+[36.735964] (-) TimerEvent: {}
+[36.836624] (-) TimerEvent: {}
+[36.937302] (-) TimerEvent: {}
+[37.037959] (-) TimerEvent: {}
+[37.138543] (-) TimerEvent: {}
+[37.239125] (-) TimerEvent: {}
+[37.339779] (-) TimerEvent: {}
+[37.440439] (-) TimerEvent: {}
+[37.541125] (-) TimerEvent: {}
+[37.641772] (-) TimerEvent: {}
+[37.742441] (-) TimerEvent: {}
+[37.843097] (-) TimerEvent: {}
+[37.943742] (-) TimerEvent: {}
+[38.044401] (-) TimerEvent: {}
+[38.145046] (-) TimerEvent: {}
+[38.245592] (-) TimerEvent: {}
+[38.346225] (-) TimerEvent: {}
+[38.446862] (-) TimerEvent: {}
+[38.547521] (-) TimerEvent: {}
+[38.648188] (-) TimerEvent: {}
+[38.748852] (-) TimerEvent: {}
+[38.849540] (-) TimerEvent: {}
+[38.950229] (-) TimerEvent: {}
+[39.050879] (-) TimerEvent: {}
+[39.151542] (-) TimerEvent: {}
+[39.253692] (-) TimerEvent: {}
+[39.354364] (-) TimerEvent: {}
+[39.455037] (-) TimerEvent: {}
+[39.555728] (-) TimerEvent: {}
+[39.656400] (-) TimerEvent: {}
+[39.757083] (-) TimerEvent: {}
+[39.857751] (-) TimerEvent: {}
+[39.958420] (-) TimerEvent: {}
+[40.059057] (-) TimerEvent: {}
+[40.159756] (-) TimerEvent: {}
+[40.260405] (-) TimerEvent: {}
+[40.361100] (-) TimerEvent: {}
+[40.461810] (-) TimerEvent: {}
+[40.562495] (-) TimerEvent: {}
+[40.663157] (-) TimerEvent: {}
+[40.763814] (-) TimerEvent: {}
+[40.864455] (-) TimerEvent: {}
+[40.965114] (-) TimerEvent: {}
+[41.065817] (-) TimerEvent: {}
+[41.166478] (-) TimerEvent: {}
+[41.267189] (-) TimerEvent: {}
+[41.367853] (-) TimerEvent: {}
+[41.468517] (-) TimerEvent: {}
+[41.569167] (-) TimerEvent: {}
+[41.669956] (-) TimerEvent: {}
+[41.770716] (-) TimerEvent: {}
+[41.871411] (-) TimerEvent: {}
+[41.972090] (-) TimerEvent: {}
+[42.072763] (-) TimerEvent: {}
+[42.173440] (-) TimerEvent: {}
+[42.274091] (-) TimerEvent: {}
+[42.374737] (-) TimerEvent: {}
+[42.475374] (-) TimerEvent: {}
+[42.576025] (-) TimerEvent: {}
+[42.676691] (-) TimerEvent: {}
+[42.777352] (-) TimerEvent: {}
+[42.878020] (-) TimerEvent: {}
+[42.978679] (-) TimerEvent: {}
+[43.079364] (-) TimerEvent: {}
+[43.180063] (-) TimerEvent: {}
+[43.280744] (-) TimerEvent: {}
+[43.381413] (-) TimerEvent: {}
+[43.482058] (-) TimerEvent: {}
+[43.582731] (-) TimerEvent: {}
+[43.683402] (-) TimerEvent: {}
+[43.784074] (-) TimerEvent: {}
+[43.884746] (-) TimerEvent: {}
+[43.985451] (-) TimerEvent: {}
+[44.086128] (-) TimerEvent: {}
+[44.186808] (-) TimerEvent: {}
+[44.287501] (-) TimerEvent: {}
+[44.388157] (-) TimerEvent: {}
+[44.488824] (-) TimerEvent: {}
+[44.589505] (-) TimerEvent: {}
+[44.690171] (-) TimerEvent: {}
+[44.790827] (-) TimerEvent: {}
+[44.891499] (-) TimerEvent: {}
+[44.992176] (-) TimerEvent: {}
+[45.092842] (-) TimerEvent: {}
+[45.193524] (-) TimerEvent: {}
+[45.294175] (-) TimerEvent: {}
+[45.394822] (-) TimerEvent: {}
+[45.495480] (-) TimerEvent: {}
+[45.596148] (-) TimerEvent: {}
+[45.696804] (-) TimerEvent: {}
+[45.797479] (-) TimerEvent: {}
+[45.898140] (-) TimerEvent: {}
+[45.998798] (-) TimerEvent: {}
+[46.099480] (-) TimerEvent: {}
+[46.200151] (-) TimerEvent: {}
+[46.300829] (-) TimerEvent: {}
+[46.401506] (-) TimerEvent: {}
+[46.502194] (-) TimerEvent: {}
+[46.602877] (-) TimerEvent: {}
+[46.684239] (zed_components) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_one_component.so\x1b[0m\n'}
+[46.703033] (-) TimerEvent: {}
+[46.803682] (-) TimerEvent: {}
+[46.904331] (-) TimerEvent: {}
+[47.004983] (-) TimerEvent: {}
+[47.105675] (-) TimerEvent: {}
+[47.206334] (-) TimerEvent: {}
+[47.306988] (-) TimerEvent: {}
+[47.407643] (-) TimerEvent: {}
+[47.465920] (zed_components) StdoutLine: {'line': b'[ 90%] Built target zed_camera_one_component\n'}
+[47.507809] (-) TimerEvent: {}
+[47.608435] (-) TimerEvent: {}
+[47.709069] (-) TimerEvent: {}
+[47.809711] (-) TimerEvent: {}
+[47.910354] (-) TimerEvent: {}
+[48.010995] (-) TimerEvent: {}
+[48.111651] (-) TimerEvent: {}
+[48.212306] (-) TimerEvent: {}
+[48.312964] (-) TimerEvent: {}
+[48.413636] (-) TimerEvent: {}
+[48.514285] (-) TimerEvent: {}
+[48.614939] (-) TimerEvent: {}
+[48.715591] (-) TimerEvent: {}
+[48.816239] (-) TimerEvent: {}
+[48.916895] (-) TimerEvent: {}
+[49.017565] (-) TimerEvent: {}
+[49.118217] (-) TimerEvent: {}
+[49.218869] (-) TimerEvent: {}
+[49.319774] (-) TimerEvent: {}
+[49.420450] (-) TimerEvent: {}
+[49.521351] (-) TimerEvent: {}
+[49.622026] (-) TimerEvent: {}
+[49.722690] (-) TimerEvent: {}
+[49.823355] (-) TimerEvent: {}
+[49.924007] (-) TimerEvent: {}
+[50.024650] (-) TimerEvent: {}
+[50.125342] (-) TimerEvent: {}
+[50.226009] (-) TimerEvent: {}
+[50.326676] (-) TimerEvent: {}
+[50.427322] (-) TimerEvent: {}
+[50.527994] (-) TimerEvent: {}
+[50.628684] (-) TimerEvent: {}
+[50.729389] (-) TimerEvent: {}
+[50.830301] (-) TimerEvent: {}
+[50.931218] (-) TimerEvent: {}
+[51.032142] (-) TimerEvent: {}
+[51.133119] (-) TimerEvent: {}
+[51.233764] (-) TimerEvent: {}
+[51.334375] (-) TimerEvent: {}
+[51.434941] (-) TimerEvent: {}
+[51.535543] (-) TimerEvent: {}
+[51.636109] (-) TimerEvent: {}
+[51.736758] (-) TimerEvent: {}
+[51.837411] (-) TimerEvent: {}
+[51.937956] (-) TimerEvent: {}
+[52.038470] (-) TimerEvent: {}
+[52.138977] (-) TimerEvent: {}
+[52.239474] (-) TimerEvent: {}
+[52.339981] (-) TimerEvent: {}
+[52.440568] (-) TimerEvent: {}
+[52.541216] (-) TimerEvent: {}
+[52.642234] (-) TimerEvent: {}
+[52.743004] (-) TimerEvent: {}
+[52.843736] (-) TimerEvent: {}
+[52.944431] (-) TimerEvent: {}
+[53.045159] (-) TimerEvent: {}
+[53.145854] (-) TimerEvent: {}
+[53.246552] (-) TimerEvent: {}
+[53.347243] (-) TimerEvent: {}
+[53.447959] (-) TimerEvent: {}
+[53.548714] (-) TimerEvent: {}
+[53.649482] (-) TimerEvent: {}
+[53.750140] (-) TimerEvent: {}
+[53.850751] (-) TimerEvent: {}
+[53.951332] (-) TimerEvent: {}
+[54.051863] (-) TimerEvent: {}
+[54.152382] (-) TimerEvent: {}
+[54.252893] (-) TimerEvent: {}
+[54.353425] (-) TimerEvent: {}
+[54.453914] (-) TimerEvent: {}
+[54.554468] (-) TimerEvent: {}
+[54.655091] (-) TimerEvent: {}
+[54.755646] (-) TimerEvent: {}
+[54.856186] (-) TimerEvent: {}
+[54.956699] (-) TimerEvent: {}
+[55.057237] (-) TimerEvent: {}
+[55.157807] (-) TimerEvent: {}
+[55.258476] (-) TimerEvent: {}
+[55.359106] (-) TimerEvent: {}
+[55.459745] (-) TimerEvent: {}
+[55.560310] (-) TimerEvent: {}
+[55.660813] (-) TimerEvent: {}
+[55.761347] (-) TimerEvent: {}
+[55.861850] (-) TimerEvent: {}
+[55.962354] (-) TimerEvent: {}
+[56.062877] (-) TimerEvent: {}
+[56.163441] (-) TimerEvent: {}
+[56.263957] (-) TimerEvent: {}
+[56.364488] (-) TimerEvent: {}
+[56.465083] (-) TimerEvent: {}
+[56.565662] (-) TimerEvent: {}
+[56.666192] (-) TimerEvent: {}
+[56.766723] (-) TimerEvent: {}
+[56.867269] (-) TimerEvent: {}
+[56.967817] (-) TimerEvent: {}
+[57.068367] (-) TimerEvent: {}
+[57.168915] (-) TimerEvent: {}
+[57.269493] (-) TimerEvent: {}
+[57.370038] (-) TimerEvent: {}
+[57.470589] (-) TimerEvent: {}
+[57.571128] (-) TimerEvent: {}
+[57.671664] (-) TimerEvent: {}
+[57.772195] (-) TimerEvent: {}
+[57.872726] (-) TimerEvent: {}
+[57.973263] (-) TimerEvent: {}
+[58.073771] (-) TimerEvent: {}
+[58.174291] (-) TimerEvent: {}
+[58.274803] (-) TimerEvent: {}
+[58.375364] (-) TimerEvent: {}
+[58.475960] (-) TimerEvent: {}
+[58.576504] (-) TimerEvent: {}
+[58.677110] (-) TimerEvent: {}
+[58.777703] (-) TimerEvent: {}
+[58.878296] (-) TimerEvent: {}
+[58.978898] (-) TimerEvent: {}
+[59.079499] (-) TimerEvent: {}
+[59.180088] (-) TimerEvent: {}
+[59.280686] (-) TimerEvent: {}
+[59.381339] (-) TimerEvent: {}
+[59.481945] (-) TimerEvent: {}
+[59.582543] (-) TimerEvent: {}
+[59.683140] (-) TimerEvent: {}
+[59.783722] (-) TimerEvent: {}
+[59.884318] (-) TimerEvent: {}
+[59.984933] (-) TimerEvent: {}
+[60.085602] (-) TimerEvent: {}
+[60.186177] (-) TimerEvent: {}
+[60.286560] (-) TimerEvent: {}
+[60.386900] (-) TimerEvent: {}
+[60.487239] (-) TimerEvent: {}
+[60.587558] (-) TimerEvent: {}
+[60.687865] (-) TimerEvent: {}
+[60.788168] (-) TimerEvent: {}
+[60.888476] (-) TimerEvent: {}
+[60.988785] (-) TimerEvent: {}
+[61.089100] (-) TimerEvent: {}
+[61.189470] (-) TimerEvent: {}
+[61.289821] (-) TimerEvent: {}
+[61.390134] (-) TimerEvent: {}
+[61.490435] (-) TimerEvent: {}
+[61.590758] (-) TimerEvent: {}
+[61.691074] (-) TimerEvent: {}
+[61.791368] (-) TimerEvent: {}
+[61.891664] (-) TimerEvent: {}
+[61.991974] (-) TimerEvent: {}
+[62.092265] (-) TimerEvent: {}
+[62.192577] (-) TimerEvent: {}
+[62.292919] (-) TimerEvent: {}
+[62.393250] (-) TimerEvent: {}
+[62.493669] (-) TimerEvent: {}
+[62.594248] (-) TimerEvent: {}
+[62.694607] (-) TimerEvent: {}
+[62.794938] (-) TimerEvent: {}
+[62.895288] (-) TimerEvent: {}
+[62.995614] (-) TimerEvent: {}
+[63.095916] (-) TimerEvent: {}
+[63.196214] (-) TimerEvent: {}
+[63.296538] (-) TimerEvent: {}
+[63.396894] (-) TimerEvent: {}
+[63.497237] (-) TimerEvent: {}
+[63.597557] (-) TimerEvent: {}
+[63.697860] (-) TimerEvent: {}
+[63.798147] (-) TimerEvent: {}
+[63.898435] (-) TimerEvent: {}
+[63.998721] (-) TimerEvent: {}
+[64.099001] (-) TimerEvent: {}
+[64.199285] (-) TimerEvent: {}
+[64.299566] (-) TimerEvent: {}
+[64.399845] (-) TimerEvent: {}
+[64.500162] (-) TimerEvent: {}
+[64.600539] (-) TimerEvent: {}
+[64.700862] (-) TimerEvent: {}
+[64.801184] (-) TimerEvent: {}
+[64.901475] (-) TimerEvent: {}
+[65.001767] (-) TimerEvent: {}
+[65.102057] (-) TimerEvent: {}
+[65.202373] (-) TimerEvent: {}
+[65.302734] (-) TimerEvent: {}
+[65.403046] (-) TimerEvent: {}
+[65.503339] (-) TimerEvent: {}
+[65.603649] (-) TimerEvent: {}
+[65.703953] (-) TimerEvent: {}
+[65.804290] (-) TimerEvent: {}
+[65.904645] (-) TimerEvent: {}
+[66.004978] (-) TimerEvent: {}
+[66.105301] (-) TimerEvent: {}
+[66.205609] (-) TimerEvent: {}
+[66.305940] (-) TimerEvent: {}
+[66.406290] (-) TimerEvent: {}
+[66.506774] (-) TimerEvent: {}
+[66.607461] (-) TimerEvent: {}
+[66.708067] (-) TimerEvent: {}
+[66.808501] (-) TimerEvent: {}
+[66.908873] (-) TimerEvent: {}
+[67.009272] (-) TimerEvent: {}
+[67.109681] (-) TimerEvent: {}
+[67.210009] (-) TimerEvent: {}
+[67.310342] (-) TimerEvent: {}
+[67.410707] (-) TimerEvent: {}
+[67.511058] (-) TimerEvent: {}
+[67.611450] (-) TimerEvent: {}
+[67.711787] (-) TimerEvent: {}
+[67.812098] (-) TimerEvent: {}
+[67.912395] (-) TimerEvent: {}
+[68.012692] (-) TimerEvent: {}
+[68.112978] (-) TimerEvent: {}
+[68.213290] (-) TimerEvent: {}
+[68.313577] (-) TimerEvent: {}
+[68.413863] (-) TimerEvent: {}
+[68.514146] (-) TimerEvent: {}
+[68.614445] (-) TimerEvent: {}
+[68.714797] (-) TimerEvent: {}
+[68.815101] (-) TimerEvent: {}
+[68.915387] (-) TimerEvent: {}
+[69.015708] (-) TimerEvent: {}
+[69.116046] (-) TimerEvent: {}
+[69.216372] (-) TimerEvent: {}
+[69.316724] (-) TimerEvent: {}
+[69.417054] (-) TimerEvent: {}
+[69.517352] (-) TimerEvent: {}
+[69.617647] (-) TimerEvent: {}
+[69.717962] (-) TimerEvent: {}
+[69.818261] (-) TimerEvent: {}
+[69.918550] (-) TimerEvent: {}
+[70.018838] (-) TimerEvent: {}
+[70.119143] (-) TimerEvent: {}
+[70.219469] (-) TimerEvent: {}
+[70.319810] (-) TimerEvent: {}
+[70.420121] (-) TimerEvent: {}
+[70.520423] (-) TimerEvent: {}
+[70.620722] (-) TimerEvent: {}
+[70.721023] (-) TimerEvent: {}
+[70.821371] (-) TimerEvent: {}
+[70.921684] (-) TimerEvent: {}
+[71.021980] (-) TimerEvent: {}
+[71.122281] (-) TimerEvent: {}
+[71.222572] (-) TimerEvent: {}
+[71.330129] (-) TimerEvent: {}
+[71.430433] (-) TimerEvent: {}
+[71.530723] (-) TimerEvent: {}
+[71.631027] (-) TimerEvent: {}
+[71.731342] (-) TimerEvent: {}
+[71.831661] (-) TimerEvent: {}
+[71.931965] (-) TimerEvent: {}
+[72.032254] (-) TimerEvent: {}
+[72.132544] (-) TimerEvent: {}
+[72.232838] (-) TimerEvent: {}
+[72.333150] (-) TimerEvent: {}
+[72.433446] (-) TimerEvent: {}
+[72.533756] (-) TimerEvent: {}
+[72.634079] (-) TimerEvent: {}
+[72.734397] (-) TimerEvent: {}
+[72.834702] (-) TimerEvent: {}
+[72.935013] (-) TimerEvent: {}
+[73.035310] (-) TimerEvent: {}
+[73.135627] (-) TimerEvent: {}
+[73.235960] (-) TimerEvent: {}
+[73.336309] (-) TimerEvent: {}
+[73.436644] (-) TimerEvent: {}
+[73.536946] (-) TimerEvent: {}
+[73.637273] (-) TimerEvent: {}
+[73.737590] (-) TimerEvent: {}
+[73.837958] (-) TimerEvent: {}
+[73.938302] (-) TimerEvent: {}
+[74.038750] (-) TimerEvent: {}
+[74.139302] (-) TimerEvent: {}
+[74.239893] (-) TimerEvent: {}
+[74.340482] (-) TimerEvent: {}
+[74.441134] (-) TimerEvent: {}
+[74.541731] (-) TimerEvent: {}
+[74.642345] (-) TimerEvent: {}
+[74.742955] (-) TimerEvent: {}
+[74.843555] (-) TimerEvent: {}
+[74.944168] (-) TimerEvent: {}
+[75.044792] (-) TimerEvent: {}
+[75.145440] (-) TimerEvent: {}
+[75.246055] (-) TimerEvent: {}
+[75.346657] (-) TimerEvent: {}
+[75.447240] (-) TimerEvent: {}
+[75.547859] (-) TimerEvent: {}
+[75.648523] (-) TimerEvent: {}
+[75.749159] (-) TimerEvent: {}
+[75.849780] (-) TimerEvent: {}
+[75.950399] (-) TimerEvent: {}
+[76.051056] (-) TimerEvent: {}
+[76.151739] (-) TimerEvent: {}
+[76.252410] (-) TimerEvent: {}
+[76.353135] (-) TimerEvent: {}
+[76.453751] (-) TimerEvent: {}
+[76.554372] (-) TimerEvent: {}
+[76.655057] (-) TimerEvent: {}
+[76.755819] (-) TimerEvent: {}
+[76.856572] (-) TimerEvent: {}
+[76.957366] (-) TimerEvent: {}
+[77.058125] (-) TimerEvent: {}
+[77.158858] (-) TimerEvent: {}
+[77.259526] (-) TimerEvent: {}
+[77.360153] (-) TimerEvent: {}
+[77.460762] (-) TimerEvent: {}
+[77.561363] (-) TimerEvent: {}
+[77.661895] (-) TimerEvent: {}
+[77.762419] (-) TimerEvent: {}
+[77.862965] (-) TimerEvent: {}
+[77.963524] (-) TimerEvent: {}
+[78.064091] (-) TimerEvent: {}
+[78.164653] (-) TimerEvent: {}
+[78.265251] (-) TimerEvent: {}
+[78.365853] (-) TimerEvent: {}
+[78.466393] (-) TimerEvent: {}
+[78.566955] (-) TimerEvent: {}
+[78.667532] (-) TimerEvent: {}
+[78.768106] (-) TimerEvent: {}
+[78.868694] (-) TimerEvent: {}
+[78.969312] (-) TimerEvent: {}
+[79.069901] (-) TimerEvent: {}
+[79.170552] (-) TimerEvent: {}
+[79.271257] (-) TimerEvent: {}
+[79.371871] (-) TimerEvent: {}
+[79.472484] (-) TimerEvent: {}
+[79.573112] (-) TimerEvent: {}
+[79.673718] (-) TimerEvent: {}
+[79.774315] (-) TimerEvent: {}
+[79.874911] (-) TimerEvent: {}
+[79.975511] (-) TimerEvent: {}
+[80.076103] (-) TimerEvent: {}
+[80.176687] (-) TimerEvent: {}
+[80.277303] (-) TimerEvent: {}
+[80.377899] (-) TimerEvent: {}
+[80.478465] (-) TimerEvent: {}
+[80.579046] (-) TimerEvent: {}
+[80.679643] (-) TimerEvent: {}
+[80.780260] (-) TimerEvent: {}
+[80.880865] (-) TimerEvent: {}
+[80.981451] (-) TimerEvent: {}
+[81.081975] (-) TimerEvent: {}
+[81.182645] (-) TimerEvent: {}
+[81.283468] (-) TimerEvent: {}
+[81.384258] (-) TimerEvent: {}
+[81.485133] (-) TimerEvent: {}
+[81.585911] (-) TimerEvent: {}
+[81.686672] (-) TimerEvent: {}
+[81.787404] (-) TimerEvent: {}
+[81.888092] (-) TimerEvent: {}
+[81.988801] (-) TimerEvent: {}
+[82.089511] (-) TimerEvent: {}
+[82.190194] (-) TimerEvent: {}
+[82.290933] (-) TimerEvent: {}
+[82.391723] (-) TimerEvent: {}
+[82.492460] (-) TimerEvent: {}
+[82.593164] (-) TimerEvent: {}
+[82.693856] (-) TimerEvent: {}
+[82.794601] (-) TimerEvent: {}
+[82.895396] (-) TimerEvent: {}
+[82.996091] (-) TimerEvent: {}
+[83.097095] (-) TimerEvent: {}
+[83.197768] (-) TimerEvent: {}
+[83.298443] (-) TimerEvent: {}
+[83.399130] (-) TimerEvent: {}
+[83.499813] (-) TimerEvent: {}
+[83.600591] (-) TimerEvent: {}
+[83.701303] (-) TimerEvent: {}
+[83.801962] (-) TimerEvent: {}
+[83.902630] (-) TimerEvent: {}
+[84.003340] (-) TimerEvent: {}
+[84.104050] (-) TimerEvent: {}
+[84.204671] (-) TimerEvent: {}
+[84.305245] (-) TimerEvent: {}
+[84.405854] (-) TimerEvent: {}
+[84.506469] (-) TimerEvent: {}
+[84.608560] (-) TimerEvent: {}
+[84.709195] (-) TimerEvent: {}
+[84.809872] (-) TimerEvent: {}
+[84.910532] (-) TimerEvent: {}
+[85.011171] (-) TimerEvent: {}
+[85.111820] (-) TimerEvent: {}
+[85.212487] (-) TimerEvent: {}
+[85.313173] (-) TimerEvent: {}
+[85.413849] (-) TimerEvent: {}
+[85.514536] (-) TimerEvent: {}
+[85.615222] (-) TimerEvent: {}
+[85.716078] (-) TimerEvent: {}
+[85.816742] (-) TimerEvent: {}
+[85.917599] (-) TimerEvent: {}
+[86.024623] (-) TimerEvent: {}
+[86.125306] (-) TimerEvent: {}
+[86.225962] (-) TimerEvent: {}
+[86.326654] (-) TimerEvent: {}
+[86.427306] (-) TimerEvent: {}
+[86.527958] (-) TimerEvent: {}
+[86.628605] (-) TimerEvent: {}
+[86.729267] (-) TimerEvent: {}
+[86.829915] (-) TimerEvent: {}
+[86.930563] (-) TimerEvent: {}
+[87.031207] (-) TimerEvent: {}
+[87.131818] (-) TimerEvent: {}
+[87.232731] (-) TimerEvent: {}
+[87.333485] (-) TimerEvent: {}
+[87.434128] (-) TimerEvent: {}
+[87.534797] (-) TimerEvent: {}
+[87.635457] (-) TimerEvent: {}
+[87.736162] (-) TimerEvent: {}
+[87.836877] (-) TimerEvent: {}
+[87.937587] (-) TimerEvent: {}
+[88.038289] (-) TimerEvent: {}
+[88.139019] (-) TimerEvent: {}
+[88.240168] (-) TimerEvent: {}
+[88.341106] (-) TimerEvent: {}
+[88.441781] (-) TimerEvent: {}
+[88.542528] (-) TimerEvent: {}
+[88.643246] (-) TimerEvent: {}
+[88.743908] (-) TimerEvent: {}
+[88.844579] (-) TimerEvent: {}
+[88.945293] (-) TimerEvent: {}
+[89.045945] (-) TimerEvent: {}
+[89.146621] (-) TimerEvent: {}
+[89.247285] (-) TimerEvent: {}
+[89.347965] (-) TimerEvent: {}
+[89.448684] (-) TimerEvent: {}
+[89.549380] (-) TimerEvent: {}
+[89.650060] (-) TimerEvent: {}
+[89.750730] (-) TimerEvent: {}
+[89.851433] (-) TimerEvent: {}
+[89.952094] (-) TimerEvent: {}
+[90.052752] (-) TimerEvent: {}
+[90.153436] (-) TimerEvent: {}
+[90.254088] (-) TimerEvent: {}
+[90.354740] (-) TimerEvent: {}
+[90.455404] (-) TimerEvent: {}
+[90.556051] (-) TimerEvent: {}
+[90.656726] (-) TimerEvent: {}
+[90.757536] (-) TimerEvent: {}
+[90.858401] (-) TimerEvent: {}
+[90.959074] (-) TimerEvent: {}
+[91.059779] (-) TimerEvent: {}
+[91.160496] (-) TimerEvent: {}
+[91.261206] (-) TimerEvent: {}
+[91.361882] (-) TimerEvent: {}
+[91.462557] (-) TimerEvent: {}
+[91.563254] (-) TimerEvent: {}
+[91.663910] (-) TimerEvent: {}
+[91.764596] (-) TimerEvent: {}
+[91.865251] (-) TimerEvent: {}
+[91.966013] (-) TimerEvent: {}
+[92.066691] (-) TimerEvent: {}
+[92.167398] (-) TimerEvent: {}
+[92.268076] (-) TimerEvent: {}
+[92.368785] (-) TimerEvent: {}
+[92.469983] (-) TimerEvent: {}
+[92.570711] (-) TimerEvent: {}
+[92.671411] (-) TimerEvent: {}
+[92.772065] (-) TimerEvent: {}
+[92.872752] (-) TimerEvent: {}
+[92.974030] (-) TimerEvent: {}
+[93.074744] (-) TimerEvent: {}
+[93.175386] (-) TimerEvent: {}
+[93.275986] (-) TimerEvent: {}
+[93.376625] (-) TimerEvent: {}
+[93.477325] (-) TimerEvent: {}
+[93.577907] (-) TimerEvent: {}
+[93.678531] (-) TimerEvent: {}
+[93.779140] (-) TimerEvent: {}
+[93.879787] (-) TimerEvent: {}
+[93.980461] (-) TimerEvent: {}
+[94.081181] (-) TimerEvent: {}
+[94.182019] (-) TimerEvent: {}
+[94.282746] (-) TimerEvent: {}
+[94.383499] (-) TimerEvent: {}
+[94.484149] (-) TimerEvent: {}
+[94.584767] (-) TimerEvent: {}
+[94.685404] (-) TimerEvent: {}
+[94.786065] (-) TimerEvent: {}
+[94.886714] (-) TimerEvent: {}
+[94.987327] (-) TimerEvent: {}
+[95.087996] (-) TimerEvent: {}
+[95.188688] (-) TimerEvent: {}
+[95.289436] (-) TimerEvent: {}
+[95.390157] (-) TimerEvent: {}
+[95.490850] (-) TimerEvent: {}
+[95.591527] (-) TimerEvent: {}
+[95.692209] (-) TimerEvent: {}
+[95.792937] (-) TimerEvent: {}
+[95.893697] (-) TimerEvent: {}
+[95.994378] (-) TimerEvent: {}
+[96.095086] (-) TimerEvent: {}
+[96.195813] (-) TimerEvent: {}
+[96.296495] (-) TimerEvent: {}
+[96.397209] (-) TimerEvent: {}
+[96.497907] (-) TimerEvent: {}
+[96.598589] (-) TimerEvent: {}
+[96.699386] (-) TimerEvent: {}
+[96.800072] (-) TimerEvent: {}
+[96.900731] (-) TimerEvent: {}
+[97.001906] (-) TimerEvent: {}
+[97.102560] (-) TimerEvent: {}
+[97.203220] (-) TimerEvent: {}
+[97.303976] (-) TimerEvent: {}
+[97.404657] (-) TimerEvent: {}
+[97.505378] (-) TimerEvent: {}
+[97.606039] (-) TimerEvent: {}
+[97.706675] (-) TimerEvent: {}
+[97.807346] (-) TimerEvent: {}
+[97.908035] (-) TimerEvent: {}
+[98.008703] (-) TimerEvent: {}
+[98.109397] (-) TimerEvent: {}
+[98.210926] (-) TimerEvent: {}
+[98.311610] (-) TimerEvent: {}
+[98.412295] (-) TimerEvent: {}
+[98.512953] (-) TimerEvent: {}
+[98.613701] (-) TimerEvent: {}
+[98.714369] (-) TimerEvent: {}
+[98.815303] (-) TimerEvent: {}
+[98.915956] (-) TimerEvent: {}
+[99.016603] (-) TimerEvent: {}
+[99.117322] (-) TimerEvent: {}
+[99.217970] (-) TimerEvent: {}
+[99.318634] (-) TimerEvent: {}
+[99.419289] (-) TimerEvent: {}
+[99.519938] (-) TimerEvent: {}
+[99.620612] (-) TimerEvent: {}
+[99.721327] (-) TimerEvent: {}
+[99.821978] (-) TimerEvent: {}
+[99.922663] (-) TimerEvent: {}
+[100.023715] (-) TimerEvent: {}
+[100.124375] (-) TimerEvent: {}
+[100.225148] (-) TimerEvent: {}
+[100.325816] (-) TimerEvent: {}
+[100.426470] (-) TimerEvent: {}
+[100.527088] (-) TimerEvent: {}
+[100.627728] (-) TimerEvent: {}
+[100.728418] (-) TimerEvent: {}
+[100.829119] (-) TimerEvent: {}
+[100.929887] (-) TimerEvent: {}
+[101.030578] (-) TimerEvent: {}
+[101.131252] (-) TimerEvent: {}
+[101.231896] (-) TimerEvent: {}
+[101.332524] (-) TimerEvent: {}
+[101.433153] (-) TimerEvent: {}
+[101.533775] (-) TimerEvent: {}
+[101.634409] (-) TimerEvent: {}
+[101.735054] (-) TimerEvent: {}
+[101.835697] (-) TimerEvent: {}
+[101.936325] (-) TimerEvent: {}
+[102.036957] (-) TimerEvent: {}
+[102.137610] (-) TimerEvent: {}
+[102.238210] (-) TimerEvent: {}
+[102.338769] (-) TimerEvent: {}
+[102.439364] (-) TimerEvent: {}
+[102.540005] (-) TimerEvent: {}
+[102.640675] (-) TimerEvent: {}
+[102.741441] (-) TimerEvent: {}
+[102.842057] (-) TimerEvent: {}
+[102.942787] (-) TimerEvent: {}
+[103.043584] (-) TimerEvent: {}
+[103.144388] (-) TimerEvent: {}
+[103.245243] (-) TimerEvent: {}
+[103.346028] (-) TimerEvent: {}
+[103.446747] (-) TimerEvent: {}
+[103.547412] (-) TimerEvent: {}
+[103.648044] (-) TimerEvent: {}
+[103.748724] (-) TimerEvent: {}
+[103.849453] (-) TimerEvent: {}
+[103.950088] (-) TimerEvent: {}
+[104.050720] (-) TimerEvent: {}
+[104.151407] (-) TimerEvent: {}
+[104.252115] (-) TimerEvent: {}
+[104.352815] (-) TimerEvent: {}
+[104.453528] (-) TimerEvent: {}
+[104.554194] (-) TimerEvent: {}
+[104.654914] (-) TimerEvent: {}
+[104.755736] (-) TimerEvent: {}
+[104.856500] (-) TimerEvent: {}
+[104.957150] (-) TimerEvent: {}
+[105.057778] (-) TimerEvent: {}
+[105.158427] (-) TimerEvent: {}
+[105.259189] (-) TimerEvent: {}
+[105.359972] (-) TimerEvent: {}
+[105.460746] (-) TimerEvent: {}
+[105.561563] (-) TimerEvent: {}
+[105.662417] (-) TimerEvent: {}
+[105.763214] (-) TimerEvent: {}
+[105.863968] (-) TimerEvent: {}
+[105.964647] (-) TimerEvent: {}
+[106.065340] (-) TimerEvent: {}
+[106.165953] (-) TimerEvent: {}
+[106.266544] (-) TimerEvent: {}
+[106.367203] (-) TimerEvent: {}
+[106.467922] (-) TimerEvent: {}
+[106.568594] (-) TimerEvent: {}
+[106.669303] (-) TimerEvent: {}
+[106.770010] (-) TimerEvent: {}
+[106.870671] (-) TimerEvent: {}
+[106.971301] (-) TimerEvent: {}
+[107.072021] (-) TimerEvent: {}
+[107.172767] (-) TimerEvent: {}
+[107.273652] (-) TimerEvent: {}
+[107.374454] (-) TimerEvent: {}
+[107.475237] (-) TimerEvent: {}
+[107.576023] (-) TimerEvent: {}
+[107.676881] (-) TimerEvent: {}
+[107.777747] (-) TimerEvent: {}
+[107.878546] (-) TimerEvent: {}
+[107.979374] (-) TimerEvent: {}
+[108.080178] (-) TimerEvent: {}
+[108.180937] (-) TimerEvent: {}
+[108.281689] (-) TimerEvent: {}
+[108.382370] (-) TimerEvent: {}
+[108.483107] (-) TimerEvent: {}
+[108.583888] (-) TimerEvent: {}
+[108.684709] (-) TimerEvent: {}
+[108.785592] (-) TimerEvent: {}
+[108.886423] (-) TimerEvent: {}
+[108.987229] (-) TimerEvent: {}
+[109.088040] (-) TimerEvent: {}
+[109.188743] (-) TimerEvent: {}
+[109.289591] (-) TimerEvent: {}
+[109.390400] (-) TimerEvent: {}
+[109.491251] (-) TimerEvent: {}
+[109.592060] (-) TimerEvent: {}
+[109.692859] (-) TimerEvent: {}
+[109.793738] (-) TimerEvent: {}
+[109.894548] (-) TimerEvent: {}
+[109.995364] (-) TimerEvent: {}
+[110.096145] (-) TimerEvent: {}
+[110.196917] (-) TimerEvent: {}
+[110.297755] (-) TimerEvent: {}
+[110.398592] (-) TimerEvent: {}
+[110.499425] (-) TimerEvent: {}
+[110.600264] (-) TimerEvent: {}
+[110.701116] (-) TimerEvent: {}
+[110.801935] (-) TimerEvent: {}
+[110.902744] (-) TimerEvent: {}
+[111.003563] (-) TimerEvent: {}
+[111.104399] (-) TimerEvent: {}
+[111.205226] (-) TimerEvent: {}
+[111.306069] (-) TimerEvent: {}
+[111.406893] (-) TimerEvent: {}
+[111.507724] (-) TimerEvent: {}
+[111.608521] (-) TimerEvent: {}
+[111.709361] (-) TimerEvent: {}
+[111.810167] (-) TimerEvent: {}
+[111.910984] (-) TimerEvent: {}
+[112.011777] (-) TimerEvent: {}
+[112.112591] (-) TimerEvent: {}
+[112.213360] (-) TimerEvent: {}
+[112.314094] (-) TimerEvent: {}
+[112.414842] (-) TimerEvent: {}
+[112.515493] (-) TimerEvent: {}
+[112.616100] (-) TimerEvent: {}
+[112.716766] (-) TimerEvent: {}
+[112.817587] (-) TimerEvent: {}
+[112.918432] (-) TimerEvent: {}
+[113.019240] (-) TimerEvent: {}
+[113.120029] (-) TimerEvent: {}
+[113.220823] (-) TimerEvent: {}
+[113.321648] (-) TimerEvent: {}
+[113.422367] (-) TimerEvent: {}
+[113.523041] (-) TimerEvent: {}
+[113.623747] (-) TimerEvent: {}
+[113.724424] (-) TimerEvent: {}
+[113.825115] (-) TimerEvent: {}
+[113.925795] (-) TimerEvent: {}
+[114.026466] (-) TimerEvent: {}
+[114.127151] (-) TimerEvent: {}
+[114.227846] (-) TimerEvent: {}
+[114.328453] (-) TimerEvent: {}
+[114.429285] (-) TimerEvent: {}
+[114.530009] (-) TimerEvent: {}
+[114.630797] (-) TimerEvent: {}
+[114.731624] (-) TimerEvent: {}
+[114.832434] (-) TimerEvent: {}
+[114.933164] (-) TimerEvent: {}
+[115.033724] (-) TimerEvent: {}
+[115.134245] (-) TimerEvent: {}
+[115.234786] (-) TimerEvent: {}
+[115.335423] (-) TimerEvent: {}
+[115.435974] (-) TimerEvent: {}
+[115.536480] (-) TimerEvent: {}
+[115.636983] (-) TimerEvent: {}
+[115.737556] (-) TimerEvent: {}
+[115.838007] (-) TimerEvent: {}
+[115.938502] (-) TimerEvent: {}
+[116.038975] (-) TimerEvent: {}
+[116.139506] (-) TimerEvent: {}
+[116.240203] (-) TimerEvent: {}
+[116.340939] (-) TimerEvent: {}
+[116.441694] (-) TimerEvent: {}
+[116.542376] (-) TimerEvent: {}
+[116.643119] (-) TimerEvent: {}
+[116.743924] (-) TimerEvent: {}
+[116.844693] (-) TimerEvent: {}
+[116.945449] (-) TimerEvent: {}
+[117.046228] (-) TimerEvent: {}
+[117.147025] (-) TimerEvent: {}
+[117.248827] (-) TimerEvent: {}
+[117.349527] (-) TimerEvent: {}
+[117.450172] (-) TimerEvent: {}
+[117.550827] (-) TimerEvent: {}
+[117.651485] (-) TimerEvent: {}
+[117.752140] (-) TimerEvent: {}
+[117.852805] (-) TimerEvent: {}
+[117.953478] (-) TimerEvent: {}
+[118.054102] (-) TimerEvent: {}
+[118.154760] (-) TimerEvent: {}
+[118.255420] (-) TimerEvent: {}
+[118.356095] (-) TimerEvent: {}
+[118.456759] (-) TimerEvent: {}
+[118.557479] (-) TimerEvent: {}
+[118.658137] (-) TimerEvent: {}
+[118.758822] (-) TimerEvent: {}
+[118.859474] (-) TimerEvent: {}
+[118.960123] (-) TimerEvent: {}
+[119.060800] (-) TimerEvent: {}
+[119.161473] (-) TimerEvent: {}
+[119.262151] (-) TimerEvent: {}
+[119.362816] (-) TimerEvent: {}
+[119.463480] (-) TimerEvent: {}
+[119.564139] (-) TimerEvent: {}
+[119.664751] (-) TimerEvent: {}
+[119.765424] (-) TimerEvent: {}
+[119.866070] (-) TimerEvent: {}
+[119.966735] (-) TimerEvent: {}
+[120.067394] (-) TimerEvent: {}
+[120.168053] (-) TimerEvent: {}
+[120.268675] (-) TimerEvent: {}
+[120.369343] (-) TimerEvent: {}
+[120.469978] (-) TimerEvent: {}
+[120.570636] (-) TimerEvent: {}
+[120.671301] (-) TimerEvent: {}
+[120.771920] (-) TimerEvent: {}
+[120.872585] (-) TimerEvent: {}
+[120.973191] (-) TimerEvent: {}
+[121.073854] (-) TimerEvent: {}
+[121.174493] (-) TimerEvent: {}
+[121.275150] (-) TimerEvent: {}
+[121.375806] (-) TimerEvent: {}
+[121.476444] (-) TimerEvent: {}
+[121.577119] (-) TimerEvent: {}
+[121.677777] (-) TimerEvent: {}
+[121.778426] (-) TimerEvent: {}
+[121.879107] (-) TimerEvent: {}
+[121.979738] (-) TimerEvent: {}
+[122.080386] (-) TimerEvent: {}
+[122.181077] (-) TimerEvent: {}
+[122.281743] (-) TimerEvent: {}
+[122.382422] (-) TimerEvent: {}
+[122.483073] (-) TimerEvent: {}
+[122.583774] (-) TimerEvent: {}
+[122.684483] (-) TimerEvent: {}
+[122.785167] (-) TimerEvent: {}
+[122.885826] (-) TimerEvent: {}
+[122.986483] (-) TimerEvent: {}
+[123.087129] (-) TimerEvent: {}
+[123.187802] (-) TimerEvent: {}
+[123.288467] (-) TimerEvent: {}
+[123.389146] (-) TimerEvent: {}
+[123.489834] (-) TimerEvent: {}
+[123.590472] (-) TimerEvent: {}
+[123.691134] (-) TimerEvent: {}
+[123.791846] (-) TimerEvent: {}
+[123.892512] (-) TimerEvent: {}
+[123.993194] (-) TimerEvent: {}
+[124.093845] (-) TimerEvent: {}
+[124.194458] (-) TimerEvent: {}
+[124.295125] (-) TimerEvent: {}
+[124.395780] (-) TimerEvent: {}
+[124.496388] (-) TimerEvent: {}
+[124.597087] (-) TimerEvent: {}
+[124.697767] (-) TimerEvent: {}
+[124.798409] (-) TimerEvent: {}
+[124.899104] (-) TimerEvent: {}
+[124.999768] (-) TimerEvent: {}
+[125.100448] (-) TimerEvent: {}
+[125.201251] (-) TimerEvent: {}
+[125.301939] (-) TimerEvent: {}
+[125.402614] (-) TimerEvent: {}
+[125.503272] (-) TimerEvent: {}
+[125.604055] (-) TimerEvent: {}
+[125.704805] (-) TimerEvent: {}
+[125.805501] (-) TimerEvent: {}
+[125.906166] (-) TimerEvent: {}
+[126.006826] (-) TimerEvent: {}
+[126.107485] (-) TimerEvent: {}
+[126.208186] (-) TimerEvent: {}
+[126.308892] (-) TimerEvent: {}
+[126.409632] (-) TimerEvent: {}
+[126.510293] (-) TimerEvent: {}
+[126.610949] (-) TimerEvent: {}
+[126.711914] (-) TimerEvent: {}
+[126.813172] (-) TimerEvent: {}
+[126.913853] (-) TimerEvent: {}
+[127.014555] (-) TimerEvent: {}
+[127.115883] (-) TimerEvent: {}
+[127.216582] (-) TimerEvent: {}
+[127.317272] (-) TimerEvent: {}
+[127.417926] (-) TimerEvent: {}
+[127.518606] (-) TimerEvent: {}
+[127.619282] (-) TimerEvent: {}
+[127.719948] (-) TimerEvent: {}
+[127.820613] (-) TimerEvent: {}
+[127.921252] (-) TimerEvent: {}
+[128.021914] (-) TimerEvent: {}
+[128.122579] (-) TimerEvent: {}
+[128.223218] (-) TimerEvent: {}
+[128.323815] (-) TimerEvent: {}
+[128.424390] (-) TimerEvent: {}
+[128.524978] (-) TimerEvent: {}
+[128.625649] (-) TimerEvent: {}
+[128.726341] (-) TimerEvent: {}
+[128.827012] (-) TimerEvent: {}
+[128.927681] (-) TimerEvent: {}
+[129.028306] (-) TimerEvent: {}
+[129.129176] (-) TimerEvent: {}
+[129.229800] (-) TimerEvent: {}
+[129.330456] (-) TimerEvent: {}
+[129.431113] (-) TimerEvent: {}
+[129.531768] (-) TimerEvent: {}
+[129.632439] (-) TimerEvent: {}
+[129.733112] (-) TimerEvent: {}
+[129.833756] (-) TimerEvent: {}
+[129.934407] (-) TimerEvent: {}
+[130.035072] (-) TimerEvent: {}
+[130.135740] (-) TimerEvent: {}
+[130.236413] (-) TimerEvent: {}
+[130.337143] (-) TimerEvent: {}
+[130.437803] (-) TimerEvent: {}
+[130.538429] (-) TimerEvent: {}
+[130.639064] (-) TimerEvent: {}
+[130.739731] (-) TimerEvent: {}
+[130.840395] (-) TimerEvent: {}
+[130.941069] (-) TimerEvent: {}
+[131.041729] (-) TimerEvent: {}
+[131.142386] (-) TimerEvent: {}
+[131.243058] (-) TimerEvent: {}
+[131.343723] (-) TimerEvent: {}
+[131.444454] (-) TimerEvent: {}
+[131.545137] (-) TimerEvent: {}
+[131.645821] (-) TimerEvent: {}
+[131.746483] (-) TimerEvent: {}
+[131.847177] (-) TimerEvent: {}
+[131.947819] (-) TimerEvent: {}
+[132.048448] (-) TimerEvent: {}
+[132.149104] (-) TimerEvent: {}
+[132.249752] (-) TimerEvent: {}
+[132.350393] (-) TimerEvent: {}
+[132.451063] (-) TimerEvent: {}
+[132.551736] (-) TimerEvent: {}
+[132.652398] (-) TimerEvent: {}
+[132.753086] (-) TimerEvent: {}
+[132.853743] (-) TimerEvent: {}
+[132.954386] (-) TimerEvent: {}
+[133.055034] (-) TimerEvent: {}
+[133.155667] (-) TimerEvent: {}
+[133.256342] (-) TimerEvent: {}
+[133.357018] (-) TimerEvent: {}
+[133.457692] (-) TimerEvent: {}
+[133.558348] (-) TimerEvent: {}
+[133.659005] (-) TimerEvent: {}
+[133.759655] (-) TimerEvent: {}
+[133.860321] (-) TimerEvent: {}
+[133.960989] (-) TimerEvent: {}
+[134.061666] (-) TimerEvent: {}
+[134.162324] (-) TimerEvent: {}
+[134.262966] (-) TimerEvent: {}
+[134.363616] (-) TimerEvent: {}
+[134.464297] (-) TimerEvent: {}
+[134.564953] (-) TimerEvent: {}
+[134.665656] (-) TimerEvent: {}
+[134.766288] (-) TimerEvent: {}
+[134.866934] (-) TimerEvent: {}
+[134.967598] (-) TimerEvent: {}
+[135.068250] (-) TimerEvent: {}
+[135.168922] (-) TimerEvent: {}
+[135.269588] (-) TimerEvent: {}
+[135.370228] (-) TimerEvent: {}
+[135.470870] (-) TimerEvent: {}
+[135.571509] (-) TimerEvent: {}
+[135.672145] (-) TimerEvent: {}
+[135.772797] (-) TimerEvent: {}
+[135.873611] (-) TimerEvent: {}
+[135.974275] (-) TimerEvent: {}
+[136.074920] (-) TimerEvent: {}
+[136.175578] (-) TimerEvent: {}
+[136.276244] (-) TimerEvent: {}
+[136.376911] (-) TimerEvent: {}
+[136.477532] (-) TimerEvent: {}
+[136.578194] (-) TimerEvent: {}
+[136.678816] (-) TimerEvent: {}
+[136.779453] (-) TimerEvent: {}
+[136.880126] (-) TimerEvent: {}
+[136.980845] (-) TimerEvent: {}
+[137.081523] (-) TimerEvent: {}
+[137.182144] (-) TimerEvent: {}
+[137.282788] (-) TimerEvent: {}
+[137.383454] (-) TimerEvent: {}
+[137.484139] (-) TimerEvent: {}
+[137.584801] (-) TimerEvent: {}
+[137.685486] (-) TimerEvent: {}
+[137.786156] (-) TimerEvent: {}
+[137.886826] (-) TimerEvent: {}
+[137.987493] (-) TimerEvent: {}
+[138.088158] (-) TimerEvent: {}
+[138.188827] (-) TimerEvent: {}
+[138.289503] (-) TimerEvent: {}
+[138.390163] (-) TimerEvent: {}
+[138.490866] (-) TimerEvent: {}
+[138.591531] (-) TimerEvent: {}
+[138.692213] (-) TimerEvent: {}
+[138.792899] (-) TimerEvent: {}
+[138.893570] (-) TimerEvent: {}
+[138.994222] (-) TimerEvent: {}
+[139.094925] (-) TimerEvent: {}
+[139.195624] (-) TimerEvent: {}
+[139.296300] (-) TimerEvent: {}
+[139.396988] (-) TimerEvent: {}
+[139.497701] (-) TimerEvent: {}
+[139.598414] (-) TimerEvent: {}
+[139.699126] (-) TimerEvent: {}
+[139.799771] (-) TimerEvent: {}
+[139.900435] (-) TimerEvent: {}
+[140.001103] (-) TimerEvent: {}
+[140.101791] (-) TimerEvent: {}
+[140.202461] (-) TimerEvent: {}
+[140.303142] (-) TimerEvent: {}
+[140.403790] (-) TimerEvent: {}
+[140.504464] (-) TimerEvent: {}
+[140.605145] (-) TimerEvent: {}
+[140.705802] (-) TimerEvent: {}
+[140.806473] (-) TimerEvent: {}
+[140.907181] (-) TimerEvent: {}
+[141.007847] (-) TimerEvent: {}
+[141.108536] (-) TimerEvent: {}
+[141.209242] (-) TimerEvent: {}
+[141.309937] (-) TimerEvent: {}
+[141.410608] (-) TimerEvent: {}
+[141.511250] (-) TimerEvent: {}
+[141.611933] (-) TimerEvent: {}
+[141.712616] (-) TimerEvent: {}
+[141.813314] (-) TimerEvent: {}
+[141.913988] (-) TimerEvent: {}
+[142.014665] (-) TimerEvent: {}
+[142.115316] (-) TimerEvent: {}
+[142.216010] (-) TimerEvent: {}
+[142.316710] (-) TimerEvent: {}
+[142.417463] (-) TimerEvent: {}
+[142.518154] (-) TimerEvent: {}
+[142.618854] (-) TimerEvent: {}
+[142.719508] (-) TimerEvent: {}
+[142.820173] (-) TimerEvent: {}
+[142.920828] (-) TimerEvent: {}
+[143.021511] (-) TimerEvent: {}
+[143.122237] (-) TimerEvent: {}
+[143.222963] (-) TimerEvent: {}
+[143.323676] (-) TimerEvent: {}
+[143.424360] (-) TimerEvent: {}
+[143.525027] (-) TimerEvent: {}
+[143.625701] (-) TimerEvent: {}
+[143.726379] (-) TimerEvent: {}
+[143.827036] (-) TimerEvent: {}
+[143.927709] (-) TimerEvent: {}
+[144.028378] (-) TimerEvent: {}
+[144.129055] (-) TimerEvent: {}
+[144.229715] (-) TimerEvent: {}
+[144.330445] (-) TimerEvent: {}
+[144.431132] (-) TimerEvent: {}
+[144.531777] (-) TimerEvent: {}
+[144.632426] (-) TimerEvent: {}
+[144.733153] (-) TimerEvent: {}
+[144.833825] (-) TimerEvent: {}
+[144.934536] (-) TimerEvent: {}
+[145.035232] (-) TimerEvent: {}
+[145.135907] (-) TimerEvent: {}
+[145.236593] (-) TimerEvent: {}
+[145.337263] (-) TimerEvent: {}
+[145.437940] (-) TimerEvent: {}
+[145.538606] (-) TimerEvent: {}
+[145.639257] (-) TimerEvent: {}
+[145.739936] (-) TimerEvent: {}
+[145.840624] (-) TimerEvent: {}
+[145.941301] (-) TimerEvent: {}
+[146.041956] (-) TimerEvent: {}
+[146.142631] (-) TimerEvent: {}
+[146.243310] (-) TimerEvent: {}
+[146.343972] (-) TimerEvent: {}
+[146.444643] (-) TimerEvent: {}
+[146.545337] (-) TimerEvent: {}
+[146.645996] (-) TimerEvent: {}
+[146.746676] (-) TimerEvent: {}
+[146.847327] (-) TimerEvent: {}
+[146.947976] (-) TimerEvent: {}
+[147.048623] (-) TimerEvent: {}
+[147.149305] (-) TimerEvent: {}
+[147.249926] (-) TimerEvent: {}
+[147.350582] (-) TimerEvent: {}
+[147.451243] (-) TimerEvent: {}
+[147.551933] (-) TimerEvent: {}
+[147.652615] (-) TimerEvent: {}
+[147.753338] (-) TimerEvent: {}
+[147.853998] (-) TimerEvent: {}
+[147.954678] (-) TimerEvent: {}
+[148.055349] (-) TimerEvent: {}
+[148.156030] (-) TimerEvent: {}
+[148.256722] (-) TimerEvent: {}
+[148.357434] (-) TimerEvent: {}
+[148.458081] (-) TimerEvent: {}
+[148.558743] (-) TimerEvent: {}
+[148.659442] (-) TimerEvent: {}
+[148.760114] (-) TimerEvent: {}
+[148.860806] (-) TimerEvent: {}
+[148.961485] (-) TimerEvent: {}
+[149.062127] (-) TimerEvent: {}
+[149.162788] (-) TimerEvent: {}
+[149.263483] (-) TimerEvent: {}
+[149.364149] (-) TimerEvent: {}
+[149.464819] (-) TimerEvent: {}
+[149.565523] (-) TimerEvent: {}
+[149.666198] (-) TimerEvent: {}
+[149.766852] (-) TimerEvent: {}
+[149.867530] (-) TimerEvent: {}
+[149.968196] (-) TimerEvent: {}
+[150.068820] (-) TimerEvent: {}
+[150.169488] (-) TimerEvent: {}
+[150.270163] (-) TimerEvent: {}
+[150.370824] (-) TimerEvent: {}
+[150.471476] (-) TimerEvent: {}
+[150.572083] (-) TimerEvent: {}
+[150.672689] (-) TimerEvent: {}
+[150.773341] (-) TimerEvent: {}
+[150.873966] (-) TimerEvent: {}
+[150.974588] (-) TimerEvent: {}
+[151.075216] (-) TimerEvent: {}
+[151.175877] (-) TimerEvent: {}
+[151.276545] (-) TimerEvent: {}
+[151.377248] (-) TimerEvent: {}
+[151.477903] (-) TimerEvent: {}
+[151.578536] (-) TimerEvent: {}
+[151.679156] (-) TimerEvent: {}
+[151.779815] (-) TimerEvent: {}
+[151.880495] (-) TimerEvent: {}
+[151.981184] (-) TimerEvent: {}
+[152.081828] (-) TimerEvent: {}
+[152.182490] (-) TimerEvent: {}
+[152.283173] (-) TimerEvent: {}
+[152.383832] (-) TimerEvent: {}
+[152.484505] (-) TimerEvent: {}
+[152.585181] (-) TimerEvent: {}
+[152.685848] (-) TimerEvent: {}
+[152.786552] (-) TimerEvent: {}
+[152.887243] (-) TimerEvent: {}
+[152.987961] (-) TimerEvent: {}
+[153.088654] (-) TimerEvent: {}
+[153.189340] (-) TimerEvent: {}
+[153.290002] (-) TimerEvent: {}
+[153.390680] (-) TimerEvent: {}
+[153.491337] (-) TimerEvent: {}
+[153.592010] (-) TimerEvent: {}
+[153.692648] (-) TimerEvent: {}
+[153.793302] (-) TimerEvent: {}
+[153.893946] (-) TimerEvent: {}
+[153.994594] (-) TimerEvent: {}
+[154.095230] (-) TimerEvent: {}
+[154.195895] (-) TimerEvent: {}
+[154.296563] (-) TimerEvent: {}
+[154.397212] (-) TimerEvent: {}
+[154.497866] (-) TimerEvent: {}
+[154.598516] (-) TimerEvent: {}
+[154.699179] (-) TimerEvent: {}
+[154.799839] (-) TimerEvent: {}
+[154.900483] (-) TimerEvent: {}
+[155.001146] (-) TimerEvent: {}
+[155.101780] (-) TimerEvent: {}
+[155.202434] (-) TimerEvent: {}
+[155.303121] (-) TimerEvent: {}
+[155.403782] (-) TimerEvent: {}
+[155.504437] (-) TimerEvent: {}
+[155.605109] (-) TimerEvent: {}
+[155.705776] (-) TimerEvent: {}
+[155.806417] (-) TimerEvent: {}
+[155.907071] (-) TimerEvent: {}
+[156.007720] (-) TimerEvent: {}
+[156.108354] (-) TimerEvent: {}
+[156.209000] (-) TimerEvent: {}
+[156.309657] (-) TimerEvent: {}
+[156.410291] (-) TimerEvent: {}
+[156.510944] (-) TimerEvent: {}
+[156.611600] (-) TimerEvent: {}
+[156.712234] (-) TimerEvent: {}
+[156.812846] (-) TimerEvent: {}
+[156.913507] (-) TimerEvent: {}
+[157.014369] (-) TimerEvent: {}
+[157.115182] (-) TimerEvent: {}
+[157.216161] (-) TimerEvent: {}
+[157.316986] (-) TimerEvent: {}
+[157.417810] (-) TimerEvent: {}
+[157.518616] (-) TimerEvent: {}
+[157.619432] (-) TimerEvent: {}
+[157.720263] (-) TimerEvent: {}
+[157.821111] (-) TimerEvent: {}
+[157.921918] (-) TimerEvent: {}
+[158.022738] (-) TimerEvent: {}
+[158.123566] (-) TimerEvent: {}
+[158.224386] (-) TimerEvent: {}
+[158.325222] (-) TimerEvent: {}
+[158.426037] (-) TimerEvent: {}
+[158.526870] (-) TimerEvent: {}
+[158.627699] (-) TimerEvent: {}
+[158.728521] (-) TimerEvent: {}
+[158.829360] (-) TimerEvent: {}
+[158.930173] (-) TimerEvent: {}
+[159.031006] (-) TimerEvent: {}
+[159.131831] (-) TimerEvent: {}
+[159.232642] (-) TimerEvent: {}
+[159.333474] (-) TimerEvent: {}
+[159.434305] (-) TimerEvent: {}
+[159.535147] (-) TimerEvent: {}
+[159.635977] (-) TimerEvent: {}
+[159.736798] (-) TimerEvent: {}
+[159.837654] (-) TimerEvent: {}
+[159.938455] (-) TimerEvent: {}
+[160.039248] (-) TimerEvent: {}
+[160.139955] (-) TimerEvent: {}
+[160.240597] (-) TimerEvent: {}
+[160.341318] (-) TimerEvent: {}
+[160.442148] (-) TimerEvent: {}
+[160.542942] (-) TimerEvent: {}
+[160.643755] (-) TimerEvent: {}
+[160.744552] (-) TimerEvent: {}
+[160.845382] (-) TimerEvent: {}
+[160.946191] (-) TimerEvent: {}
+[161.046996] (-) TimerEvent: {}
+[161.147805] (-) TimerEvent: {}
+[161.248581] (-) TimerEvent: {}
+[161.349394] (-) TimerEvent: {}
+[161.450190] (-) TimerEvent: {}
+[161.550965] (-) TimerEvent: {}
+[161.651736] (-) TimerEvent: {}
+[161.752491] (-) TimerEvent: {}
+[161.853245] (-) TimerEvent: {}
+[161.954013] (-) TimerEvent: {}
+[162.054789] (-) TimerEvent: {}
+[162.155580] (-) TimerEvent: {}
+[162.256384] (-) TimerEvent: {}
+[162.357218] (-) TimerEvent: {}
+[162.458036] (-) TimerEvent: {}
+[162.558848] (-) TimerEvent: {}
+[162.659632] (-) TimerEvent: {}
+[162.692043] (zed_components) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_component.so\x1b[0m\n'}
+[162.759806] (-) TimerEvent: {}
+[162.860501] (-) TimerEvent: {}
+[162.961195] (-) TimerEvent: {}
+[163.061935] (-) TimerEvent: {}
+[163.162661] (-) TimerEvent: {}
+[163.263321] (-) TimerEvent: {}
+[163.364069] (-) TimerEvent: {}
+[163.464772] (-) TimerEvent: {}
+[163.565517] (-) TimerEvent: {}
+[163.666175] (-) TimerEvent: {}
+[163.766827] (-) TimerEvent: {}
+[163.867495] (-) TimerEvent: {}
+[163.968160] (-) TimerEvent: {}
+[164.025174] (zed_components) StdoutLine: {'line': b'[100%] Built target zed_camera_component\n'}
+[164.050306] (zed_components) CommandEnded: {'returncode': 0}
+[164.052450] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'install'}
+[164.068272] (-) TimerEvent: {}
+[164.071500] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/epriauto/ros2_ws/camera/build/zed_components'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[164.089796] (zed_components) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[164.090915] (zed_components) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[164.091909] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/lib/libzed_camera_component.so\n'}
+[164.108637] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/lib/libzed_camera_one_component.so\n'}
+[164.125999] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//cost_traversability.hpp\n'}
+[164.142565] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_types.hpp\n'}
+[164.159988] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//zed_camera_component.hpp\n'}
+[164.168393] (-) TimerEvent: {}
+[164.176816] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//zed_camera_one_component.hpp\n'}
+[164.194778] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//gnss_replay.hpp\n'}
+[164.213319] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//json.hpp\n'}
+[164.231693] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_logging.hpp\n'}
+[164.250179] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_tools.hpp\n'}
+[164.268624] (-) TimerEvent: {}
+[164.269628] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_win_avg.hpp\n'}
+[164.288465] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//visibility_control.hpp\n'}
+[164.308536] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/library_path.sh\n'}
+[164.328887] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/library_path.dsv\n'}
+[164.346832] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components\n'}
+[164.363782] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components\n'}
+[164.368743] (-) TimerEvent: {}
+[164.381716] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/ament_prefix_path.sh\n'}
+[164.399380] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv\n'}
+[164.418321] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/path.sh\n'}
+[164.434528] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/path.dsv\n'}
+[164.452743] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.bash\n'}
+[164.468909] (-) TimerEvent: {}
+[164.469612] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.sh\n'}
+[164.488666] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.zsh\n'}
+[164.506152] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.dsv\n'}
+[164.522254] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/package.dsv\n'}
+[164.539736] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/packages/zed_components\n'}
+[164.558716] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components\n'}
+[164.569069] (-) TimerEvent: {}
+[164.575746] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[164.593051] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[164.611418] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[164.627596] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake\n'}
+[164.644500] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake\n'}
+[164.661664] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/package.xml\n'}
+[164.669198] (-) TimerEvent: {}
+[164.684429] (zed_components) CommandEnded: {'returncode': 0}
+[164.761456] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 0}
+[164.765397] (zed_wrapper) JobStarted: {'identifier': 'zed_wrapper'}
+[164.769841] (-) TimerEvent: {}
+[164.781581] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'cmake'}
+[164.783280] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_wrapper', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_wrapper'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[164.870035] (-) TimerEvent: {}
+[164.898234] (zed_wrapper) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[164.970209] (-) TimerEvent: {}
+[165.010898] (zed_wrapper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[165.031203] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[165.070331] (-) TimerEvent: {}
+[165.171005] (-) TimerEvent: {}
+[165.174369] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[165.199170] (zed_wrapper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[165.200082] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[165.201461] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[165.211199] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[165.271185] (-) TimerEvent: {}
+[165.365903] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[165.371254] (-) TimerEvent: {}
+[165.391900] (zed_wrapper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[165.392911] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[165.394564] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[165.402084] (zed_wrapper) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[165.471413] (-) TimerEvent: {}
+[165.572008] (-) TimerEvent: {}
+[165.672562] (-) TimerEvent: {}
+[165.736404] (zed_wrapper) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[165.772640] (-) TimerEvent: {}
+[165.867493] (zed_wrapper) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[165.872738] (-) TimerEvent: {}
+[165.973305] (-) TimerEvent: {}
+[166.074035] (-) TimerEvent: {}
+[166.174992] (-) TimerEvent: {}
+[166.176838] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[166.186199] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[166.200250] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[166.222920] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[166.248276] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[166.275048] (-) TimerEvent: {}
+[166.318919] (zed_wrapper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[166.322725] (zed_wrapper) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[166.375155] (-) TimerEvent: {}
+[166.448901] (zed_wrapper) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[166.475310] (-) TimerEvent: {}
+[166.503214] (zed_wrapper) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[166.569592] (zed_wrapper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[166.575405] (-) TimerEvent: {}
+[166.582336] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[166.675581] (-) TimerEvent: {}
+[166.710505] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[166.711110] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[166.775653] (-) TimerEvent: {}
+[166.853510] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[166.857314] (zed_wrapper) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[166.875765] (-) TimerEvent: {}
+[166.976389] (-) TimerEvent: {}
+[167.077187] (-) TimerEvent: {}
+[167.177875] (-) TimerEvent: {}
+[167.243325] (zed_wrapper) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[167.245397] (zed_wrapper) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[167.245808] (zed_wrapper) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[167.277964] (-) TimerEvent: {}
+[167.378625] (-) TimerEvent: {}
+[167.479462] (-) TimerEvent: {}
+[167.580486] (-) TimerEvent: {}
+[167.591456] (zed_wrapper) StdoutLine: {'line': b'-- Configuring done\n'}
+[167.603758] (zed_wrapper) StdoutLine: {'line': b'-- Generating done\n'}
+[167.608899] (zed_wrapper) StdoutLine: {'line': b'-- Build files have been written to: /home/epriauto/ros2_ws/camera/build/zed_wrapper\n'}
+[167.637662] (zed_wrapper) CommandEnded: {'returncode': 0}
+[167.639850] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'build'}
+[167.640821] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/epriauto/ros2_ws/camera/build/zed_wrapper', '--', '-j6', '-l6'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[167.680615] (-) TimerEvent: {}
+[167.728489] (zed_wrapper) CommandEnded: {'returncode': 0}
+[167.730475] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'install'}
+[167.731312] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/epriauto/ros2_ws/camera/build/zed_wrapper'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[167.748951] (zed_wrapper) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[167.749984] (zed_wrapper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[167.751325] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/common_mono.yaml\n'}
+[167.769627] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/common_stereo.yaml\n'}
+[167.780706] (-) TimerEvent: {}
+[167.787495] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/ffmpeg.yaml\n'}
+[167.805633] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml\n'}
+[167.823801] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zed.yaml\n'}
+[167.840887] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml\n'}
+[167.859506] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml\n'}
+[167.878232] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml\n'}
+[167.880832] (-) TimerEvent: {}
+[167.896565] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml\n'}
+[167.915747] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml\n'}
+[167.934373] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zedxone4k.yaml\n'}
+[167.953166] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/config/zedxonegs.yaml\n'}
+[167.971894] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro\n'}
+[167.980938] (-) TimerEvent: {}
+[167.991484] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro\n'}
+[168.010530] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro\n'}
+[168.027601] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py\n'}
+[168.046033] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper\n'}
+[168.063366] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper\n'}
+[168.081077] (-) TimerEvent: {}
+[168.082330] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh\n'}
+[168.099798] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv\n'}
+[168.120047] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/environment/path.sh\n'}
+[168.138029] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/environment/path.dsv\n'}
+[168.154661] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/local_setup.bash\n'}
+[168.172631] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/local_setup.sh\n'}
+[168.181155] (-) TimerEvent: {}
+[168.190999] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/local_setup.zsh\n'}
+[168.211316] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/local_setup.dsv\n'}
+[168.229338] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/package.dsv\n'}
+[168.247538] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper\n'}
+[168.266272] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake\n'}
+[168.281267] (-) TimerEvent: {}
+[168.284370] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake\n'}
+[168.305496] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_wrapper/share/zed_wrapper/package.xml\n'}
+[168.330697] (zed_wrapper) CommandEnded: {'returncode': 0}
+[168.376203] (zed_wrapper) JobEnded: {'identifier': 'zed_wrapper', 'rc': 0}
+[168.379968] (zed_ros2) JobStarted: {'identifier': 'zed_ros2'}
+[168.381443] (-) TimerEvent: {}
+[168.398947] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'cmake'}
+[168.401112] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_ros2', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_ros2'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[168.432617] (zed_ros2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[168.481645] (-) TimerEvent: {}
+[168.582158] (-) TimerEvent: {}
+[168.682775] (-) TimerEvent: {}
+[168.783542] (-) TimerEvent: {}
+[168.784389] (zed_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[168.883681] (-) TimerEvent: {}
+[168.915919] (zed_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[168.983893] (-) TimerEvent: {}
+[169.084583] (-) TimerEvent: {}
+[169.104370] (zed_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[169.141806] (zed_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[169.144286] (zed_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[169.146410] (zed_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[169.150305] (zed_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[169.158230] (zed_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[169.162986] (zed_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/epriauto/ros2_ws/camera/build/zed_ros2\n'}
+[169.170003] (zed_ros2) CommandEnded: {'returncode': 0}
+[169.171413] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'build'}
+[169.172079] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/epriauto/ros2_ws/camera/build/zed_ros2', '--', '-j6', '-l6'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[169.184669] (-) TimerEvent: {}
+[169.245256] (zed_ros2) CommandEnded: {'returncode': 0}
+[169.247649] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'install'}
+[169.248178] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/epriauto/ros2_ws/camera/build/zed_ros2'], 'cwd': '/home/epriauto/ros2_ws/camera/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/epriauto/ros2_ws/camera/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/camera/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1219'), ('SYSTEMD_EXEC_PID', '1688'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5463'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:38598'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1662,unix/epriauto-desktop:/tmp/.ICE-unix/1662'), ('INVOCATION_ID', '994ae2e3ea65406caf37e55d328172e5'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:8ed209a3-7482-4d41-9dcd-b74f5c4c24f3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/camera/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble')]), 'shell': False}
+[169.265713] (zed_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[169.266624] (zed_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[169.267408] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/package_run_dependencies/zed_ros2\n'}
+[169.284775] (-) TimerEvent: {}
+[169.285350] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/parent_prefix_path/zed_ros2\n'}
+[169.303522] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.sh\n'}
+[169.325234] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.dsv\n'}
+[169.343154] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/path.sh\n'}
+[169.362453] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/path.dsv\n'}
+[169.381887] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.bash\n'}
+[169.384865] (-) TimerEvent: {}
+[169.401359] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.sh\n'}
+[169.420351] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.zsh\n'}
+[169.436910] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.dsv\n'}
+[169.453109] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/package.dsv\n'}
+[169.470596] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/packages/zed_ros2\n'}
+[169.484982] (-) TimerEvent: {}
+[169.489118] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config.cmake\n'}
+[169.506845] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config-version.cmake\n'}
+[169.527893] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/package.xml\n'}
+[169.553181] (zed_ros2) CommandEnded: {'returncode': 0}
+[169.585263] (-) TimerEvent: {}
+[169.599410] (zed_ros2) JobEnded: {'identifier': 'zed_ros2', 'rc': 0}
+[169.601656] (-) EventReactorShutdown: {}

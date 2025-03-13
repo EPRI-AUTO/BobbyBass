@@ -1,0 +1,165 @@
+[0.017s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_components
+[0.176s] -- The C compiler identification is GNU 11.4.0
+[0.323s] -- The CXX compiler identification is GNU 11.4.0
+[0.348s] -- Detecting C compiler ABI info
+[0.488s] -- Detecting C compiler ABI info - done
+[0.513s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.514s] -- Detecting C compile features
+[0.516s] -- Detecting C compile features - done
+[0.528s] -- Detecting CXX compiler ABI info
+[0.677s] -- Detecting CXX compiler ABI info - done
+[0.702s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.703s] -- Detecting CXX compile features
+[0.705s] -- Detecting CXX compile features - done
+[0.720s] -- Looking for sgemm_
+[0.860s] -- Looking for sgemm_ - not found
+[0.866s] -- Looking for pthread.h
+[1.014s] -- Looking for pthread.h - found
+[1.015s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.162s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.165s] -- Found Threads: TRUE  
+[1.248s] -- Looking for sgemm_
+[1.420s] -- Looking for sgemm_ - found
+[1.422s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  
+[1.493s] -- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12.6") 
+[1.542s] -- Found CUDA: /usr/local/cuda (found version "12.6") 
+[1.547s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.857s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.991s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.264s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.274s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.290s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.312s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.340s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.533s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.537s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.677s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.727s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.794s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.228s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.230s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.230s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.443s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.503s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.505s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.506s] -- Configured cppcheck include dirs: /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/include;/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/tools/include
+[3.506s] -- Configured cppcheck exclude dirs and/or files: 
+[3.508s] -- Added test 'lint_cmake' to check CMake code style
+[3.511s] -- Added test 'uncrustify' to check C / C++ code style
+[3.511s] -- Configured uncrustify additional arguments: 
+[3.512s] -- Added test 'xmllint' to check XML markup files
+[3.519s] -- Configuring done
+[3.580s] -- Generating done
+[3.598s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/build/zed_components
+[3.630s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_components
+[3.636s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/build/zed_components -- -j6 -l6
+[3.733s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o[0m
+[3.733s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/gnss_replay.cpp.o[0m
+[3.733s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/gnss_replay.cpp.o[0m
+[3.733s] [ 60%] [32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_tools.cpp.o[0m
+[3.733s] [ 60%] [32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_win_avg.cpp.o[0m
+[3.734s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o[0m
+[4.623s] [ 70%] [32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/zed_camera/src/zed_camera_one_component.cpp.o[0m
+[4.670s] [ 80%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o[0m
+[16.615s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[16.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[16.617s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[16.617s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[16.617s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[16.617s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[16.617s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18[m[K,
+[16.617s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24[m[K,
+[16.617s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15[m[K:
+[16.617s] [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:[m[K In member function ‘[01m[Kbool stereolabs::ZedCamera::startCamera()[m[K’:
+[16.617s] [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[16.617s]  4249 |       get_logger(), [01;35m[K" * SVO resolution -> %dx%d"[m[K,
+[16.618s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.618s]  4250 |       [32m[KmZed->getCameraInformation().camera_configuration.resolution.width[m[K,
+[16.618s]       |       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.618s]       |                                                                    [32m[K|[m[K
+[16.618s]       |                                                                    [32m[Ksize_t {aka long unsigned int}[m[K
+[16.618s] [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[16.618s]  4249 |       get_logger(), " * SVO resolution -> [01;36m[K%d[m[Kx%d",
+[16.618s]       |                                           [01;36m[K~^[m[K
+[16.618s]       |                                            [01;36m[K|[m[K
+[16.618s]       |                                            [01;36m[Kint[m[K
+[16.619s]       |                                           [32m[K%ld[m[K
+[16.619s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[16.619s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[16.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[16.620s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[16.620s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[16.620s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18[m[K,
+[16.620s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24[m[K,
+[16.620s]                  from [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15[m[K:
+[16.620s] [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[16.620s]  4249 |       get_logger(), [01;35m[K" * SVO resolution -> %dx%d"[m[K,
+[16.621s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.621s]  4250 |       mZed->getCameraInformation().camera_configuration.resolution.width,
+[16.621s]  4251 |       [32m[KmZed->getCameraInformation().camera_configuration.resolution.height[m[K);
+[16.621s]       |       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.621s]       |                                                                    [32m[K|[m[K
+[16.621s]       |                                                                    [32m[Ksize_t {aka long unsigned int}[m[K
+[16.621s] [01m[K/home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[16.621s]  4249 |       get_logger(), " * SVO resolution -> %dx[01;36m[K%d[m[K",
+[16.621s]       |                                              [01;36m[K~^[m[K
+[16.621s]       |                                               [01;36m[K|[m[K
+[16.622s]       |                                               [01;36m[Kint[m[K
+[16.622s]       |                                              [32m[K%ld[m[K
+[46.683s] [ 90%] [32m[1mLinking CXX shared library libzed_camera_one_component.so[0m
+[47.465s] [ 90%] Built target zed_camera_one_component
+[162.691s] [100%] [32m[1mLinking CXX shared library libzed_camera_component.so[0m
+[164.024s] [100%] Built target zed_camera_component
+[164.050s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/build/zed_components -- -j6 -l6
+[164.073s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/build/zed_components
+[164.089s] -- Install configuration: "Release"
+[164.090s] -- Execute custom install script
+[164.091s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/lib/libzed_camera_component.so
+[164.108s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/lib/libzed_camera_one_component.so
+[164.125s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//cost_traversability.hpp
+[164.141s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_types.hpp
+[164.159s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//zed_camera_component.hpp
+[164.176s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//zed_camera_one_component.hpp
+[164.194s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//gnss_replay.hpp
+[164.212s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//json.hpp
+[164.231s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_logging.hpp
+[164.249s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_tools.hpp
+[164.269s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//sl_win_avg.hpp
+[164.287s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/include/zed_components//visibility_control.hpp
+[164.307s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/library_path.sh
+[164.328s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/library_path.dsv
+[164.346s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components
+[164.363s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components
+[164.381s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/ament_prefix_path.sh
+[164.398s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv
+[164.417s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/path.sh
+[164.433s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/environment/path.dsv
+[164.452s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.bash
+[164.469s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.sh
+[164.488s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.zsh
+[164.505s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/local_setup.dsv
+[164.521s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/package.dsv
+[164.539s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/packages/zed_components
+[164.558s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components
+[164.575s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake
+[164.592s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake
+[164.611s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake
+[164.627s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake
+[164.643s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake
+[164.661s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_components/share/zed_components/package.xml
+[164.684s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/build/zed_components

@@ -1,0 +1,33 @@
+[0.024s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_ros2
+[0.053s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.405s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.536s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.725s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.762s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.765s] -- Added test 'lint_cmake' to check CMake code style
+[0.767s] -- Added test 'xmllint' to check XML markup files
+[0.770s] -- Configuring done
+[0.778s] -- Generating done
+[0.783s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/build/zed_ros2
+[0.790s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/install/zed_ros2
+[0.794s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/build/zed_ros2 -- -j6 -l6
+[0.866s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/build/zed_ros2 -- -j6 -l6
+[0.871s] Invoking command in '/home/epriauto/ros2_ws/camera/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/build/zed_ros2
+[0.886s] -- Install configuration: "Release"
+[0.887s] -- Execute custom install script
+[0.888s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/package_run_dependencies/zed_ros2
+[0.906s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/parent_prefix_path/zed_ros2
+[0.924s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.sh
+[0.946s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.dsv
+[0.964s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/path.sh
+[0.983s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/environment/path.dsv
+[1.002s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.bash
+[1.022s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.sh
+[1.041s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.zsh
+[1.057s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/local_setup.dsv
+[1.073s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/package.dsv
+[1.091s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/ament_index/resource_index/packages/zed_ros2
+[1.109s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config.cmake
+[1.127s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config-version.cmake
+[1.148s] -- Symlinking: /home/epriauto/ros2_ws/camera/install/zed_ros2/share/zed_ros2/package.xml
+[1.175s] Invoked command in '/home/epriauto/ros2_ws/camera/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/install/zed_wrapper:/home/epriauto/ros2_ws/camera/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/build/zed_ros2

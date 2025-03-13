@@ -1,1 +1,0 @@
-/home/epriauto/ros2_ws/dunker_motor/dunker_motor_ros2/src/motor_control/setup.py

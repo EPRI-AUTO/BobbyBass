@@ -93,8 +93,13 @@ class MotorSubscriberNode(Node):
 
         if msg.data == 1:
             if current_time - self.last_action_time > cooldown_period:
-                self.get_logger().warn("Obstacle detected! Stopping and maneuvering...")
-                self.stop_and_turn()
+                self.get_logger().warn("Obstacle detected on the LEFT! Stopping and maneuvering...")
+                self.stop_and_turn_right()
+                self.last_action_time = time.time()
+        if msg.data == 2:
+            if current_time - self.last_action_time > cooldown_period:
+                self.get_logger().warn("Obstacle detected on the RIGHT! Stopping and maneuvering...")
+                self.stop_and_turn_left()
                 self.last_action_time = time.time()
         else:
             if current_time - self.last_action_time > cooldown_period:
@@ -103,7 +108,7 @@ class MotorSubscriberNode(Node):
                     self.robot.left_motor("FORWARD", 2)
                     self.robot.right_motor("FORWARD", 2)
 
-    def stop_and_turn(self):
+    def stop_and_turn_right(self):
         """ Stops the robot and turns to avoid the obstacle. """
         if not ROBOT_CONNECTED:
             self.get_logger().warn("Robot not connected. Simulating movement.")
@@ -119,10 +124,46 @@ class MotorSubscriberNode(Node):
         self.robot.right_motor("BACKWARD", 2)
         time.sleep(2)
 
+        # Stop motors
+        self.robot.left_motor("STOP", 1)
+        self.robot.right_motor("STOP", 1)
+        time.sleep(1)
+
         # Turn (Right)
         self.robot.left_motor("FORWARD", 2)
         self.robot.right_motor("BACKWARD", 2)
+        time.sleep(2)
+
+        # Stop again
+        self.robot.left_motor("STOP", 1)
+        self.robot.right_motor("STOP", 1)
+        self.get_logger().info("Obstacle avoided. Ready to move again!")
+
+    def stop_and_turn_left(self):
+        """ Stops the robot and turns to avoid the obstacle. """
+        if not ROBOT_CONNECTED:
+            self.get_logger().warn("Robot not connected. Simulating movement.")
+            return
+
+        # Stop motors
+        self.robot.left_motor("STOP", 1)
+        self.robot.right_motor("STOP", 1)
         time.sleep(1)
+
+        # Reverse
+        self.robot.left_motor("BACKWARD", 2)
+        self.robot.right_motor("BACKWARD", 2)
+        time.sleep(2)
+
+        # Stop motors
+        self.robot.left_motor("STOP", 1)
+        self.robot.right_motor("STOP", 1)
+        time.sleep(1)
+
+        # Turn (Left)
+        self.robot.left_motor("BACKWARD", 2)
+        self.robot.right_motor("FORWARD", 2)
+        time.sleep(2)
 
         # Stop again
         self.robot.left_motor("STOP", 1)
@@ -149,6 +190,9 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    robot = RobotControl("/dev/ttyACM0", 115200)
+    robot.left_motor("STOP", 1)
+    robot.right_motor("STOP", 1)
     node.destroy_node()
     rclpy.shutdown()
 

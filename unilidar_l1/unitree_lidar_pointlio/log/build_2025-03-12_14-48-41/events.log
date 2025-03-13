@@ -1,0 +1,1270 @@
+[0.000000] (-) TimerEvent: {}
+[0.000961] (unitree_lidar_pointlio) JobQueued: {'identifier': 'unitree_lidar_pointlio', 'dependencies': OrderedDict()}
+[0.001260] (unitree_lidar_pointlio) JobStarted: {'identifier': 'unitree_lidar_pointlio'}
+[0.014873] (unitree_lidar_pointlio) JobProgress: {'identifier': 'unitree_lidar_pointlio', 'progress': 'cmake'}
+[0.015941] (unitree_lidar_pointlio) Command: {'cmd': ['/usr/bin/cmake', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio'], 'cwd': '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1166'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3738'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:41087'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1599,unix/epriauto-desktop:/tmp/.ICE-unix/1599'), ('INVOCATION_ID', 'd1182c395d9b407a91ad7a2e24548dac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0da2afca-677f-4474-9b7b-2b6b88a8f3de'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble')]), 'shell': False}
+[0.099184] (-) TimerEvent: {}
+[0.166946] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199330] (-) TimerEvent: {}
+[0.286618] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.299471] (-) TimerEvent: {}
+[0.308296] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399652] (-) TimerEvent: {}
+[0.442666] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.467643] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.469438] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.470973] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.482405] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499747] (-) TimerEvent: {}
+[0.600364] (-) TimerEvent: {}
+[0.639937] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.665342] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.666374] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.668122] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.670328] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Current CPU architecture: aarch64\n'}
+[0.678379] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700490] (-) TimerEvent: {}
+[0.801146] (-) TimerEvent: {}
+[0.901807] (-) TimerEvent: {}
+[1.001374] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.001911] (-) TimerEvent: {}
+[1.102369] (-) TimerEvent: {}
+[1.137705] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.197810] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.202470] (-) TimerEvent: {}
+[1.273785] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.280948] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.294847] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.302568] (-) TimerEvent: {}
+[1.315499] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.342905] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.402954] (-) TimerEvent: {}
+[1.414561] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.418919] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.503313] (-) TimerEvent: {}
+[1.552432] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.603194] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.603594] (-) TimerEvent: {}
+[1.667298] (unitree_lidar_pointlio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.680533] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703691] (-) TimerEvent: {}
+[1.804118] (-) TimerEvent: {}
+[1.813745] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.814834] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.904345] (-) TimerEvent: {}
+[1.966567] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.969891] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.004461] (-) TimerEvent: {}
+[2.105148] (-) TimerEvent: {}
+[2.132601] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.134935] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.165150] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.198432] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.205187] (-) TimerEvent: {}
+[2.228609] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.299838] (unitree_lidar_pointlio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.305309] (-) TimerEvent: {}
+[2.315862] (unitree_lidar_pointlio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.363806] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.364284] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.405410] (-) TimerEvent: {}
+[2.425227] (unitree_lidar_pointlio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.445435] (unitree_lidar_pointlio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.505630] (-) TimerEvent: {}
+[2.522653] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[2.523252] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[2.605692] (-) TimerEvent: {}
+[2.706240] (-) TimerEvent: {}
+[2.807008] (-) TimerEvent: {}
+[2.907739] (-) TimerEvent: {}
+[3.008517] (-) TimerEvent: {}
+[3.109293] (-) TimerEvent: {}
+[3.210079] (-) TimerEvent: {}
+[3.310855] (-) TimerEvent: {}
+[3.411545] (-) TimerEvent: {}
+[3.512058] (-) TimerEvent: {}
+[3.612679] (-) TimerEvent: {}
+[3.713370] (-) TimerEvent: {}
+[3.813978] (-) TimerEvent: {}
+[3.914809] (-) TimerEvent: {}
+[4.015523] (-) TimerEvent: {}
+[4.116060] (-) TimerEvent: {}
+[4.216717] (-) TimerEvent: {}
+[4.317522] (-) TimerEvent: {}
+[4.409195] (unitree_lidar_pointlio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.417620] (-) TimerEvent: {}
+[4.435868] (unitree_lidar_pointlio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[4.506395] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[4.508460] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.517698] (-) TimerEvent: {}
+[4.610761] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.617822] (-) TimerEvent: {}
+[4.718407] (-) TimerEvent: {}
+[4.819077] (-) TimerEvent: {}
+[4.869856] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.879290] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.888665] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.919156] (-) TimerEvent: {}
+[5.019609] (-) TimerEvent: {}
+[5.118348] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.119707] (-) TimerEvent: {}
+[5.220132] (-) TimerEvent: {}
+[5.320643] (-) TimerEvent: {}
+[5.357211] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.420761] (-) TimerEvent: {}
+[5.521216] (-) TimerEvent: {}
+[5.590951] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[5.592110] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[5.593523] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[5.594868] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[5.596285] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[5.597604] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[5.598268] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[5.598956] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[5.600240] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[5.601730] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[5.603269] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[5.604619] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[5.606141] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[5.607652] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[5.609080] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[5.610547] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[5.612018] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[5.613429] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[5.615053] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[5.616419] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[5.617709] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[5.618281] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[5.619900] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[5.621307] (-) TimerEvent: {}
+[5.621623] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[5.622857] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[5.678960] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[5.681193] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.681543] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.721422] (-) TimerEvent: {}
+[5.821858] (-) TimerEvent: {}
+[5.839863] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[5.921988] (-) TimerEvent: {}
+[6.022574] (-) TimerEvent: {}
+[6.124063] (-) TimerEvent: {}
+[6.224875] (-) TimerEvent: {}
+[6.325606] (-) TimerEvent: {}
+[6.426284] (-) TimerEvent: {}
+[6.527066] (-) TimerEvent: {}
+[6.547922] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[6.627143] (-) TimerEvent: {}
+[6.725666] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.727241] (-) TimerEvent: {}
+[6.827714] (-) TimerEvent: {}
+[6.852821] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Generating done\n'}
+[6.879242] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Build files have been written to: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio\n'}
+[6.925299] (unitree_lidar_pointlio) CommandEnded: {'returncode': 0}
+[6.927314] (unitree_lidar_pointlio) JobProgress: {'identifier': 'unitree_lidar_pointlio', 'progress': 'build'}
+[6.930793] (unitree_lidar_pointlio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio', '--', '-j6', '-l6'], 'cwd': '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1166'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3738'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:41087'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1599,unix/epriauto-desktop:/tmp/.ICE-unix/1599'), ('INVOCATION_ID', 'd1182c395d9b407a91ad7a2e24548dac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0da2afca-677f-4474-9b7b-2b6b88a8f3de'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble')]), 'shell': False}
+[6.933649] (-) TimerEvent: {}
+[7.034555] (-) TimerEvent: {}
+[7.035464] (unitree_lidar_pointlio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o\x1b[0m\n'}
+[7.035822] (unitree_lidar_pointlio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[7.035969] (unitree_lidar_pointlio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[7.036286] (unitree_lidar_pointlio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o\x1b[0m\n'}
+[7.036656] (unitree_lidar_pointlio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[7.134719] (-) TimerEvent: {}
+[7.235404] (-) TimerEvent: {}
+[7.336169] (-) TimerEvent: {}
+[7.436845] (-) TimerEvent: {}
+[7.537699] (-) TimerEvent: {}
+[7.638523] (-) TimerEvent: {}
+[7.739202] (-) TimerEvent: {}
+[7.839888] (-) TimerEvent: {}
+[7.940575] (-) TimerEvent: {}
+[8.041233] (-) TimerEvent: {}
+[8.141909] (-) TimerEvent: {}
+[8.242564] (-) TimerEvent: {}
+[8.343289] (-) TimerEvent: {}
+[8.443989] (-) TimerEvent: {}
+[8.544682] (-) TimerEvent: {}
+[8.645386] (-) TimerEvent: {}
+[8.746111] (-) TimerEvent: {}
+[8.846894] (-) TimerEvent: {}
+[8.947609] (-) TimerEvent: {}
+[9.048314] (-) TimerEvent: {}
+[9.148990] (-) TimerEvent: {}
+[9.249712] (-) TimerEvent: {}
+[9.350464] (-) TimerEvent: {}
+[9.451228] (-) TimerEvent: {}
+[9.551910] (-) TimerEvent: {}
+[9.652594] (-) TimerEvent: {}
+[9.753264] (-) TimerEvent: {}
+[9.853938] (-) TimerEvent: {}
+[9.954606] (-) TimerEvent: {}
+[10.055288] (-) TimerEvent: {}
+[10.155967] (-) TimerEvent: {}
+[10.256673] (-) TimerEvent: {}
+[10.357375] (-) TimerEvent: {}
+[10.458076] (-) TimerEvent: {}
+[10.558820] (-) TimerEvent: {}
+[10.659483] (-) TimerEvent: {}
+[10.760187] (-) TimerEvent: {}
+[10.860887] (-) TimerEvent: {}
+[10.961605] (-) TimerEvent: {}
+[11.062329] (-) TimerEvent: {}
+[11.163050] (-) TimerEvent: {}
+[11.263748] (-) TimerEvent: {}
+[11.364464] (-) TimerEvent: {}
+[11.465211] (-) TimerEvent: {}
+[11.565916] (-) TimerEvent: {}
+[11.666659] (-) TimerEvent: {}
+[11.767409] (-) TimerEvent: {}
+[11.868130] (-) TimerEvent: {}
+[11.968848] (-) TimerEvent: {}
+[12.069527] (-) TimerEvent: {}
+[12.170218] (-) TimerEvent: {}
+[12.270933] (-) TimerEvent: {}
+[12.371645] (-) TimerEvent: {}
+[12.472534] (-) TimerEvent: {}
+[12.573270] (-) TimerEvent: {}
+[12.674140] (-) TimerEvent: {}
+[12.774888] (-) TimerEvent: {}
+[12.875612] (-) TimerEvent: {}
+[12.976336] (-) TimerEvent: {}
+[13.077105] (-) TimerEvent: {}
+[13.177823] (-) TimerEvent: {}
+[13.278540] (-) TimerEvent: {}
+[13.379413] (-) TimerEvent: {}
+[13.480220] (-) TimerEvent: {}
+[13.580996] (-) TimerEvent: {}
+[13.681680] (-) TimerEvent: {}
+[13.782368] (-) TimerEvent: {}
+[13.883077] (-) TimerEvent: {}
+[13.983769] (-) TimerEvent: {}
+[14.084477] (-) TimerEvent: {}
+[14.185160] (-) TimerEvent: {}
+[14.285896] (-) TimerEvent: {}
+[14.387148] (-) TimerEvent: {}
+[14.487822] (-) TimerEvent: {}
+[14.588484] (-) TimerEvent: {}
+[14.689168] (-) TimerEvent: {}
+[14.789860] (-) TimerEvent: {}
+[14.890591] (-) TimerEvent: {}
+[14.991340] (-) TimerEvent: {}
+[15.092059] (-) TimerEvent: {}
+[15.192787] (-) TimerEvent: {}
+[15.293503] (-) TimerEvent: {}
+[15.394184] (-) TimerEvent: {}
+[15.496159] (-) TimerEvent: {}
+[15.596873] (-) TimerEvent: {}
+[15.697570] (-) TimerEvent: {}
+[15.798317] (-) TimerEvent: {}
+[15.899087] (-) TimerEvent: {}
+[15.999811] (-) TimerEvent: {}
+[16.100500] (-) TimerEvent: {}
+[16.201232] (-) TimerEvent: {}
+[16.301890] (-) TimerEvent: {}
+[16.402603] (-) TimerEvent: {}
+[16.503329] (-) TimerEvent: {}
+[16.604327] (-) TimerEvent: {}
+[16.705017] (-) TimerEvent: {}
+[16.805712] (-) TimerEvent: {}
+[16.906416] (-) TimerEvent: {}
+[17.007110] (-) TimerEvent: {}
+[17.107785] (-) TimerEvent: {}
+[17.208467] (-) TimerEvent: {}
+[17.309173] (-) TimerEvent: {}
+[17.409868] (-) TimerEvent: {}
+[17.510565] (-) TimerEvent: {}
+[17.611288] (-) TimerEvent: {}
+[17.711969] (-) TimerEvent: {}
+[17.812830] (-) TimerEvent: {}
+[17.913542] (-) TimerEvent: {}
+[18.014379] (-) TimerEvent: {}
+[18.115105] (-) TimerEvent: {}
+[18.215785] (-) TimerEvent: {}
+[18.316457] (-) TimerEvent: {}
+[18.417117] (-) TimerEvent: {}
+[18.517790] (-) TimerEvent: {}
+[18.618485] (-) TimerEvent: {}
+[18.719187] (-) TimerEvent: {}
+[18.819844] (-) TimerEvent: {}
+[18.920552] (-) TimerEvent: {}
+[19.021225] (-) TimerEvent: {}
+[19.121908] (-) TimerEvent: {}
+[19.222591] (-) TimerEvent: {}
+[19.323282] (-) TimerEvent: {}
+[19.424062] (-) TimerEvent: {}
+[19.524744] (-) TimerEvent: {}
+[19.625420] (-) TimerEvent: {}
+[19.726103] (-) TimerEvent: {}
+[19.826811] (-) TimerEvent: {}
+[19.927492] (-) TimerEvent: {}
+[20.028173] (-) TimerEvent: {}
+[20.128854] (-) TimerEvent: {}
+[20.229526] (-) TimerEvent: {}
+[20.330290] (-) TimerEvent: {}
+[20.431004] (-) TimerEvent: {}
+[20.531668] (-) TimerEvent: {}
+[20.632338] (-) TimerEvent: {}
+[20.733021] (-) TimerEvent: {}
+[20.833689] (-) TimerEvent: {}
+[20.934349] (-) TimerEvent: {}
+[21.035031] (-) TimerEvent: {}
+[21.135703] (-) TimerEvent: {}
+[21.236375] (-) TimerEvent: {}
+[21.337050] (-) TimerEvent: {}
+[21.437732] (-) TimerEvent: {}
+[21.538404] (-) TimerEvent: {}
+[21.639088] (-) TimerEvent: {}
+[21.739797] (-) TimerEvent: {}
+[21.840541] (-) TimerEvent: {}
+[21.941234] (-) TimerEvent: {}
+[22.041924] (-) TimerEvent: {}
+[22.142593] (-) TimerEvent: {}
+[22.243316] (-) TimerEvent: {}
+[22.344005] (-) TimerEvent: {}
+[22.444681] (-) TimerEvent: {}
+[22.545420] (-) TimerEvent: {}
+[22.646095] (-) TimerEvent: {}
+[22.746789] (-) TimerEvent: {}
+[22.847477] (-) TimerEvent: {}
+[22.948150] (-) TimerEvent: {}
+[23.048824] (-) TimerEvent: {}
+[23.149516] (-) TimerEvent: {}
+[23.250259] (-) TimerEvent: {}
+[23.351159] (-) TimerEvent: {}
+[23.451938] (-) TimerEvent: {}
+[23.552616] (-) TimerEvent: {}
+[23.653290] (-) TimerEvent: {}
+[23.753983] (-) TimerEvent: {}
+[23.854653] (-) TimerEvent: {}
+[23.955423] (-) TimerEvent: {}
+[24.056402] (-) TimerEvent: {}
+[24.157078] (-) TimerEvent: {}
+[24.257771] (-) TimerEvent: {}
+[24.358478] (-) TimerEvent: {}
+[24.459179] (-) TimerEvent: {}
+[24.559826] (-) TimerEvent: {}
+[24.660483] (-) TimerEvent: {}
+[24.761132] (-) TimerEvent: {}
+[24.861777] (-) TimerEvent: {}
+[24.962423] (-) TimerEvent: {}
+[25.063101] (-) TimerEvent: {}
+[25.163751] (-) TimerEvent: {}
+[25.264413] (-) TimerEvent: {}
+[25.365026] (-) TimerEvent: {}
+[25.465681] (-) TimerEvent: {}
+[25.566335] (-) TimerEvent: {}
+[25.667041] (-) TimerEvent: {}
+[25.767707] (-) TimerEvent: {}
+[25.868361] (-) TimerEvent: {}
+[25.969025] (-) TimerEvent: {}
+[26.069685] (-) TimerEvent: {}
+[26.170322] (-) TimerEvent: {}
+[26.270988] (-) TimerEvent: {}
+[26.371642] (-) TimerEvent: {}
+[26.472295] (-) TimerEvent: {}
+[26.572935] (-) TimerEvent: {}
+[26.673595] (-) TimerEvent: {}
+[26.774243] (-) TimerEvent: {}
+[26.874891] (-) TimerEvent: {}
+[26.975539] (-) TimerEvent: {}
+[27.076190] (-) TimerEvent: {}
+[27.176841] (-) TimerEvent: {}
+[27.194698] (unitree_lidar_pointlio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[27.241942] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50\x1b[m\x1b[K,\n'}
+[27.242320] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/Estimator.h:4\x1b[m\x1b[K,\n'}
+[27.242452] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/Estimator.cpp:2\x1b[m\x1b[K:\n'}
+[27.242573] (unitree_lidar_pointlio) StderrLine: {'line': b'/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.242695] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.242847] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:334:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic MTK::SO3<_scalar, Options> MTK::SO3<_scalar, Options>::exp(const Eigen::Matrix<Type, 3, 1>&, MTK::SO3<_scalar, Options>::scalar) [with _scalar = double; int Options = 0; MTK::SO3<_scalar, Options>::scalar = double]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.242978] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:242:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid MTK::SO3<_scalar, Options>::boxplus(MTK::vectview<const _scalar, MTK::SO3<_scalar, Options>::DOF>, MTK::SO3<_scalar, Options>::scalar) [with _scalar = double; int Options = 0; MTK::SO3<_scalar, Options>::scalar = double]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.243101] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/Estimator.h:38:1:\x1b[m\x1b[K   required from here\n'}
+[27.243202] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[27.243308] (unitree_lidar_pointlio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[27.243407] (unitree_lidar_pointlio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.276994] (-) TimerEvent: {}
+[27.377624] (-) TimerEvent: {}
+[27.478286] (-) TimerEvent: {}
+[27.578941] (-) TimerEvent: {}
+[27.679610] (-) TimerEvent: {}
+[27.780272] (-) TimerEvent: {}
+[27.880939] (-) TimerEvent: {}
+[27.981761] (-) TimerEvent: {}
+[28.082428] (-) TimerEvent: {}
+[28.183106] (-) TimerEvent: {}
+[28.283801] (-) TimerEvent: {}
+[28.384460] (-) TimerEvent: {}
+[28.485110] (-) TimerEvent: {}
+[28.585749] (-) TimerEvent: {}
+[28.686415] (-) TimerEvent: {}
+[28.787165] (-) TimerEvent: {}
+[28.888026] (-) TimerEvent: {}
+[28.988771] (-) TimerEvent: {}
+[29.089433] (-) TimerEvent: {}
+[29.190104] (-) TimerEvent: {}
+[29.290777] (-) TimerEvent: {}
+[29.391442] (-) TimerEvent: {}
+[29.492174] (-) TimerEvent: {}
+[29.592834] (-) TimerEvent: {}
+[29.693496] (-) TimerEvent: {}
+[29.794148] (-) TimerEvent: {}
+[29.894812] (-) TimerEvent: {}
+[29.995471] (-) TimerEvent: {}
+[30.096128] (-) TimerEvent: {}
+[30.196766] (-) TimerEvent: {}
+[30.297421] (-) TimerEvent: {}
+[30.398079] (-) TimerEvent: {}
+[30.498723] (-) TimerEvent: {}
+[30.599430] (-) TimerEvent: {}
+[30.700162] (-) TimerEvent: {}
+[30.800822] (-) TimerEvent: {}
+[30.901480] (-) TimerEvent: {}
+[31.002134] (-) TimerEvent: {}
+[31.102806] (-) TimerEvent: {}
+[31.203464] (-) TimerEvent: {}
+[31.304137] (-) TimerEvent: {}
+[31.404807] (-) TimerEvent: {}
+[31.505478] (-) TimerEvent: {}
+[31.606148] (-) TimerEvent: {}
+[31.706819] (-) TimerEvent: {}
+[31.807477] (-) TimerEvent: {}
+[31.908123] (-) TimerEvent: {}
+[32.008750] (-) TimerEvent: {}
+[32.109380] (-) TimerEvent: {}
+[32.210060] (-) TimerEvent: {}
+[32.310716] (-) TimerEvent: {}
+[32.411393] (-) TimerEvent: {}
+[32.512054] (-) TimerEvent: {}
+[32.612719] (-) TimerEvent: {}
+[32.713385] (-) TimerEvent: {}
+[32.814107] (-) TimerEvent: {}
+[32.914798] (-) TimerEvent: {}
+[33.015442] (-) TimerEvent: {}
+[33.116132] (-) TimerEvent: {}
+[33.216802] (-) TimerEvent: {}
+[33.317470] (-) TimerEvent: {}
+[33.418123] (-) TimerEvent: {}
+[33.518862] (-) TimerEvent: {}
+[33.619517] (-) TimerEvent: {}
+[33.720178] (-) TimerEvent: {}
+[33.820848] (-) TimerEvent: {}
+[33.823244] (unitree_lidar_pointlio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[33.823621] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50\x1b[m\x1b[K,\n'}
+[33.823756] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/Estimator.h:4\x1b[m\x1b[K,\n'}
+[33.823876] (unitree_lidar_pointlio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/laserMapping.cpp:27\x1b[m\x1b[K:\n'}
+[33.823988] (unitree_lidar_pointlio) StderrLine: {'line': b'/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::cos_sinc_sqrt(const scalar&) [with scalar = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.824106] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::exp(MTK::vectview<scalar, dim>, MTK::vectview<const scalar, dim>, const scalar&) [with scalar = double; int n = 3]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.824257] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::predict(double&, esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::processnoisecovariance&, const input&, bool, bool) [with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[33.824377] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/src/laserMapping.cpp:1004:46:\x1b[m\x1b[K   required from here\n'}
+[33.824480] (unitree_lidar_pointlio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src/unitree_lidar_pointlio/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[33.824585] (unitree_lidar_pointlio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[33.824683] (unitree_lidar_pointlio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.921023] (-) TimerEvent: {}
+[34.021669] (-) TimerEvent: {}
+[34.122333] (-) TimerEvent: {}
+[34.223007] (-) TimerEvent: {}
+[34.323672] (-) TimerEvent: {}
+[34.424323] (-) TimerEvent: {}
+[34.525030] (-) TimerEvent: {}
+[34.625683] (-) TimerEvent: {}
+[34.726329] (-) TimerEvent: {}
+[34.826995] (-) TimerEvent: {}
+[34.927702] (-) TimerEvent: {}
+[35.028456] (-) TimerEvent: {}
+[35.129115] (-) TimerEvent: {}
+[35.229763] (-) TimerEvent: {}
+[35.330483] (-) TimerEvent: {}
+[35.431298] (-) TimerEvent: {}
+[35.531947] (-) TimerEvent: {}
+[35.632602] (-) TimerEvent: {}
+[35.733252] (-) TimerEvent: {}
+[35.833909] (-) TimerEvent: {}
+[35.934571] (-) TimerEvent: {}
+[36.035236] (-) TimerEvent: {}
+[36.135885] (-) TimerEvent: {}
+[36.236547] (-) TimerEvent: {}
+[36.337208] (-) TimerEvent: {}
+[36.437863] (-) TimerEvent: {}
+[36.538524] (-) TimerEvent: {}
+[36.639206] (-) TimerEvent: {}
+[36.739879] (-) TimerEvent: {}
+[36.840534] (-) TimerEvent: {}
+[36.941198] (-) TimerEvent: {}
+[37.041844] (-) TimerEvent: {}
+[37.142486] (-) TimerEvent: {}
+[37.243146] (-) TimerEvent: {}
+[37.343764] (-) TimerEvent: {}
+[37.444368] (-) TimerEvent: {}
+[37.545011] (-) TimerEvent: {}
+[37.645666] (-) TimerEvent: {}
+[37.746311] (-) TimerEvent: {}
+[37.846974] (-) TimerEvent: {}
+[37.947618] (-) TimerEvent: {}
+[38.048265] (-) TimerEvent: {}
+[38.148906] (-) TimerEvent: {}
+[38.249558] (-) TimerEvent: {}
+[38.350201] (-) TimerEvent: {}
+[38.450850] (-) TimerEvent: {}
+[38.551513] (-) TimerEvent: {}
+[38.652173] (-) TimerEvent: {}
+[38.752827] (-) TimerEvent: {}
+[38.853476] (-) TimerEvent: {}
+[38.954133] (-) TimerEvent: {}
+[39.054789] (-) TimerEvent: {}
+[39.155429] (-) TimerEvent: {}
+[39.256083] (-) TimerEvent: {}
+[39.356747] (-) TimerEvent: {}
+[39.457412] (-) TimerEvent: {}
+[39.558062] (-) TimerEvent: {}
+[39.658710] (-) TimerEvent: {}
+[39.759371] (-) TimerEvent: {}
+[39.860019] (-) TimerEvent: {}
+[39.960681] (-) TimerEvent: {}
+[40.061337] (-) TimerEvent: {}
+[40.161987] (-) TimerEvent: {}
+[40.262702] (-) TimerEvent: {}
+[40.363369] (-) TimerEvent: {}
+[40.464010] (-) TimerEvent: {}
+[40.564673] (-) TimerEvent: {}
+[40.665325] (-) TimerEvent: {}
+[40.765976] (-) TimerEvent: {}
+[40.866636] (-) TimerEvent: {}
+[40.967320] (-) TimerEvent: {}
+[41.067985] (-) TimerEvent: {}
+[41.168625] (-) TimerEvent: {}
+[41.269282] (-) TimerEvent: {}
+[41.369920] (-) TimerEvent: {}
+[41.470576] (-) TimerEvent: {}
+[41.571249] (-) TimerEvent: {}
+[41.672084] (-) TimerEvent: {}
+[41.772732] (-) TimerEvent: {}
+[41.873379] (-) TimerEvent: {}
+[41.974037] (-) TimerEvent: {}
+[42.074682] (-) TimerEvent: {}
+[42.175349] (-) TimerEvent: {}
+[42.275992] (-) TimerEvent: {}
+[42.376644] (-) TimerEvent: {}
+[42.477298] (-) TimerEvent: {}
+[42.577942] (-) TimerEvent: {}
+[42.678570] (-) TimerEvent: {}
+[42.779235] (-) TimerEvent: {}
+[42.879883] (-) TimerEvent: {}
+[42.980547] (-) TimerEvent: {}
+[43.081201] (-) TimerEvent: {}
+[43.181834] (-) TimerEvent: {}
+[43.282481] (-) TimerEvent: {}
+[43.383161] (-) TimerEvent: {}
+[43.483809] (-) TimerEvent: {}
+[43.584455] (-) TimerEvent: {}
+[43.685101] (-) TimerEvent: {}
+[43.785727] (-) TimerEvent: {}
+[43.886372] (-) TimerEvent: {}
+[43.987058] (-) TimerEvent: {}
+[44.087728] (-) TimerEvent: {}
+[44.188372] (-) TimerEvent: {}
+[44.289016] (-) TimerEvent: {}
+[44.389680] (-) TimerEvent: {}
+[44.490471] (-) TimerEvent: {}
+[44.591292] (-) TimerEvent: {}
+[44.692082] (-) TimerEvent: {}
+[44.792873] (-) TimerEvent: {}
+[44.893656] (-) TimerEvent: {}
+[44.994423] (-) TimerEvent: {}
+[45.095243] (-) TimerEvent: {}
+[45.196026] (-) TimerEvent: {}
+[45.296800] (-) TimerEvent: {}
+[45.397564] (-) TimerEvent: {}
+[45.498336] (-) TimerEvent: {}
+[45.599145] (-) TimerEvent: {}
+[45.699932] (-) TimerEvent: {}
+[45.800730] (-) TimerEvent: {}
+[45.901544] (-) TimerEvent: {}
+[46.002336] (-) TimerEvent: {}
+[46.103106] (-) TimerEvent: {}
+[46.203866] (-) TimerEvent: {}
+[46.304675] (-) TimerEvent: {}
+[46.405459] (-) TimerEvent: {}
+[46.506130] (-) TimerEvent: {}
+[46.606914] (-) TimerEvent: {}
+[46.707674] (-) TimerEvent: {}
+[46.808332] (-) TimerEvent: {}
+[46.909135] (-) TimerEvent: {}
+[47.009921] (-) TimerEvent: {}
+[47.110828] (-) TimerEvent: {}
+[47.211630] (-) TimerEvent: {}
+[47.312379] (-) TimerEvent: {}
+[47.413047] (-) TimerEvent: {}
+[47.513930] (-) TimerEvent: {}
+[47.614689] (-) TimerEvent: {}
+[47.715364] (-) TimerEvent: {}
+[47.816155] (-) TimerEvent: {}
+[47.916978] (-) TimerEvent: {}
+[48.017777] (-) TimerEvent: {}
+[48.118574] (-) TimerEvent: {}
+[48.219390] (-) TimerEvent: {}
+[48.320241] (-) TimerEvent: {}
+[48.421012] (-) TimerEvent: {}
+[48.521790] (-) TimerEvent: {}
+[48.622641] (-) TimerEvent: {}
+[48.723493] (-) TimerEvent: {}
+[48.824260] (-) TimerEvent: {}
+[48.925061] (-) TimerEvent: {}
+[49.025842] (-) TimerEvent: {}
+[49.126635] (-) TimerEvent: {}
+[49.227491] (-) TimerEvent: {}
+[49.328253] (-) TimerEvent: {}
+[49.428949] (-) TimerEvent: {}
+[49.529628] (-) TimerEvent: {}
+[49.630330] (-) TimerEvent: {}
+[49.731153] (-) TimerEvent: {}
+[49.831952] (-) TimerEvent: {}
+[49.932759] (-) TimerEvent: {}
+[50.033565] (-) TimerEvent: {}
+[50.134383] (-) TimerEvent: {}
+[50.235227] (-) TimerEvent: {}
+[50.335987] (-) TimerEvent: {}
+[50.436684] (-) TimerEvent: {}
+[50.537474] (-) TimerEvent: {}
+[50.638278] (-) TimerEvent: {}
+[50.739111] (-) TimerEvent: {}
+[50.839946] (-) TimerEvent: {}
+[50.940656] (-) TimerEvent: {}
+[51.041485] (-) TimerEvent: {}
+[51.142271] (-) TimerEvent: {}
+[51.242945] (-) TimerEvent: {}
+[51.343733] (-) TimerEvent: {}
+[51.444509] (-) TimerEvent: {}
+[51.545173] (-) TimerEvent: {}
+[51.645978] (-) TimerEvent: {}
+[51.746755] (-) TimerEvent: {}
+[51.847414] (-) TimerEvent: {}
+[51.948212] (-) TimerEvent: {}
+[52.048963] (-) TimerEvent: {}
+[52.149606] (-) TimerEvent: {}
+[52.250393] (-) TimerEvent: {}
+[52.351189] (-) TimerEvent: {}
+[52.451876] (-) TimerEvent: {}
+[52.552678] (-) TimerEvent: {}
+[52.653497] (-) TimerEvent: {}
+[52.754308] (-) TimerEvent: {}
+[52.855144] (-) TimerEvent: {}
+[52.955941] (-) TimerEvent: {}
+[53.056717] (-) TimerEvent: {}
+[53.157508] (-) TimerEvent: {}
+[53.258293] (-) TimerEvent: {}
+[53.359155] (-) TimerEvent: {}
+[53.459961] (-) TimerEvent: {}
+[53.560785] (-) TimerEvent: {}
+[53.661597] (-) TimerEvent: {}
+[53.762450] (-) TimerEvent: {}
+[53.863284] (-) TimerEvent: {}
+[53.964109] (-) TimerEvent: {}
+[54.064888] (-) TimerEvent: {}
+[54.165698] (-) TimerEvent: {}
+[54.266372] (-) TimerEvent: {}
+[54.367169] (-) TimerEvent: {}
+[54.467935] (-) TimerEvent: {}
+[54.568749] (-) TimerEvent: {}
+[54.669567] (-) TimerEvent: {}
+[54.770330] (-) TimerEvent: {}
+[54.871010] (-) TimerEvent: {}
+[54.971814] (-) TimerEvent: {}
+[55.072560] (-) TimerEvent: {}
+[55.173212] (-) TimerEvent: {}
+[55.274009] (-) TimerEvent: {}
+[55.374784] (-) TimerEvent: {}
+[55.475436] (-) TimerEvent: {}
+[55.576231] (-) TimerEvent: {}
+[55.677033] (-) TimerEvent: {}
+[55.777837] (-) TimerEvent: {}
+[55.878638] (-) TimerEvent: {}
+[55.979414] (-) TimerEvent: {}
+[56.080181] (-) TimerEvent: {}
+[56.180938] (-) TimerEvent: {}
+[56.281609] (-) TimerEvent: {}
+[56.382412] (-) TimerEvent: {}
+[56.483219] (-) TimerEvent: {}
+[56.583900] (-) TimerEvent: {}
+[56.684694] (-) TimerEvent: {}
+[56.785466] (-) TimerEvent: {}
+[56.886136] (-) TimerEvent: {}
+[56.986898] (-) TimerEvent: {}
+[57.087509] (-) TimerEvent: {}
+[57.188149] (-) TimerEvent: {}
+[57.288955] (-) TimerEvent: {}
+[57.389698] (-) TimerEvent: {}
+[57.490342] (-) TimerEvent: {}
+[57.591174] (-) TimerEvent: {}
+[57.691974] (-) TimerEvent: {}
+[57.792771] (-) TimerEvent: {}
+[57.893579] (-) TimerEvent: {}
+[57.994359] (-) TimerEvent: {}
+[58.095178] (-) TimerEvent: {}
+[58.195951] (-) TimerEvent: {}
+[58.296731] (-) TimerEvent: {}
+[58.397512] (-) TimerEvent: {}
+[58.498283] (-) TimerEvent: {}
+[58.599092] (-) TimerEvent: {}
+[58.699873] (-) TimerEvent: {}
+[58.800691] (-) TimerEvent: {}
+[58.901478] (-) TimerEvent: {}
+[59.002265] (-) TimerEvent: {}
+[59.103090] (-) TimerEvent: {}
+[59.203863] (-) TimerEvent: {}
+[59.304799] (-) TimerEvent: {}
+[59.405606] (-) TimerEvent: {}
+[59.506363] (-) TimerEvent: {}
+[59.607060] (-) TimerEvent: {}
+[59.707859] (-) TimerEvent: {}
+[59.808653] (-) TimerEvent: {}
+[59.909438] (-) TimerEvent: {}
+[60.010229] (-) TimerEvent: {}
+[60.111039] (-) TimerEvent: {}
+[60.211680] (-) TimerEvent: {}
+[60.312489] (-) TimerEvent: {}
+[60.413278] (-) TimerEvent: {}
+[60.514080] (-) TimerEvent: {}
+[60.614917] (-) TimerEvent: {}
+[60.715754] (-) TimerEvent: {}
+[60.816552] (-) TimerEvent: {}
+[60.917352] (-) TimerEvent: {}
+[61.018111] (-) TimerEvent: {}
+[61.118924] (-) TimerEvent: {}
+[61.219678] (-) TimerEvent: {}
+[61.320354] (-) TimerEvent: {}
+[61.421164] (-) TimerEvent: {}
+[61.521915] (-) TimerEvent: {}
+[61.622501] (-) TimerEvent: {}
+[61.723289] (-) TimerEvent: {}
+[61.823944] (-) TimerEvent: {}
+[61.924554] (-) TimerEvent: {}
+[62.025340] (-) TimerEvent: {}
+[62.126084] (-) TimerEvent: {}
+[62.226726] (-) TimerEvent: {}
+[62.327559] (-) TimerEvent: {}
+[62.428342] (-) TimerEvent: {}
+[62.529037] (-) TimerEvent: {}
+[62.629845] (-) TimerEvent: {}
+[62.730662] (-) TimerEvent: {}
+[62.831527] (-) TimerEvent: {}
+[62.932319] (-) TimerEvent: {}
+[63.033107] (-) TimerEvent: {}
+[63.133906] (-) TimerEvent: {}
+[63.234694] (-) TimerEvent: {}
+[63.335512] (-) TimerEvent: {}
+[63.436295] (-) TimerEvent: {}
+[63.537087] (-) TimerEvent: {}
+[63.637889] (-) TimerEvent: {}
+[63.738696] (-) TimerEvent: {}
+[63.839553] (-) TimerEvent: {}
+[63.940369] (-) TimerEvent: {}
+[64.041148] (-) TimerEvent: {}
+[64.141951] (-) TimerEvent: {}
+[64.242774] (-) TimerEvent: {}
+[64.343433] (-) TimerEvent: {}
+[64.444253] (-) TimerEvent: {}
+[64.545136] (-) TimerEvent: {}
+[64.645936] (-) TimerEvent: {}
+[64.746726] (-) TimerEvent: {}
+[64.847533] (-) TimerEvent: {}
+[64.948351] (-) TimerEvent: {}
+[65.049181] (-) TimerEvent: {}
+[65.149989] (-) TimerEvent: {}
+[65.250805] (-) TimerEvent: {}
+[65.351573] (-) TimerEvent: {}
+[65.452317] (-) TimerEvent: {}
+[65.553103] (-) TimerEvent: {}
+[65.653898] (-) TimerEvent: {}
+[65.754592] (-) TimerEvent: {}
+[65.855434] (-) TimerEvent: {}
+[65.956199] (-) TimerEvent: {}
+[66.056863] (-) TimerEvent: {}
+[66.157677] (-) TimerEvent: {}
+[66.258436] (-) TimerEvent: {}
+[66.359114] (-) TimerEvent: {}
+[66.459919] (-) TimerEvent: {}
+[66.560685] (-) TimerEvent: {}
+[66.661355] (-) TimerEvent: {}
+[66.762156] (-) TimerEvent: {}
+[66.862892] (-) TimerEvent: {}
+[66.963560] (-) TimerEvent: {}
+[67.064347] (-) TimerEvent: {}
+[67.165117] (-) TimerEvent: {}
+[67.265760] (-) TimerEvent: {}
+[67.366541] (-) TimerEvent: {}
+[67.467322] (-) TimerEvent: {}
+[67.567986] (-) TimerEvent: {}
+[67.668765] (-) TimerEvent: {}
+[67.769540] (-) TimerEvent: {}
+[67.870413] (-) TimerEvent: {}
+[67.971220] (-) TimerEvent: {}
+[68.071995] (-) TimerEvent: {}
+[68.172774] (-) TimerEvent: {}
+[68.273535] (-) TimerEvent: {}
+[68.374285] (-) TimerEvent: {}
+[68.475063] (-) TimerEvent: {}
+[68.575838] (-) TimerEvent: {}
+[68.676624] (-) TimerEvent: {}
+[68.777411] (-) TimerEvent: {}
+[68.878201] (-) TimerEvent: {}
+[68.978974] (-) TimerEvent: {}
+[69.079885] (-) TimerEvent: {}
+[69.180670] (-) TimerEvent: {}
+[69.281437] (-) TimerEvent: {}
+[69.382097] (-) TimerEvent: {}
+[69.482942] (-) TimerEvent: {}
+[69.583712] (-) TimerEvent: {}
+[69.684389] (-) TimerEvent: {}
+[69.785177] (-) TimerEvent: {}
+[69.885951] (-) TimerEvent: {}
+[69.986735] (-) TimerEvent: {}
+[70.087529] (-) TimerEvent: {}
+[70.188280] (-) TimerEvent: {}
+[70.289058] (-) TimerEvent: {}
+[70.389817] (-) TimerEvent: {}
+[70.490576] (-) TimerEvent: {}
+[70.591396] (-) TimerEvent: {}
+[70.692209] (-) TimerEvent: {}
+[70.792973] (-) TimerEvent: {}
+[70.893771] (-) TimerEvent: {}
+[70.994551] (-) TimerEvent: {}
+[71.095201] (-) TimerEvent: {}
+[71.195965] (-) TimerEvent: {}
+[71.296710] (-) TimerEvent: {}
+[71.397331] (-) TimerEvent: {}
+[71.498106] (-) TimerEvent: {}
+[71.598872] (-) TimerEvent: {}
+[71.699500] (-) TimerEvent: {}
+[71.800250] (-) TimerEvent: {}
+[71.900985] (-) TimerEvent: {}
+[72.001618] (-) TimerEvent: {}
+[72.102356] (-) TimerEvent: {}
+[72.203115] (-) TimerEvent: {}
+[72.303767] (-) TimerEvent: {}
+[72.404530] (-) TimerEvent: {}
+[72.505263] (-) TimerEvent: {}
+[72.606030] (-) TimerEvent: {}
+[72.706874] (-) TimerEvent: {}
+[72.807648] (-) TimerEvent: {}
+[72.908298] (-) TimerEvent: {}
+[73.009063] (-) TimerEvent: {}
+[73.109818] (-) TimerEvent: {}
+[73.210567] (-) TimerEvent: {}
+[73.311370] (-) TimerEvent: {}
+[73.412118] (-) TimerEvent: {}
+[73.512879] (-) TimerEvent: {}
+[73.613659] (-) TimerEvent: {}
+[73.714447] (-) TimerEvent: {}
+[73.815273] (-) TimerEvent: {}
+[73.916050] (-) TimerEvent: {}
+[74.016819] (-) TimerEvent: {}
+[74.117584] (-) TimerEvent: {}
+[74.218371] (-) TimerEvent: {}
+[74.319196] (-) TimerEvent: {}
+[74.419990] (-) TimerEvent: {}
+[74.520766] (-) TimerEvent: {}
+[74.621544] (-) TimerEvent: {}
+[74.722223] (-) TimerEvent: {}
+[74.823059] (-) TimerEvent: {}
+[74.923852] (-) TimerEvent: {}
+[75.024621] (-) TimerEvent: {}
+[75.125391] (-) TimerEvent: {}
+[75.226140] (-) TimerEvent: {}
+[75.326872] (-) TimerEvent: {}
+[75.427645] (-) TimerEvent: {}
+[75.528417] (-) TimerEvent: {}
+[75.629218] (-) TimerEvent: {}
+[75.730036] (-) TimerEvent: {}
+[75.830825] (-) TimerEvent: {}
+[75.931656] (-) TimerEvent: {}
+[76.032467] (-) TimerEvent: {}
+[76.133126] (-) TimerEvent: {}
+[76.233910] (-) TimerEvent: {}
+[76.334674] (-) TimerEvent: {}
+[76.435356] (-) TimerEvent: {}
+[76.536149] (-) TimerEvent: {}
+[76.636914] (-) TimerEvent: {}
+[76.737579] (-) TimerEvent: {}
+[76.838374] (-) TimerEvent: {}
+[76.939166] (-) TimerEvent: {}
+[77.039808] (-) TimerEvent: {}
+[77.140574] (-) TimerEvent: {}
+[77.241327] (-) TimerEvent: {}
+[77.341989] (-) TimerEvent: {}
+[77.442785] (-) TimerEvent: {}
+[77.543536] (-) TimerEvent: {}
+[77.644219] (-) TimerEvent: {}
+[77.745031] (-) TimerEvent: {}
+[77.845832] (-) TimerEvent: {}
+[77.946638] (-) TimerEvent: {}
+[78.047463] (-) TimerEvent: {}
+[78.148246] (-) TimerEvent: {}
+[78.249028] (-) TimerEvent: {}
+[78.349814] (-) TimerEvent: {}
+[78.450588] (-) TimerEvent: {}
+[78.551423] (-) TimerEvent: {}
+[78.652228] (-) TimerEvent: {}
+[78.753021] (-) TimerEvent: {}
+[78.853826] (-) TimerEvent: {}
+[78.954659] (-) TimerEvent: {}
+[79.055383] (-) TimerEvent: {}
+[79.156169] (-) TimerEvent: {}
+[79.256976] (-) TimerEvent: {}
+[79.357891] (-) TimerEvent: {}
+[79.458698] (-) TimerEvent: {}
+[79.559480] (-) TimerEvent: {}
+[79.660153] (-) TimerEvent: {}
+[79.760808] (-) TimerEvent: {}
+[79.861594] (-) TimerEvent: {}
+[79.962354] (-) TimerEvent: {}
+[80.063018] (-) TimerEvent: {}
+[80.163817] (-) TimerEvent: {}
+[80.264604] (-) TimerEvent: {}
+[80.365421] (-) TimerEvent: {}
+[80.466226] (-) TimerEvent: {}
+[80.567029] (-) TimerEvent: {}
+[80.667703] (-) TimerEvent: {}
+[80.768499] (-) TimerEvent: {}
+[80.869292] (-) TimerEvent: {}
+[80.970092] (-) TimerEvent: {}
+[81.070918] (-) TimerEvent: {}
+[81.171607] (-) TimerEvent: {}
+[81.272410] (-) TimerEvent: {}
+[81.373187] (-) TimerEvent: {}
+[81.473854] (-) TimerEvent: {}
+[81.574672] (-) TimerEvent: {}
+[81.675479] (-) TimerEvent: {}
+[81.776157] (-) TimerEvent: {}
+[81.876957] (-) TimerEvent: {}
+[81.977718] (-) TimerEvent: {}
+[82.078388] (-) TimerEvent: {}
+[82.179224] (-) TimerEvent: {}
+[82.280010] (-) TimerEvent: {}
+[82.380698] (-) TimerEvent: {}
+[82.481505] (-) TimerEvent: {}
+[82.582287] (-) TimerEvent: {}
+[82.682993] (-) TimerEvent: {}
+[82.783784] (-) TimerEvent: {}
+[82.884556] (-) TimerEvent: {}
+[82.985367] (-) TimerEvent: {}
+[83.086153] (-) TimerEvent: {}
+[83.186932] (-) TimerEvent: {}
+[83.287724] (-) TimerEvent: {}
+[83.388508] (-) TimerEvent: {}
+[83.489292] (-) TimerEvent: {}
+[83.590050] (-) TimerEvent: {}
+[83.690866] (-) TimerEvent: {}
+[83.791628] (-) TimerEvent: {}
+[83.892389] (-) TimerEvent: {}
+[83.993159] (-) TimerEvent: {}
+[84.093928] (-) TimerEvent: {}
+[84.194694] (-) TimerEvent: {}
+[84.295532] (-) TimerEvent: {}
+[84.396304] (-) TimerEvent: {}
+[84.497220] (-) TimerEvent: {}
+[84.597994] (-) TimerEvent: {}
+[84.698731] (-) TimerEvent: {}
+[84.799382] (-) TimerEvent: {}
+[84.900134] (-) TimerEvent: {}
+[85.000881] (-) TimerEvent: {}
+[85.101519] (-) TimerEvent: {}
+[85.202307] (-) TimerEvent: {}
+[85.303131] (-) TimerEvent: {}
+[85.403941] (-) TimerEvent: {}
+[85.504729] (-) TimerEvent: {}
+[85.605519] (-) TimerEvent: {}
+[85.706306] (-) TimerEvent: {}
+[85.807131] (-) TimerEvent: {}
+[85.907988] (-) TimerEvent: {}
+[86.008788] (-) TimerEvent: {}
+[86.109642] (-) TimerEvent: {}
+[86.210281] (-) TimerEvent: {}
+[86.311086] (-) TimerEvent: {}
+[86.411826] (-) TimerEvent: {}
+[86.512444] (-) TimerEvent: {}
+[86.613220] (-) TimerEvent: {}
+[86.713976] (-) TimerEvent: {}
+[86.814632] (-) TimerEvent: {}
+[86.915452] (-) TimerEvent: {}
+[87.016208] (-) TimerEvent: {}
+[87.116832] (-) TimerEvent: {}
+[87.217619] (-) TimerEvent: {}
+[87.318390] (-) TimerEvent: {}
+[87.419031] (-) TimerEvent: {}
+[87.519814] (-) TimerEvent: {}
+[87.620586] (-) TimerEvent: {}
+[87.721250] (-) TimerEvent: {}
+[87.822007] (-) TimerEvent: {}
+[87.922798] (-) TimerEvent: {}
+[88.023630] (-) TimerEvent: {}
+[88.124398] (-) TimerEvent: {}
+[88.225151] (-) TimerEvent: {}
+[88.325959] (-) TimerEvent: {}
+[88.426775] (-) TimerEvent: {}
+[88.527536] (-) TimerEvent: {}
+[88.628390] (-) TimerEvent: {}
+[88.729191] (-) TimerEvent: {}
+[88.829979] (-) TimerEvent: {}
+[88.930804] (-) TimerEvent: {}
+[89.031590] (-) TimerEvent: {}
+[89.132373] (-) TimerEvent: {}
+[89.233136] (-) TimerEvent: {}
+[89.333912] (-) TimerEvent: {}
+[89.434661] (-) TimerEvent: {}
+[89.535503] (-) TimerEvent: {}
+[89.636303] (-) TimerEvent: {}
+[89.737056] (-) TimerEvent: {}
+[89.837726] (-) TimerEvent: {}
+[89.938531] (-) TimerEvent: {}
+[90.039703] (-) TimerEvent: {}
+[90.140633] (-) TimerEvent: {}
+[90.241395] (-) TimerEvent: {}
+[90.342182] (-) TimerEvent: {}
+[90.442973] (-) TimerEvent: {}
+[90.543737] (-) TimerEvent: {}
+[90.644531] (-) TimerEvent: {}
+[90.745359] (-) TimerEvent: {}
+[90.846122] (-) TimerEvent: {}
+[90.946802] (-) TimerEvent: {}
+[91.047594] (-) TimerEvent: {}
+[91.148301] (-) TimerEvent: {}
+[91.248913] (-) TimerEvent: {}
+[91.349676] (-) TimerEvent: {}
+[91.450393] (-) TimerEvent: {}
+[91.551029] (-) TimerEvent: {}
+[91.651805] (-) TimerEvent: {}
+[91.752543] (-) TimerEvent: {}
+[91.853182] (-) TimerEvent: {}
+[91.953948] (-) TimerEvent: {}
+[92.054689] (-) TimerEvent: {}
+[92.155325] (-) TimerEvent: {}
+[92.256082] (-) TimerEvent: {}
+[92.356778] (-) TimerEvent: {}
+[92.457548] (-) TimerEvent: {}
+[92.558304] (-) TimerEvent: {}
+[92.659065] (-) TimerEvent: {}
+[92.759718] (-) TimerEvent: {}
+[92.860489] (-) TimerEvent: {}
+[92.961255] (-) TimerEvent: {}
+[93.062067] (-) TimerEvent: {}
+[93.162847] (-) TimerEvent: {}
+[93.263574] (-) TimerEvent: {}
+[93.364328] (-) TimerEvent: {}
+[93.465084] (-) TimerEvent: {}
+[93.565845] (-) TimerEvent: {}
+[93.666608] (-) TimerEvent: {}
+[93.767388] (-) TimerEvent: {}
+[93.868181] (-) TimerEvent: {}
+[93.969007] (-) TimerEvent: {}
+[94.069777] (-) TimerEvent: {}
+[94.170537] (-) TimerEvent: {}
+[94.271332] (-) TimerEvent: {}
+[94.372116] (-) TimerEvent: {}
+[94.472879] (-) TimerEvent: {}
+[94.573639] (-) TimerEvent: {}
+[94.674388] (-) TimerEvent: {}
+[94.775149] (-) TimerEvent: {}
+[94.875957] (-) TimerEvent: {}
+[94.976721] (-) TimerEvent: {}
+[95.077459] (-) TimerEvent: {}
+[95.178081] (-) TimerEvent: {}
+[95.278904] (-) TimerEvent: {}
+[95.379652] (-) TimerEvent: {}
+[95.480392] (-) TimerEvent: {}
+[95.581163] (-) TimerEvent: {}
+[95.681911] (-) TimerEvent: {}
+[95.782536] (-) TimerEvent: {}
+[95.883335] (-) TimerEvent: {}
+[95.984104] (-) TimerEvent: {}
+[96.084893] (-) TimerEvent: {}
+[96.185652] (-) TimerEvent: {}
+[96.286352] (-) TimerEvent: {}
+[96.387004] (-) TimerEvent: {}
+[96.487770] (-) TimerEvent: {}
+[96.588523] (-) TimerEvent: {}
+[96.689283] (-) TimerEvent: {}
+[96.790039] (-) TimerEvent: {}
+[96.890681] (-) TimerEvent: {}
+[96.991459] (-) TimerEvent: {}
+[97.092189] (-) TimerEvent: {}
+[97.192815] (-) TimerEvent: {}
+[97.293597] (-) TimerEvent: {}
+[97.394321] (-) TimerEvent: {}
+[97.494975] (-) TimerEvent: {}
+[97.595819] (-) TimerEvent: {}
+[97.696553] (-) TimerEvent: {}
+[97.797248] (-) TimerEvent: {}
+[97.897858] (-) TimerEvent: {}
+[97.998478] (-) TimerEvent: {}
+[98.099204] (-) TimerEvent: {}
+[98.199885] (-) TimerEvent: {}
+[98.300618] (-) TimerEvent: {}
+[98.401260] (-) TimerEvent: {}
+[98.502073] (-) TimerEvent: {}
+[98.602697] (-) TimerEvent: {}
+[98.703352] (-) TimerEvent: {}
+[98.803989] (-) TimerEvent: {}
+[98.904619] (-) TimerEvent: {}
+[99.005255] (-) TimerEvent: {}
+[99.106011] (-) TimerEvent: {}
+[99.206711] (-) TimerEvent: {}
+[99.307489] (-) TimerEvent: {}
+[99.408254] (-) TimerEvent: {}
+[99.509013] (-) TimerEvent: {}
+[99.609798] (-) TimerEvent: {}
+[99.710577] (-) TimerEvent: {}
+[99.811412] (-) TimerEvent: {}
+[99.912176] (-) TimerEvent: {}
+[100.012956] (-) TimerEvent: {}
+[100.113697] (-) TimerEvent: {}
+[100.214408] (-) TimerEvent: {}
+[100.315166] (-) TimerEvent: {}
+[100.415918] (-) TimerEvent: {}
+[100.516712] (-) TimerEvent: {}
+[100.617487] (-) TimerEvent: {}
+[100.718242] (-) TimerEvent: {}
+[100.819025] (-) TimerEvent: {}
+[100.919767] (-) TimerEvent: {}
+[101.020520] (-) TimerEvent: {}
+[101.121391] (-) TimerEvent: {}
+[101.222192] (-) TimerEvent: {}
+[101.323027] (-) TimerEvent: {}
+[101.423803] (-) TimerEvent: {}
+[101.524571] (-) TimerEvent: {}
+[101.625342] (-) TimerEvent: {}
+[101.726150] (-) TimerEvent: {}
+[101.826967] (-) TimerEvent: {}
+[101.927721] (-) TimerEvent: {}
+[102.028459] (-) TimerEvent: {}
+[102.129179] (-) TimerEvent: {}
+[102.229941] (-) TimerEvent: {}
+[102.330561] (-) TimerEvent: {}
+[102.431354] (-) TimerEvent: {}
+[102.532126] (-) TimerEvent: {}
+[102.632895] (-) TimerEvent: {}
+[102.733633] (-) TimerEvent: {}
+[102.834315] (-) TimerEvent: {}
+[102.935099] (-) TimerEvent: {}
+[103.035889] (-) TimerEvent: {}
+[103.136556] (-) TimerEvent: {}
+[103.237380] (-) TimerEvent: {}
+[103.338171] (-) TimerEvent: {}
+[103.438838] (-) TimerEvent: {}
+[103.539696] (-) TimerEvent: {}
+[103.640415] (-) TimerEvent: {}
+[103.741041] (-) TimerEvent: {}
+[103.841805] (-) TimerEvent: {}
+[103.942635] (-) TimerEvent: {}
+[104.043289] (-) TimerEvent: {}
+[104.144053] (-) TimerEvent: {}
+[104.244774] (-) TimerEvent: {}
+[104.345406] (-) TimerEvent: {}
+[104.446201] (-) TimerEvent: {}
+[104.546900] (-) TimerEvent: {}
+[104.647525] (-) TimerEvent: {}
+[104.748256] (-) TimerEvent: {}
+[104.848961] (-) TimerEvent: {}
+[104.949555] (-) TimerEvent: {}
+[105.050317] (-) TimerEvent: {}
+[105.151083] (-) TimerEvent: {}
+[105.251844] (-) TimerEvent: {}
+[105.352632] (-) TimerEvent: {}
+[105.453393] (-) TimerEvent: {}
+[105.554174] (-) TimerEvent: {}
+[105.654957] (-) TimerEvent: {}
+[105.755706] (-) TimerEvent: {}
+[105.856486] (-) TimerEvent: {}
+[105.957230] (-) TimerEvent: {}
+[106.057980] (-) TimerEvent: {}
+[106.158796] (-) TimerEvent: {}
+[106.259540] (-) TimerEvent: {}
+[106.360320] (-) TimerEvent: {}
+[106.461091] (-) TimerEvent: {}
+[106.561850] (-) TimerEvent: {}
+[106.662623] (-) TimerEvent: {}
+[106.763462] (-) TimerEvent: {}
+[106.864246] (-) TimerEvent: {}
+[106.965018] (-) TimerEvent: {}
+[107.065701] (-) TimerEvent: {}
+[107.166462] (-) TimerEvent: {}
+[107.267238] (-) TimerEvent: {}
+[107.368024] (-) TimerEvent: {}
+[107.468809] (-) TimerEvent: {}
+[107.569545] (-) TimerEvent: {}
+[107.670207] (-) TimerEvent: {}
+[107.771007] (-) TimerEvent: {}
+[107.871850] (-) TimerEvent: {}
+[107.972686] (-) TimerEvent: {}
+[108.073457] (-) TimerEvent: {}
+[108.174399] (-) TimerEvent: {}
+[108.275030] (-) TimerEvent: {}
+[108.375792] (-) TimerEvent: {}
+[108.476511] (-) TimerEvent: {}
+[108.577253] (-) TimerEvent: {}
+[108.678084] (-) TimerEvent: {}
+[108.778922] (-) TimerEvent: {}
+[108.879695] (-) TimerEvent: {}
+[108.980426] (-) TimerEvent: {}
+[109.081047] (-) TimerEvent: {}
+[109.181641] (-) TimerEvent: {}
+[109.282245] (-) TimerEvent: {}
+[109.382862] (-) TimerEvent: {}
+[109.483460] (-) TimerEvent: {}
+[109.584073] (-) TimerEvent: {}
+[109.684688] (-) TimerEvent: {}
+[109.785326] (-) TimerEvent: {}
+[109.812552] (unitree_lidar_pointlio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointlio_mapping\x1b[0m\n'}
+[109.885619] (-) TimerEvent: {}
+[109.986280] (-) TimerEvent: {}
+[110.086983] (-) TimerEvent: {}
+[110.187609] (-) TimerEvent: {}
+[110.288222] (-) TimerEvent: {}
+[110.388851] (-) TimerEvent: {}
+[110.489426] (-) TimerEvent: {}
+[110.590057] (-) TimerEvent: {}
+[110.690696] (-) TimerEvent: {}
+[110.791363] (-) TimerEvent: {}
+[110.892096] (-) TimerEvent: {}
+[110.992725] (-) TimerEvent: {}
+[111.093360] (-) TimerEvent: {}
+[111.194007] (-) TimerEvent: {}
+[111.294630] (-) TimerEvent: {}
+[111.395273] (-) TimerEvent: {}
+[111.495890] (-) TimerEvent: {}
+[111.596496] (-) TimerEvent: {}
+[111.697129] (-) TimerEvent: {}
+[111.797743] (-) TimerEvent: {}
+[111.866046] (unitree_lidar_pointlio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[111.891524] (unitree_lidar_pointlio) CommandEnded: {'returncode': 0}
+[111.893994] (unitree_lidar_pointlio) JobProgress: {'identifier': 'unitree_lidar_pointlio', 'progress': 'install'}
+[111.897830] (-) TimerEvent: {}
+[111.912482] (unitree_lidar_pointlio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio'], 'cwd': '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'epriauto'), ('CXXFLAGS', '-std=c++14'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/epriauto'), ('OLDPWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1166'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3738'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'epriauto'), ('JOURNAL_STREAM', '8:41087'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'epriauto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/epriauto-desktop:@/tmp/.ICE-unix/1599,unix/epriauto-desktop:/tmp/.ICE-unix/1599'), ('INVOCATION_ID', 'd1182c395d9b407a91ad7a2e24548dac'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0da2afca-677f-4474-9b7b-2b6b88a8f3de'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/build/unitree_lidar_pointlio'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio:/opt/ros/humble')]), 'shell': False}
+[111.932205] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[111.933665] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[111.934882] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/lib/unitree_lidar_pointlio/pointlio_mapping\n'}
+[111.954665] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/config/unilidar_l1.yaml\n'}
+[111.971513] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/launch/correct_odom_unilidar_l1.launch.py\n'}
+[111.988878] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/launch/mapping_unilidar_l1.launch.py\n'}
+[111.997950] (-) TimerEvent: {}
+[112.007093] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/rviz_cfg/loam_livox.rviz\n'}
+[112.024375] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_pointlio\n'}
+[112.042082] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_pointlio\n'}
+[112.058733] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/environment/ament_prefix_path.sh\n'}
+[112.075964] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/environment/ament_prefix_path.dsv\n'}
+[112.092919] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/environment/path.sh\n'}
+[112.098060] (-) TimerEvent: {}
+[112.110291] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/environment/path.dsv\n'}
+[112.125755] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/local_setup.bash\n'}
+[112.143548] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/local_setup.sh\n'}
+[112.159090] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/local_setup.zsh\n'}
+[112.174733] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/local_setup.dsv\n'}
+[112.191577] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/package.dsv\n'}
+[112.198191] (-) TimerEvent: {}
+[112.209477] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/ament_index/resource_index/packages/unitree_lidar_pointlio\n'}
+[112.227258] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[112.245121] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/cmake/unitree_lidar_pointlioConfig.cmake\n'}
+[112.262423] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/cmake/unitree_lidar_pointlioConfig-version.cmake\n'}
+[112.280004] (unitree_lidar_pointlio) StdoutLine: {'line': b'-- Symlinking: /home/epriauto/ros2_ws/unilidar_l1/unitree_lidar_pointlio/install/unitree_lidar_pointlio/share/unitree_lidar_pointlio/package.xml\n'}
+[112.298367] (-) TimerEvent: {}
+[112.303840] (unitree_lidar_pointlio) CommandEnded: {'returncode': 0}
+[112.359488] (unitree_lidar_pointlio) JobEnded: {'identifier': 'unitree_lidar_pointlio', 'rc': 0}
+[112.361374] (-) EventReactorShutdown: {}

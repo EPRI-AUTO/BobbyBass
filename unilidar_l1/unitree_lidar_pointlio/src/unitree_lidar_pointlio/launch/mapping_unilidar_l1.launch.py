@@ -15,7 +15,7 @@ def generate_launch_description():
     # Node parameters, including those from the YAML configuration file
     laser_mapping_params = [
         PathJoinSubstitution([
-            FindPackageShare('point_lio'),
+            FindPackageShare('unitree_lidar_pointlio'),
             'config', 'unilidar_l1.yaml'
         ]),
         {
@@ -34,7 +34,7 @@ def generate_launch_description():
 
     # Node definition for laserMapping with Point-LIO
     laser_mapping_node = Node(
-        package='point_lio',
+        package='unitree_lidar_pointlio',
         executable='pointlio_mapping',
         name='laserMapping',
         output='screen',
@@ -48,7 +48,7 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz',
         arguments=['-d', PathJoinSubstitution([
-            FindPackageShare('point_lio'),
+            FindPackageShare('unitree_lidar_pointlio'),
             'rviz_cfg', 'loam_livox.rviz'
         ])],
         condition=IfCondition(LaunchConfiguration('rviz')),

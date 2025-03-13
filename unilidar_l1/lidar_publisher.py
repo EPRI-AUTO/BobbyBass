@@ -1,4 +1,5 @@
 import rclpy
+import time
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
 import sensor_msgs_py.point_cloud2 as pc2
@@ -26,20 +27,30 @@ class LiDARPublisherNode(Node):
         
         # Check if any point is within the detection range (e.g., 0.3)
         detection_threshold = 0.3
-        obstacle_detected = any(
-            (x**2 + y**2 + z**2) ** 0.5 < detection_threshold for x, y, z in point_cloud
-        )
 
-        # Publish 1 if obstacle detected, 0 otherwise
-        signal = Int32()
-        signal.data = 1 if obstacle_detected else 0
-        self.obstacle_publisher.publish(signal)
+        # Find the first set of coordinates that triggered the detection
+        triggering_points = [
+            (x, y, z) for x, y, z in point_cloud if (x**2 + y**2 + z**2) ** 0.5 < detection_threshold
+        ]
+
+        # Check if an obstacle is detected
+        obstacle_detected = bool(triggering_points)
 
         # Log the result
+        signal = Int32()
         if obstacle_detected:
-            self.get_logger().warn("Obstacle detected within 0.3 meters! Sending signal: 1")
+            most_recent_coordinates = triggering_points[-1]  # Last element in the list
+            x_value = most_recent_coordinates[0]
+            if x_value < 0:
+                self.get_logger().warn("Obstacle detected on the left! Sending signal: 1")
+                signal.data = 1
+            else:
+                self.get_logger().warn("Obstacle detected on the right! Sending signal: 2")
+                signal.data = 2
         else:
             self.get_logger().info("No obstacle detected. Sending signal: 0")
+            signal.data = 0
+        self.obstacle_publisher.publish(signal)
 
 def main(args=None):
     rclpy.init(args=args)

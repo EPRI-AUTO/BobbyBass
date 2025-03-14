@@ -59,11 +59,11 @@ class MotorSubscriberNode(Node):
 
     def mode_callback(self, msg):
         """ Callback to switch between manual and autonomous mode. """
-        """ TO SWITCH TO MANUAL run: ros2 topic pub /robot_mode std_msgs/msg/String "data: 'manual'" """
-        """ TO SWITCH TO  AUTONOMOUS run: ros2 topic pub /robot_mode std_msgs/msg/String "data: 'autonomous'" """
+        # TO SWITCH TO MANUAL run: ros2 topic pub /robot_mode std_msgs/msg/String "data: 'manual'"
+        # TO SWITCH TO  AUTONOMOUS run: ros2 topic pub /robot_mode std_msgs/msg/String "data: 'autonomous'"
         if msg.data in ["manual", "autonomous"]:
             self.mode = msg.data
-            self.get_logger().info(f"🔄 Mode switched to: {self.mode.upper()}")
+            self.get_logger().info(f"Mode switched to: {self.mode.upper()}")
 
             if self.mode == "manual":
                 # Stop autonomous mode

@@ -26,7 +26,8 @@ class LiDARPublisherNode(Node):
         point_cloud = list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True))
         
         # Check if any point is within the detection range (e.g., 0.3)
-        detection_threshold = 0.3
+        detection_threshold = 0.47
+        detection_threshold_2 = 0.4
 
         # Find the first set of coordinates that triggered the detection
         triggering_points = [

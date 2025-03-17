@@ -163,6 +163,12 @@ class MotorSubscriberNode(Node):
         self.get_logger().info("Obstacle avoided. Ready to move again!")
 
     def manual_set(self):
+        if pygame.joystick.get_count() == 0:
+            self.get_logger().warn("No joystick detected! Switching to stop mode.")
+            self.robot.left_motor("STOP", 1)
+            self.robot.right_motor("STOP", 1)
+            return
+        
         # Joystick input
         hor = pygame.joystick.Joystick(0).get_axis(0)
         vert = pygame.joystick.Joystick(0).get_axis(1)

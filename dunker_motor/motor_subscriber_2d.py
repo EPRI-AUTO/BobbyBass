@@ -25,12 +25,15 @@ except ImportError:
 class MotorSubscriberNode(Node):
     def __init__(self):
         super().__init__('motor_subscriber_node')
+        self.stuck_counter = 0
 
         pygame.joystick.init()
         pygame.init()
         self.joystick = pygame.joystick.Joystick(0)
 
-        self.previous_mode = 0
+        self.obstacle_left = False
+        self.obstacle_right = False
+        self.boost = 1
 
         # Subscribe to mode switch topic
         self.mode_subscription = self.create_subscription(
@@ -77,19 +80,11 @@ class MotorSubscriberNode(Node):
     
     def obstacle_callback(self, msg):
         pygame.event.pump()  # Process joystick events
-
         msg2 = String()
 
-        # Shoulder button mode switching
-        if self.joystick.get_button(4):
-            self.get_logger().info("Switching to Manual Mode")
-            msg2.data = "manual"
-            self.mode_publisher.publish(msg2)
-
-        elif self.joystick.get_button(5):
-            self.get_logger().info("Switching to Autonomous Mode")
-            msg2.data = "autonomous"
-            self.mode_publisher.publish(msg2)
+        # End motor_subscriber when BUTTON is pressed
+        if self.joystick.get_button(1):
+            raise KeyboardInterrupt()
 
         # Single button mode switching (edge detection)
         button_state = self.joystick.get_button(3)
@@ -102,103 +97,106 @@ class MotorSubscriberNode(Node):
 
         self.last_button_state = button_state  # Store button state for next loop        
 
-        """ Callback to handle obstacle detection (only in autonomous mode). """
+        # Callback to handle obstacle detection (only in autonomous mode).
         if self.mode == "autonomous":
-            if msg.data == 1:
-                if self.previous_mode != 1:
+            if msg.data not in [3, 4, 5, 6] and self.stuck_counter >= 4:
+                self.robot.left_motor("STOP", 1)
+                self.robot.right_motor("STOP", 1)
+                # self.robot.left_motor("BACKWARD", 1)
+                # self.robot.right_motor("BACKWARD", 1)
+                self.get_logger().warn("Robot may be stuck, reversing...")
+                time.sleep(1)
+                self.stuck_counter = 0
+                
+            if msg.data == 1: #Close Left
+                if not self.obstacle_left and not self.obstacle_right:
+                    self.obstacle_left = True
                     self.robot.left_motor("STOP", 1)
                     self.robot.right_motor("STOP", 1)
                     time.sleep(0.5)
-                self.robot.left_motor("FORWARD", 2)
-                self.robot.right_motor("BACKWARD", 2)
-                self.get_logger().warn("Obstacle detected on the LEFT! Stopping and maneuvering...")
-            elif msg.data == 2:
-                if self.previous_mode != 2:
+                if self.obstacle_left:
+                    self.robot.left_motor("FORWARD", 1)
+                    self.robot.right_motor("BACKWARD", 1)
+                    self.get_logger().warn("Obstacle detected on the LEFT! Turning away...")
+                    self.stuck_counter += 1
+            elif msg.data == 2: #Close Right
+                if not self.obstacle_left and not self.obstacle_right:
+                    self.obstacle_right = True
                     self.robot.left_motor("STOP", 1)
                     self.robot.right_motor("STOP", 1)
                     time.sleep(0.5)
-                self.robot.left_motor("BACKWARD", 2)
-                self.robot.right_motor("FORWARD", 2)
-                self.get_logger().warn("Obstacle detected on the RIGHT! Stopping and maneuvering...")
-            else:
-                if self.previous_mode == 1 or self.previous_mode == 2:
-                    self.robot.left_motor("STOP", 1)
-                    self.robot.right_motor("STOP", 1)
-                    time.sleep(0.5)
-                self.get_logger().info("No obstacle detected. Moving forward.")
-                if ROBOT_CONNECTED:
+                if self.obstacle_right:
+                    self.robot.left_motor("BACKWARD", 1)
+                    self.robot.right_motor("FORWARD", 1)
+                    self.get_logger().warn("Obstacle detected on the RIGHT! Turning away...")
+                    self.stuck_counter += 1
+            elif msg.data == 3: #Medium Left
+                self.stuck_counter = 0
+                if self.obstacle_left:
+                    self.robot.left_motor("FORWARD", 1)
+                    self.robot.right_motor("BACKWARD", 1)
+                    self.get_logger().warn("Obstacle detected on the LEFT! Turning away...")
+                else:
                     self.robot.left_motor("FORWARD", 1)
                     self.robot.right_motor("FORWARD", 1)
-            self.previous_mode = msg.data
+                    self.get_logger().info("Possible object detected on the left. Moving slowly...")
+            elif msg.data == 4: #Medium Right
+                self.stuck_counter = 0
+                if self.obstacle_right:
+                    self.robot.left_motor("BACKWARD", 1)
+                    self.robot.right_motor("FORWARD", 1)
+                    self.get_logger().warn("Obstacle detected on the RIGHT! Turning away...")
+                else:
+                    self.robot.left_motor("FORWARD", 1)
+                    self.robot.right_motor("FORWARD", 1)
+                    self.get_logger().info("Possible object detected on the right. Moving slowly...")
+            elif msg.data == 5: #Far Left
+                self.stuck_counter = 0
+                if self.obstacle_left or self.obstacle_right:
+                    self.obstacle_left = False
+                    self.obstacle_right = False
+                    self.robot.left_motor("STOP", 1)
+                    self.robot.right_motor("STOP", 1)
+                    self.get_logger().info("Obstacle avoided. Resetting...")
+                    time.sleep(0.5)
+                self.robot.left_motor("FORWARD", 2)
+                self.robot.right_motor("FORWARD", 2)
+                self.get_logger().info("Possible object detected in the distance. Slowing down...")
+            elif msg.data == 6: #Far Right
+                self.stuck_counter = 0
+                if self.obstacle_left or self.obstacle_right:
+                    self.obstacle_left = False
+                    self.obstacle_right = False
+                    self.robot.left_motor("STOP", 1)
+                    self.robot.right_motor("STOP", 1)
+                    self.get_logger().info("Obstacle avoided. Resetting...")
+                    time.sleep(0.5)
+                self.robot.left_motor("FORWARD", 2)
+                self.robot.right_motor("FORWARD", 2)
+                self.get_logger().info("Possible object detected in the distance. Slowing down...")
+            else:
+                if self.obstacle_left or self.obstacle_right:
+                    self.obstacle_left = False
+                    self.obstacle_right = False
+                    self.robot.left_motor("STOP", 1)
+                    self.robot.right_motor("STOP", 1)
+                    self.get_logger().info("Obstacle avoided. Resetting...")
+                    time.sleep(0.5)
+                self.robot.left_motor("FORWARD", 4)
+                self.robot.right_motor("FORWARD", 4)
+                self.get_logger().info("No obstacle detected. Moving forward.")
         elif self.mode == "manual":
             self.manual_set()
-
-    def stop_and_turn_right(self):
-        """ Stops the robot and turns to avoid the obstacle. """
-        if not ROBOT_CONNECTED:
-            self.get_logger().warn("Robot not connected. Simulating movement.")
-            return
-
-        # Stop motors
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        time.sleep(1)
-
-        # Reverse
-        self.robot.left_motor("BACKWARD", 2)
-        self.robot.right_motor("BACKWARD", 2)
-        time.sleep(2)
-
-        # Stop motors
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        time.sleep(1)
-
-        # Turn (Right)
-        self.robot.left_motor("FORWARD", 2)
-        self.robot.right_motor("BACKWARD", 2)
-        time.sleep(2)
-
-        # Stop again
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        self.get_logger().info("Obstacle avoided. Ready to move again!")
-
-    def stop_and_turn_left(self):
-        """ Stops the robot and turns to avoid the obstacle. """
-        if not ROBOT_CONNECTED:
-            self.get_logger().warn("Robot not connected. Simulating movement.")
-            return
-
-        # Stop motors
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        time.sleep(1)
-
-        # Reverse
-        self.robot.left_motor("BACKWARD", 2)
-        self.robot.right_motor("BACKWARD", 2)
-        time.sleep(2)
-
-        # Stop motors
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        time.sleep(1)
-
-        # Turn (Left)
-        self.robot.left_motor("BACKWARD", 2)
-        self.robot.right_motor("FORWARD", 2)
-        time.sleep(2)
-
-        # Stop again
-        self.robot.left_motor("STOP", 1)
-        self.robot.right_motor("STOP", 1)
-        self.get_logger().info("Obstacle avoided. Ready to move again!")
+        
 
     def manual_set(self):
+        if self.joystick.get_button(0):
+            self.boost = 2
+        else:
+            self.boost = 1
         # Joystick input
-        hor = pygame.joystick.Joystick(0).get_axis(0)
-        vert = pygame.joystick.Joystick(0).get_axis(1)
+        hor = self.joystick.get_axis(0)
+        vert = self.joystick.get_axis(1)
 
         if abs(hor) < 0.1 and abs(vert) < 0.1:
             leftSpeed = 0
@@ -242,23 +240,23 @@ class MotorSubscriberNode(Node):
             right_speed = 1
 
         # D-Pad inputs
-        if pygame.joystick.Joystick(0).get_hat(0) == (0, 1):
+        if self.joystick.get_hat(0) == (0, 1):
             left_dir = right_dir = "FORWARD"
-            left_speed = right_speed = 2
-        if pygame.joystick.Joystick(0).get_hat(0) == (0, -1):
+            left_speed = right_speed = 3
+        elif self.joystick.get_hat(0) == (0, -1):
             left_dir = right_dir = "BACKWARD"
-            left_speed = right_speed = 4
-        if pygame.joystick.Joystick(0).get_hat(0) == (-1, 0):
+            left_speed = right_speed = 3
+        elif self.joystick.get_hat(0) == (-1, 0):
             left_dir = "BACKWARD"
             right_dir = "FORWARD"
-            left_speed = right_speed = 2
-        if pygame.joystick.Joystick(0).get_hat(0) == (1, 0):
+            left_speed = right_speed = 1
+        elif self.joystick.get_hat(0) == (1, 0):
             left_dir = "FORWARD"
             right_dir = "BACKWARD"
-            left_speed = right_speed = 2
+            left_speed = right_speed = 1
 
-        self.robot.left_motor(left_dir, left_speed)
-        self.robot.right_motor(right_dir, right_speed)
+        self.robot.left_motor(left_dir, left_speed*self.boost)
+        self.robot.right_motor(right_dir, right_speed*self.boost)
 
 def main(args=None):
     rclpy.init(args=args)

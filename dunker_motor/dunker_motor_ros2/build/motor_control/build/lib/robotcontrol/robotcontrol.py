@@ -9,6 +9,23 @@ class RobotControl:
         
         return
 
+    def battery_check(self):
+        self.ser.write(b"(")
+        while self.ser.in_waiting < 2:
+            time.sleep(0.001)
+        if self.ser.in_waiting >= 2:  # Check if there are at least 2 bytes available to read
+            highByte = self.ser.read(1)  # Read the high byte (1 byte)
+            lowByte = self.ser.read(1)   # Read the low byte (1 byte)
+
+        # Convert the bytes to integers
+        highByte = highByte[0]  # Extract the value from the byte object
+        lowByte = lowByte[0]    # Extract the value from the byte object
+
+        # Reconstruct the integer from the high and low bytes
+        batval = (highByte << 8) | lowByte
+
+        return batval
+
     def left_motor(self, direction, speed):
         if direction == "FORWARD":
             self.ser.write(b"a")
@@ -120,8 +137,8 @@ class RobotControl:
             self.ser.write(b"*")
 
         if self.ser.read() == b"c":
-            return 1
+            return "c"
         else:
-            return 0
+            return "o"
 
         return

@@ -78,6 +78,7 @@ class MotorSubscriberNode(Node):
             self.get_logger().info(f"Mode switched to: {self.mode.upper()}")
     
     def obstacle_callback(self, msg):
+        # print(self.robot.battery_check())
         pygame.event.pump()  # Process joystick events
         msg2 = String()
 
@@ -166,8 +167,8 @@ class MotorSubscriberNode(Node):
                     self.robot.right_motor("STOP", 1)
                     self.get_logger().info("Obstacle avoided. Reseting...")
                     time.sleep(0.5)
-                self.robot.left_motor("FORWARD", 4)
-                self.robot.right_motor("FORWARD", 4)
+                self.robot.left_motor("FORWARD", 5)
+                self.robot.right_motor("FORWARD", 5)
                 self.get_logger().info("No obstacle detected. Moving forward.")
         elif self.mode == "manual":
             self.manual_set()
@@ -178,19 +179,16 @@ class MotorSubscriberNode(Node):
         else:
             self.boost = 1
         # Joystick input
-        hor = self.joystick.get_axis(0)
-        vert = self.joystick.get_axis(1)
+        move = self.joystick.get_axis(1)
+        turn = self.joystick.get_axis(2)
 
-        if abs(hor) < 0.1 and abs(vert) < 0.1:
-            leftSpeed = 0
-            rightSpeed = 0
-        else:
-            if hor < 0:
-                rightSpeed = -vert
-                leftSpeed = rightSpeed * (1 - abs(hor))
-            else:
-                leftSpeed = -vert
-                rightSpeed = leftSpeed * (1 - abs(hor))
+        if abs(move) < 0.1:
+            move = 0
+        if abs(turn) < 0.1:
+            turn = 0
+        
+        leftSpeed = -move + turn
+        rightSpeed = -move - turn
 
         if leftSpeed == 0:
             left_dir = "STOP"
@@ -205,7 +203,7 @@ class MotorSubscriberNode(Node):
         elif rightSpeed < 0:
             right_dir = "BACKWARD"
 
-        if abs(leftSpeed) > 0.75:
+        if abs(leftSpeed) > 0.95:
             left_speed = 4
         elif abs(leftSpeed) > 0.5:
             left_speed = 3
@@ -213,7 +211,7 @@ class MotorSubscriberNode(Node):
             left_speed = 2
         else:
             left_speed = 1
-        if abs(rightSpeed) > 0.75:
+        if abs(rightSpeed) > 0.95:
             right_speed = 4
         elif abs(rightSpeed) > 0.5:
             right_speed = 3

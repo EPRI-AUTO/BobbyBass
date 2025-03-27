@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-60312ad665210b18424d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "zed_tutorial_video",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-79e88506e0e37dc8230e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_tutorial_video::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_tutorial_video-Release-1f9c2d0c963aca3b69c1.json",
+					"name" : "zed_tutorial_video",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_tutorial_video_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_tutorial_video_files-Release-27b97de1dcc48c2f6813.json",
+					"name" : "zed_tutorial_video_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_tutorial_video_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_tutorial_video_uninstall-Release-6d995a7f25ce9c5c780d.json",
+					"name" : "zed_tutorial_video_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_video",
+		"source" : "/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tutorials/zed_video_tutorial"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

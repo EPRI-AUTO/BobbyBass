@@ -1,0 +1,1 @@
+/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ipc/ament_cmake_core/zed_ipcConfig-version.cmake

@@ -1,0 +1,72 @@
+[0.059s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tutorials/zed_depth_tutorial -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth
+[0.192s] -- The C compiler identification is GNU 11.4.0
+[0.347s] -- The CXX compiler identification is GNU 11.4.0
+[0.362s] -- Detecting C compiler ABI info
+[0.546s] -- Detecting C compiler ABI info - done
+[0.554s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.555s] -- Detecting C compile features
+[0.556s] -- Detecting C compile features - done
+[0.562s] -- Detecting CXX compiler ABI info
+[0.734s] -- Detecting CXX compiler ABI info - done
+[0.758s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.759s] -- Detecting CXX compile features
+[0.759s] -- Detecting CXX compile features - done
+[0.765s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.133s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.288s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.596s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.604s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.626s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.651s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.682s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.774s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.779s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.963s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.030s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.134s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.149s] -- Looking for pthread.h
+[2.307s] -- Looking for pthread.h - found
+[2.307s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.466s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.467s] -- Found Threads: TRUE  
+[2.659s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.715s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.717s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.719s] -- Configured cppcheck include dirs: 
+[2.719s] -- Configured cppcheck exclude dirs and/or files: 
+[2.722s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.722s] -- Configured cpplint exclude dirs and/or files: 
+[2.725s] -- Added test 'lint_cmake' to check CMake code style
+[2.729s] -- Added test 'uncrustify' to check C / C++ code style
+[2.730s] -- Configured uncrustify additional arguments: 
+[2.731s] -- Added test 'xmllint' to check XML markup files
+[2.732s] -- Added test 'clang_format' to check C / C++ code style
+[2.735s] -- Configuring done
+[2.760s] -- Generating done
+[2.769s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth
+[2.806s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tutorials/zed_depth_tutorial -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth
+[2.808s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth -- -j6 -l6
+[2.976s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_tutorial_depth.dir/src/zed_depth_sub_tutorial.cpp.o[0m
+[43.279s] [100%] [32m[1mLinking CXX executable zed_tutorial_depth[0m
+[44.455s] [100%] Built target zed_tutorial_depth
+[44.491s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth -- -j6 -l6
+[44.507s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth
+[49.024s] -- Install configuration: "Release"
+[49.024s] -- Execute custom install script
+[49.024s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/lib/zed_tutorial_depth/zed_tutorial_depth
+[49.024s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_depth
+[49.024s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_depth
+[49.024s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.sh
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.dsv
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.sh
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.dsv
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.bash
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.sh
+[49.025s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.zsh
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.dsv
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/package.dsv
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/ament_index/resource_index/packages/zed_tutorial_depth
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig.cmake
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig-version.cmake
+[49.026s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_depth/share/zed_tutorial_depth/package.xml
+[49.072s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_depth

@@ -1,0 +1,3 @@
+/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/lib/librviz_plugin_zed_od.so
+/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport.cmake
+/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport-release.cmake

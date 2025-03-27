@@ -1,0 +1,130 @@
+[0.064s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/rviz-plugin-zed-od -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od
+[0.206s] -- The C compiler identification is GNU 11.4.0
+[0.371s] -- The CXX compiler identification is GNU 11.4.0
+[0.391s] -- Detecting C compiler ABI info
+[0.540s] -- Detecting C compiler ABI info - done
+[0.556s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.556s] -- Detecting C compile features
+[0.556s] -- Detecting C compile features - done
+[0.560s] -- Detecting CXX compiler ABI info
+[0.744s] -- Detecting CXX compiler ABI info - done
+[0.772s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.779s] -- Detecting CXX compile features
+[0.779s] -- Detecting CXX compile features - done
+[0.779s] -- Enabling tests requiring a display
+[0.789s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.235s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.378s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.647s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.651s] -- Found OGRE
+[1.652s] --   static     : OFF
+[1.654s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.654s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.654s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.654s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.654s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.654s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.654s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.659s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.659s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.659s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.659s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.745s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[1.758s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[1.976s] -- Found X11: /usr/include   
+[1.977s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[2.151s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[2.151s] -- Looking for gethostbyname
+[2.278s] -- Looking for gethostbyname - found
+[2.278s] -- Looking for connect
+[2.443s] -- Looking for connect - found
+[2.443s] -- Looking for remove
+[2.592s] -- Looking for remove - found
+[2.592s] -- Looking for shmat
+[2.771s] -- Looking for shmat - found
+[2.772s] -- Looking for IceConnectionNumber in ICE
+[3.001s] -- Looking for IceConnectionNumber in ICE - found
+[3.083s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.107s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.113s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.180s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.338s] -- Found rviz_common: 11.2.16 (/opt/ros/humble/share/rviz_common/cmake)
+[3.395s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[3.620s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[3.770s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.775s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.827s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.990s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.995s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.032s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.044s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.063s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.094s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.114s] -- Looking for pthread.h
+[4.327s] -- Looking for pthread.h - found
+[4.327s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.519s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.521s] -- Found Threads: TRUE  
+[4.818s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.819s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.285s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.375s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.380s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.382s] -- Configured cppcheck include dirs: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/rviz-plugin-zed-od/src/include;/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/rviz-plugin-zed-od/src/plugin/include;$<BUILD_INTERFACE:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/rviz-plugin-zed-od/include>
+[5.382s] -- Configured cppcheck exclude dirs and/or files: 
+[5.386s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.386s] -- Configured cpplint exclude dirs and/or files: 
+[5.389s] -- Added test 'lint_cmake' to check CMake code style
+[5.393s] -- Added test 'uncrustify' to check C / C++ code style
+[5.394s] -- Configured uncrustify additional arguments: 
+[5.396s] -- Added test 'xmllint' to check XML markup files
+[5.400s] -- Added test 'clang_format' to check C / C++ code style
+[5.429s] -- Configuring done
+[5.716s] -- Generating done
+[5.731s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od
+[5.795s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/rviz-plugin-zed-od -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od
+[5.798s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od -- -j6 -l6
+[7.130s] [ 20%] [34m[1mAutomatic MOC and UIC for target rviz_plugin_zed_od[0m
+[8.991s] [ 20%] Built target rviz_plugin_zed_od_autogen
+[9.041s] [ 60%] [32mBuilding CXX object CMakeFiles/rviz_plugin_zed_od.dir/rviz_plugin_zed_od_autogen/mocs_compilation.cpp.o[0m
+[9.041s] [ 60%] [32mBuilding CXX object CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o[0m
+[9.056s] [ 80%] [32mBuilding CXX object CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_info.cpp.o[0m
+[68.595s] [100%] [32m[1mLinking CXX shared library librviz_plugin_zed_od.so[0m
+[70.933s] [100%] Built target rviz_plugin_zed_od
+[70.961s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od -- -j6 -l6
+[70.965s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od
+[70.980s] -- Install configuration: "Release"
+[70.981s] -- Execute custom install script
+[70.982s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od//plugins_description.xml
+[71.000s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/library_path.sh
+[71.018s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/library_path.dsv
+[71.044s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//visibility_control.hpp
+[71.064s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//zed_body_parts.hpp
+[71.092s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//zed_od_display.hpp
+[71.117s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//zed_od_info.hpp
+[71.135s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/icons/ZedObjDet.png
+[71.155s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/ament_index/resource_index/package_run_dependencies/rviz_plugin_zed_od
+[71.179s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/ament_index/resource_index/parent_prefix_path/rviz_plugin_zed_od
+[71.201s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/ament_prefix_path.sh
+[71.233s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/ament_prefix_path.dsv
+[71.251s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/path.sh
+[71.270s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/path.dsv
+[71.288s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.bash
+[71.306s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.sh
+[71.324s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.zsh
+[71.344s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.dsv
+[71.368s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/package.dsv
+[71.390s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/ament_index/resource_index/packages/rviz_plugin_zed_od
+[71.418s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugin_zed_od
+[71.435s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_include_directories-extras.cmake
+[71.458s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_targets-extras.cmake
+[71.475s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_dependencies-extras.cmake
+[71.493s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odConfig.cmake
+[71.510s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odConfig-version.cmake
+[71.526s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/package.xml
+[71.543s] -- Installing: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/lib/librviz_plugin_zed_od.so
+[71.547s] -- Set runtime path of "/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/lib/librviz_plugin_zed_od.so" to ""
+[71.548s] -- Installing: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport.cmake
+[71.549s] -- Installing: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport-release.cmake
+[71.555s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/rviz_plugin_zed_od

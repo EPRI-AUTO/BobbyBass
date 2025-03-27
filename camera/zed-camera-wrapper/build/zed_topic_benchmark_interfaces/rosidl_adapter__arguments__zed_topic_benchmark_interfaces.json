@@ -1,0 +1,6 @@
+{
+  "package_name": "zed_topic_benchmark_interfaces",
+  "non_idl_tuples": [
+    "/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tools/zed_benchmark_interfaces:msg/BenchmarkStatsStamped.msg"
+  ]
+}

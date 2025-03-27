@@ -1,0 +1,72 @@
+[0.064s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tutorials/zed_pose_tutorial -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking
+[0.217s] -- The C compiler identification is GNU 11.4.0
+[0.356s] -- The CXX compiler identification is GNU 11.4.0
+[0.368s] -- Detecting C compiler ABI info
+[0.523s] -- Detecting C compiler ABI info - done
+[0.540s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.540s] -- Detecting C compile features
+[0.540s] -- Detecting C compile features - done
+[0.544s] -- Detecting CXX compiler ABI info
+[0.722s] -- Detecting CXX compiler ABI info - done
+[0.740s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.740s] -- Detecting CXX compile features
+[0.741s] -- Detecting CXX compile features - done
+[0.746s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.131s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.304s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.596s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.606s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.626s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.676s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.761s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.769s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.948s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.024s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.135s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.147s] -- Looking for pthread.h
+[2.320s] -- Looking for pthread.h - found
+[2.320s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.484s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.486s] -- Found Threads: TRUE  
+[2.884s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.970s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.972s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.973s] -- Configured cppcheck include dirs: 
+[2.973s] -- Configured cppcheck exclude dirs and/or files: 
+[2.975s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.975s] -- Configured cpplint exclude dirs and/or files: 
+[2.977s] -- Added test 'lint_cmake' to check CMake code style
+[2.978s] -- Added test 'uncrustify' to check C / C++ code style
+[2.978s] -- Configured uncrustify additional arguments: 
+[2.979s] -- Added test 'xmllint' to check XML markup files
+[2.981s] -- Added test 'clang_format' to check C / C++ code style
+[2.986s] -- Configuring done
+[3.031s] -- Generating done
+[3.041s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking
+[3.088s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tutorials/zed_pose_tutorial -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking
+[3.089s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking -- -j6 -l6
+[3.193s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_tutorial_pos_tracking.dir/src/zed_tutorial_pos_tracking.cpp.o[0m
+[56.069s] [100%] [32m[1mLinking CXX executable zed_tutorial_pos_tracking[0m
+[56.583s] [100%] Built target zed_tutorial_pos_tracking
+[56.675s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking -- -j6 -l6
+[56.689s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking
+[57.164s] -- Install configuration: "Release"
+[57.164s] -- Execute custom install script
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/lib/zed_tutorial_pos_tracking/zed_tutorial_pos_tracking
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_pos_tracking
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_pos_tracking
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/environment/ament_prefix_path.sh
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/environment/ament_prefix_path.dsv
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/environment/path.sh
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/environment/path.dsv
+[57.165s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/local_setup.bash
+[57.166s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/local_setup.sh
+[57.166s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/local_setup.zsh
+[57.166s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/local_setup.dsv
+[57.166s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/package.dsv
+[57.193s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/ament_index/resource_index/packages/zed_tutorial_pos_tracking
+[57.213s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/cmake/zed_tutorial_pos_trackingConfig.cmake
+[57.233s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/cmake/zed_tutorial_pos_trackingConfig-version.cmake
+[57.259s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_tutorial_pos_tracking/share/zed_tutorial_pos_tracking/package.xml
+[57.284s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_tutorial_pos_tracking

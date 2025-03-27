@@ -1,0 +1,50 @@
+[0.058s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/zed_display_rviz2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2
+[0.549s] -- The C compiler identification is GNU 11.4.0
+[0.550s] -- The CXX compiler identification is GNU 11.4.0
+[0.550s] -- Detecting C compiler ABI info
+[0.659s] -- Detecting C compiler ABI info - done
+[0.678s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.679s] -- Detecting C compile features
+[0.679s] -- Detecting C compile features - done
+[0.705s] -- Detecting CXX compiler ABI info
+[1.015s] -- Detecting CXX compiler ABI info - done
+[1.022s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.033s] -- Detecting CXX compile features
+[1.034s] -- Detecting CXX compile features - done
+[1.043s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.573s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.716s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.962s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.038s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.041s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.042s] -- Added test 'lint_cmake' to check CMake code style
+[2.043s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.045s] -- Added test 'xmllint' to check XML markup files
+[2.049s] -- Configuring done
+[2.064s] -- Generating done
+[2.074s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2
+[2.113s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/zed_display_rviz2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2
+[2.114s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2 -- -j6 -l6
+[2.293s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2 -- -j6 -l6
+[2.307s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2
+[2.424s] -- Install configuration: "Release"
+[2.424s] -- Execute custom install script
+[2.425s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/launch/display_zed_cam.launch.py
+[2.425s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zed_mono.rviz
+[2.425s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zed_stereo.rviz
+[2.449s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/ament_index/resource_index/package_run_dependencies/zed_display_rviz2
+[2.473s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/ament_index/resource_index/parent_prefix_path/zed_display_rviz2
+[2.493s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/environment/ament_prefix_path.sh
+[2.514s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/environment/ament_prefix_path.dsv
+[2.550s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/environment/path.sh
+[2.577s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/environment/path.dsv
+[2.598s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.bash
+[2.618s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.sh
+[2.635s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.zsh
+[2.653s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.dsv
+[2.671s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/package.dsv
+[2.691s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/ament_index/resource_index/packages/zed_display_rviz2
+[2.705s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/cmake/zed_display_rviz2Config.cmake
+[2.722s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/cmake/zed_display_rviz2Config-version.cmake
+[2.740s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_display_rviz2/share/zed_display_rviz2/package.xml
+[2.839s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_display_rviz2

@@ -1,0 +1,83 @@
+[0.124s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tools/zed_benchmark_component -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component
+[7.594s] -- The C compiler identification is GNU 11.4.0
+[7.594s] -- The CXX compiler identification is GNU 11.4.0
+[7.594s] -- Detecting C compiler ABI info
+[7.594s] -- Detecting C compiler ABI info - done
+[7.594s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.594s] -- Detecting C compile features
+[7.595s] -- Detecting C compile features - done
+[7.595s] -- Detecting CXX compiler ABI info
+[7.595s] -- Detecting CXX compiler ABI info - done
+[7.595s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.595s] -- Detecting CXX compile features
+[7.595s] -- Detecting CXX compile features - done
+[7.595s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[7.595s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.596s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.596s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.596s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.596s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.596s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.596s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.596s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.596s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.596s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.597s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.597s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.597s] -- Looking for pthread.h
+[7.597s] -- Looking for pthread.h - found
+[7.597s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.597s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.597s] -- Found Threads: TRUE  
+[7.597s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[7.597s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.597s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.598s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.598s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tools/zed_benchmark_component/src/include>;$<BUILD_INTERFACE:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tools/zed_benchmark_component/src/component/include>
+[7.623s] -- Configured cppcheck exclude dirs and/or files: 
+[7.624s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.624s] -- Configured cpplint exclude dirs and/or files: 
+[7.624s] -- Added test 'lint_cmake' to check CMake code style
+[7.624s] -- Added test 'uncrustify' to check C / C++ code style
+[7.625s] -- Configured uncrustify additional arguments: 
+[7.625s] -- Added test 'xmllint' to check XML markup files
+[7.626s] -- Added test 'clang_format' to check C / C++ code style
+[7.655s] -- Configuring done
+[7.657s] -- Generating done
+[7.657s] -- Build files have been written to: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component
+[7.658s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-examples/tools/zed_benchmark_component -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component
+[7.661s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component -- -j6 -l6
+[7.882s] [ 33%] [32mBuilding CXX object CMakeFiles/zed_topic_benchmark_component.dir/src/component/src/topic_benchmark_component.cpp.o[0m
+[7.898s] [ 66%] [32mBuilding CXX object CMakeFiles/zed_topic_benchmark_component.dir/src/component/src/winavg.cpp.o[0m
+[41.115s] [100%] [32m[1mLinking CXX shared library libzed_topic_benchmark_component.so[0m
+[41.613s] [100%] Built target zed_topic_benchmark_component
+[41.665s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component -- -j6 -l6
+[41.679s] Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component
+[43.043s] -- Install configuration: "Release"
+[43.044s] -- Execute custom install script
+[43.044s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/lib/libzed_topic_benchmark_component.so
+[43.045s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/include/zed_topic_benchmark_component/topic_benchmark_component.hpp
+[43.045s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/include/zed_topic_benchmark_component/winavg.hpp
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/include/zed_topic_benchmark_component/visibility_control.hpp
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/library_path.sh
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/library_path.dsv
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/ament_index/resource_index/package_run_dependencies/zed_topic_benchmark_component
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/ament_index/resource_index/parent_prefix_path/zed_topic_benchmark_component
+[43.046s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/ament_prefix_path.sh
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/ament_prefix_path.dsv
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/path.sh
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/environment/path.dsv
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/local_setup.bash
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/local_setup.sh
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/local_setup.zsh
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/local_setup.dsv
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/package.dsv
+[43.047s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/ament_index/resource_index/packages/zed_topic_benchmark_component
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/ament_index/resource_index/rclcpp_components/zed_topic_benchmark_component
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/cmake/ament_cmake_export_libraries-extras.cmake
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/cmake/zed_topic_benchmark_componentConfig.cmake
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/cmake/zed_topic_benchmark_componentConfig-version.cmake
+[43.048s] -- Symlinking: /home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_component/share/zed_topic_benchmark_component/package.xml
+[43.078s] Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_topic_benchmark_component

@@ -1,0 +1,320 @@
+[0.237s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args=-DCMAKE_BUILD_TYPE=Release']
+[0.237s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffbd63aad0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbd7efa90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbd7efa90>>, mixin_verb=('build',))
+[0.641s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.642s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore_ament_install'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_pkg']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_pkg'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_meta']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_meta'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ros']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ros'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['cmake', 'python']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'cmake'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['python_setup_py']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python_setup_py'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore_ament_install'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_pkg']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_pkg'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_meta']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_meta'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ros']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ros'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['cmake', 'python']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'cmake'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['python_setup_py']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python_setup_py'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore_ament_install'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_pkg']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_pkg'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_meta']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_meta'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ros']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ros'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['cmake', 'python']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'cmake'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['python_setup_py']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python_setup_py'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ignore', 'ignore_ament_install']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore_ament_install'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_pkg']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_pkg'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_meta']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_meta'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ros']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ros'
+[0.683s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_components' with type 'ros.ament_cmake' and name 'zed_components'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore_ament_install'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_pkg']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_meta'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ros']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ros'
+[0.686s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_ros2' with type 'ros.ament_cmake' and name 'zed_ros2'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_meta'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ros']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ros'
+[0.720s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_wrapper' with type 'ros.ament_cmake' and name 'zed_wrapper'
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.769s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/humble
+[0.772s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target' from command line to 'None'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_cache' from command line to 'False'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_first' from command line to 'False'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_force_configure' from command line to 'False'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'ament_cmake_args' from command line to 'None'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_cmake_args' from command line to 'None'
+[0.863s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.864s] DEBUG:colcon.colcon_core.verb:Building package 'zed_components' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components', 'merge_install': False, 'path': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_components', 'symlink_install': True, 'test_result_base': None}
+[0.864s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.864s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.864s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.865s] DEBUG:colcon.colcon_core.verb:Building package 'zed_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper', 'merge_install': False, 'path': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_wrapper', 'symlink_install': True, 'test_result_base': None}
+[0.865s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target' from command line to 'None'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.866s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.866s] DEBUG:colcon.colcon_core.verb:Building package 'zed_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2', 'merge_install': False, 'path': '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.866s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.869s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.870s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_components' with build type 'ament_cmake'
+[0.871s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_components'
+[0.874s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.875s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.875s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components
+[5.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components
+[5.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components -- -j6 -l6
+[172.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components -- -j6 -l6
+[172.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components
+[172.897s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[172.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_components
+[172.921s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components' for CMake module files
+[172.924s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components' for CMake config files
+[172.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[172.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[172.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[172.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[172.939s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib'
+[172.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[172.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[172.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[172.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[172.945s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/bin'
+[172.945s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib/pkgconfig/zed_components.pc'
+[172.947s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib/python3.10/site-packages'
+[172.947s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/bin'
+[172.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.ps1'
+[172.951s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.dsv'
+[172.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.sh'
+[172.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.bash'
+[172.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.zsh'
+[172.961s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/colcon-core/packages/zed_components)
+[172.964s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[172.965s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components' for CMake module files
+[172.967s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components' for CMake config files
+[172.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[172.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[172.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[172.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[172.973s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib'
+[172.973s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[172.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[172.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[172.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[172.978s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/bin'
+[172.978s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib/pkgconfig/zed_components.pc'
+[172.978s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib/python3.10/site-packages'
+[172.979s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/bin'
+[172.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.ps1'
+[172.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.dsv'
+[172.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.sh'
+[172.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.bash'
+[172.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/zed_components/package.zsh'
+[172.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/share/colcon-core/packages/zed_components)
+[172.987s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_wrapper' with build type 'ament_cmake'
+[172.988s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_wrapper'
+[172.989s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[172.989s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[173.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper
+[176.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper
+[176.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper -- -j6 -l6
+[176.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper -- -j6 -l6
+[176.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper
+[176.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[177.000s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper' for CMake module files
+[177.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_wrapper
+[177.003s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper' for CMake config files
+[177.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[177.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[177.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[177.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[177.011s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/bin'
+[177.011s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[177.012s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/lib/python3.10/site-packages'
+[177.012s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/bin'
+[177.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[177.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[177.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.sh'
+[177.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.bash'
+[177.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[177.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[177.020s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[177.021s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper' for CMake module files
+[177.023s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper' for CMake config files
+[177.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[177.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[177.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[177.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[177.031s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/bin'
+[177.031s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[177.032s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/lib/python3.10/site-packages'
+[177.033s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/bin'
+[177.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[177.036s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[177.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.sh'
+[177.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.bash'
+[177.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[177.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[177.046s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_ros2' with build type 'ament_cmake'
+[177.046s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_ros2'
+[177.047s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[177.048s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[177.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2
+[177.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/epriauto/ros2_ws/camera/zed-camera-wrapper/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2
+[177.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2 -- -j6 -l6
+[178.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2 -- -j6 -l6
+[178.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2
+[178.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[178.365s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2' for CMake module files
+[178.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_wrapper:/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_components/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/epriauto/ros2_ws/camera/zed-camera-wrapper/build/zed_ros2
+[178.367s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2' for CMake config files
+[178.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[178.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[178.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[178.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[178.370s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/bin'
+[178.371s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[178.371s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/lib/python3.10/site-packages'
+[178.371s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/bin'
+[178.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.ps1'
+[178.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.dsv'
+[178.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.sh'
+[178.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.bash'
+[178.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.zsh'
+[178.376s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[178.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[178.378s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2' for CMake module files
+[178.379s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2' for CMake config files
+[178.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[178.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[178.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[178.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[178.382s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/bin'
+[178.383s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[178.383s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/lib/python3.10/site-packages'
+[178.383s] Level 1:colcon.colcon_core.environment:checking '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/bin'
+[178.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.ps1'
+[178.385s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.dsv'
+[178.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.sh'
+[178.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.bash'
+[178.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/zed_ros2/package.zsh'
+[178.388s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[178.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[178.390s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[178.390s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[178.391s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[178.407s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[178.407s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[178.407s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[178.437s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[178.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/local_setup.ps1'
+[178.440s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/_local_setup_util_ps1.py'
+[178.444s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/setup.ps1'
+[178.446s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/local_setup.sh'
+[178.448s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/_local_setup_util_sh.py'
+[178.449s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/setup.sh'
+[178.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/local_setup.bash'
+[178.452s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/setup.bash'
+[178.453s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/local_setup.zsh'
+[178.454s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/epriauto/ros2_ws/camera/zed-camera-wrapper/install/setup.zsh'

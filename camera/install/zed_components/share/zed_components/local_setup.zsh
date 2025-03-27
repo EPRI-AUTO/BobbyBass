@@ -1,1 +1,0 @@
-/home/epriauto/ros2_ws/camera/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh

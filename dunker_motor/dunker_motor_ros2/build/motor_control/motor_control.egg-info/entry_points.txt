@@ -1,3 +1,0 @@
-[console_scripts]
-controller = motor_control.controller:main
-

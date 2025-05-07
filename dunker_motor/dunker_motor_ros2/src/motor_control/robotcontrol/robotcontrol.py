@@ -117,7 +117,24 @@ class RobotControl:
                 self.ser.write(b"9")
 
         return
+    
+    def stuck(self, status):
+        if status == "ON":
+            self.ser.write(b"!")
+        if status == "OFF":
+            self.ser.write(b"@")
+        
+        return
+    
+    def battery_crit(self, status):
+        if status == "ON":
+            self.ser.write(b"#")
+        if status == "OFF":
+            self.ser.write(b"$")
 
+        return
+    
+    '''
     def bump_sensor(self, num):
         if num == 1:
             self.ser.write(b"!")
@@ -136,9 +153,35 @@ class RobotControl:
         if num == 8:
             self.ser.write(b"*")
 
-        if self.ser.read() == b"c":
+        if self.ser.read == b"c":
             return "c"
         else:
             return "o"
-
+        
         return
+
+    
+    def bump_sensor_status(self):
+        self.ser.write(b"!")
+        timeout = time.time() + 1.0  # 1 second timeout
+
+        while self.ser.in_waiting < 1:
+            if time.time() > timeout:
+                print("Timeout waiting for bump sensor response")
+                return None
+            time.sleep(0.001)
+
+        val = self.ser.read(1)  # Read exactly 1 byte
+        if val:
+            return val[0]
+        return None
+
+    
+        if self.ser.read() == b"b":
+            return "b"
+        elif self.ser.read() == b"f":
+            return "f"
+        else:
+            return "n"
+    '''
+    

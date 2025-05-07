@@ -1,0 +1,143 @@
+Unilidar initialization succeed!
+Set Lidar working mode to: STANDBY ... 
+Set Lidar working mode to: NORMAL ... 
+
+lidar firmware version = 1.2.3
+lidar sdk version = 1.0.16
+
+Dirty Percentage = 0.104167 %
+Dirty Percentage = 0.000000 %
+Dirty Percentage = 0.000000 %
+
+Turn on all the LED lights ...
+Turn off all the LED lights ...
+Set LED mode to: FORWARD_SLOW ...
+Set LED mode to: REVERSE_SLOW ...
+Set LED mode to: SIXSTAGE_BREATHING ...
+
+An IMU msg is parsed!
+	stamp = 1746626971.629390, id = 749
+	quaternion (x, y, z, w) = [-0.1772, -0.3488, 0.5996, 0.6957]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.629865, id = 750
+	quaternion (x, y, z, w) = [-0.1772, -0.3488, 0.5996, 0.6957]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.631356, id = 667
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6238, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.634854, id = 668
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.642274, id = 669
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.645139, id = 670
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.650842, id = 671
+	quaternion (x, y, z, w) = [-0.1649, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.655928, id = 672
+	quaternion (x, y, z, w) = [-0.1649, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.661508, id = 673
+	quaternion (x, y, z, w) = [-0.1649, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.667011, id = 674
+	quaternion (x, y, z, w) = [-0.1649, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.671342, id = 675
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.675449, id = 676
+	quaternion (x, y, z, w) = [-0.1649, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.678129, id = 677
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.683859, id = 678
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6740]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.686908, id = 679
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6239, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.689415, id = 680
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.692562, id = 681
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.697969, id = 682
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.701097, id = 683
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.703563, id = 684
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.706878, id = 685
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.711969, id = 686
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.714987, id = 687
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+An IMU msg is parsed!
+	stamp = 1746626971.720642, id = 688
+	quaternion (x, y, z, w) = [-0.1648, -0.3549, 0.6240, 0.6739]
+	timedelay (us) = 0
+
+A Cloud msg is parsed! 
+	stamp = 1746626957.590429, id = 1
+	cloud size  = 2136, ringNum = 18
+	first 10 points (x,y,z,intensity,time,ring) = 
+	  (-3.286681, -0.475123, 0.077102, 137.000000, 0.000000, 0)
+	  (-3.385634, -0.496089, 0.167722, 194.000000, 0.0

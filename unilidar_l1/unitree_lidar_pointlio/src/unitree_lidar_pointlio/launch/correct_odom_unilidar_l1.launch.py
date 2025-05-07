@@ -7,14 +7,19 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+    # Declare the RViz argument
+    rviz_arg = DeclareLaunchArgument(
+        'rviz', default_value='true',
+        description='Flag to launch RViz.')
+    
     # Node parameters, including those from the YAML configuration file
     laser_mapping_params = [
         PathJoinSubstitution([
-            FindPackageShare('point_lio'),
+            FindPackageShare('unitree_lidar_pointlio'),
             'config', 'unilidar_l1.yaml'
         ]),
         {
-            'use_imu_as_input': False,  # Change to True to use IMU as input of Point-LIO
+            'use_imu_as_input': True,  # Change to True to use IMU as input of Point-LIO
             'prop_at_freq_of_imu': True,
             'check_satu': True,
             'init_map_size': 10,
@@ -24,7 +29,7 @@ def generate_launch_description():
             'filter_size_map': 0.1,  # Options: 0.5, 0.3, 0.15, 0.1
             'cube_side_length': 1000.0,  # Option: 1000
             'runtime_pos_log_enable': False,  # Option: True
-            'odom_only': True, # Option: False
+            'odom_only': False, # Option: False
             'odom_header_frame_id': "odom",     # Default: "camera_init"
             'odom_child_frame_id': "base_link", # Default: "aft_mapped"
         }
@@ -32,7 +37,7 @@ def generate_launch_description():
 
     # Node definition for laserMapping with Point-LIO
     laser_mapping_node = Node(
-        package='point_lio',
+        package='unitree_lidar_pointlio',
         executable='pointlio_mapping',
         name='laserMapping',
         output='screen',
@@ -40,9 +45,27 @@ def generate_launch_description():
         # prefix='gdb -ex run --args'
     )
 
+    # Conditional RViz node launch
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz',
+        arguments=['-d', PathJoinSubstitution([
+            FindPackageShare('unitree_lidar_pointlio'),
+            'rviz_cfg', 'default.rviz'
+        ])],
+        condition=IfCondition(LaunchConfiguration('rviz')),
+        prefix='nice'
+    )
+
     # Assemble the launch description
     ld = LaunchDescription([
+        rviz_arg,
         laser_mapping_node,
+        GroupAction(
+            actions=[rviz_node],
+            condition=IfCondition(LaunchConfiguration('rviz'))
+        ),
     ])
 
     return ld

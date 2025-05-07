@@ -1,0 +1,11 @@
+geofence:
+  - latitude: 35.305748
+    longitude: -80.73456
+  - latitude: 35.305688
+    longitude: -80.734604
+  - latitude: 35.305649
+    longitude: -80.734456
+  - latitude: 35.305655
+    longitude: -80.734338
+  - latitude: 35.305745
+    longitude: -80.734284

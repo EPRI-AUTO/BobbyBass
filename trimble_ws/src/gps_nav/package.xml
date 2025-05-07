@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gps_nav</name>
+  <version>0.1.0</version>
+  <description>GPS waypoint and Nav2 SLAM integration</description>
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>pyproj</depend>
+  <depend>transforms3d</depend>
+  <exec_depend>launch</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
